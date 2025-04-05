@@ -4,7 +4,7 @@ Este site interativo com foco na conscientização ambiental busca educar os usu
 
 ## 🛠 Funcionalidades 🛠
 
-- *Realizar Quizzes* : Responda à perguntas sobre o meio ambiente e receba dicas de como conservá-lo!
+- *Realizar Quizzes* : Responda à perguntas sobre o meio ambiente e receba sugestões de como conservá-lo!
 - *Sugerir ações ambientais* : Faça sugestões de como preservar o ambiente e ajudar a salvar o planeta.
 - *Conhecer ONGs* : Descubra ONGs que realizam trabalhos para presevar a natureza.
 - *Mapa Interativo de Queimadas* : Use um mapa interativo para obter informações sobre queimadas ao redor do globo!
@@ -16,7 +16,7 @@ Este site interativo com foco na conscientização ambiental busca educar os usu
 
 ## 📂 Estrutura do Projeto 📂
 ```bash
-├── src/        # Código fonte do projeto
+├── docs/        # Pasta principal do projeto
 ├─── index.html # Página inicial do projeto
 ├─── css/       
 ├──── style.css # Arquivo de estilização do projeto

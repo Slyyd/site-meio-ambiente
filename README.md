@@ -1,4 +1,4 @@
-# 🌱 Site Interativo com Foco no Meio Ambiente 🌱
+# 🌱 TerraByte 🌱
 
 Este site interativo com foco na conscientização ambiental busca educar os usuários por meio de um quiz interativo que aborda questões ambientais, como poluição, conservação de recursos naturais e biodiversidade, e sugere boas práticas para a preservação do meio ambiente através de informações educativas e interativas, o objetivo é estimular o conhecimento e incentivar ações sustentáveis, promovendo um engajamento ativo do público na causa ambiental.
 

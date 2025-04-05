@@ -16,7 +16,7 @@ Este site interativo com foco na conscientização ambiental busca educar os usu
 
 ## 📂 Estrutura do Projeto 📂
 ```bash
-├── docs/        # Pasta principal do projeto
+├── docs/       # Pasta principal do projeto
 ├─── index.html # Página inicial do projeto
 ├─── css/       
 ├──── style.css # Arquivo de estilização do projeto

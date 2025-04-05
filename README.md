@@ -9,3 +9,24 @@ Este site interativo com foco na conscientização ambiental busca educar os usu
 - *Conhecer ONGs* : Descubra ONGs que realizam trabalhos para presevar a natureza.
 - *Mapa Interativo de Queimadas* : Use um mapa interativo para obter informações sobre queimadas ao redor do globo!
 
+## 🚀 Como utilizar 🚀
+
+### Pré-requisitos:
+- Um navegador atual (Chrome, Firefox, Edge, etc.).
+
+## 📂 Estrutura do Projeto 📂
+```bash
+├── src/        # Código fonte do projeto
+├─── index.html # Página inicial do projeto
+├─── css/       
+├──── style.css # Arquivo de estilização do projeto
+├─── js/
+├──── app.js    # Arquivo back-end do projeto
+└── README.md   # Readme com as informações do projeto
+```
+
+## 💻 Tecnologias Utilizadas 💻
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](    https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Javascript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)

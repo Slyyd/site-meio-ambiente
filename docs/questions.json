@@ -33,6 +33,42 @@
         },
         "resposta" : "resposta:1",
         "nivel" : 3 
+         },
+
+    "4": {
+        "questao": "Qual o maior poluente encontrado nos oceanos?",
+        "opcoes" : {
+            "1" : "Plástico",
+            "2" : "Óleo",
+            "3" : "Esgoto",
+            "4" : "Metais Pesados"
+        },
+        "resposta" : "resposta:1",
+        "nivel" : 1 
+         },
+
+    "5": {
+        "questao": "Qual o principal impacto da pesca excessiva nos oceanos?",
+        "opcoes" : {
+            "1" : "Aumento da biodiversidade marinha",
+            "2" : "Desequilíbrio da cadeia alimentar e redução de espécies",
+            "3" : "Diminuição da poluição marinha",
+            "4" : "Fortalecimento dos recifes de coral"
+        },
+        "resposta" : "resposta:2",
+        "nivel" : 2 
+         },
+
+    "6": {
+        "questao": "O que são áreas marinhas protegidas?",
+        "opcoes" : {
+            "1" : "Áreas de pesca intensiva",
+            "2" : "Regiões costeiras com alta poluição",
+            "3" : "Áreas delimitadas para conservação da biodiversidade marinha",
+            "4" : "Locais de extração de petróleo e gás"
+        },
+        "resposta" : "resposta:3",
+        "nivel" : 2 
     }
 
 }

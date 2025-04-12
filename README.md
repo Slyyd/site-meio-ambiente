@@ -16,13 +16,14 @@ Este site interativo com foco na conscientização ambiental busca educar os usu
 
 ## 📂 Estrutura do Projeto 📂
 ```bash
-├── docs/       # Pasta principal do projeto
-├─── index.html # Página inicial do projeto
+├── docs/           # Pasta principal do projeto
+├─── index.html     # Página inicial do projeto
+├─── questions.json # Arquivo com as questões do quiz
 ├─── css/       
-├──── style.css # Arquivo de estilização do projeto
+├──── style.css     # Arquivo de estilização do projeto
 ├─── js/
-├──── app.js    # Arquivo back-end do projeto
-└── README.md   # Readme com as informações do projeto
+├──── app.js        # Arquivo back-end do projeto
+└── README.md       # Readme com as informações do projeto
 ```
 
 ## 💻 Tecnologias Utilizadas 💻

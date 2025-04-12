@@ -1,0 +1,38 @@
+{
+    "1": {
+        "questao": "Qual a maior floresta do Brasil?",
+        "opcoes" : {
+            "1" : "Amazônia",
+            "2" : "Caatinga",
+            "3" : "Cerrado",
+            "4" : "Mata ATlântica"
+        },
+        "resposta" : "resposta:1",
+        "nivel" : 1 
+    },
+
+    "2": {
+        "questao": "Qual bioma foi desmatado pelos Europeus?",
+        "opcoes" : {
+            "1" : "Amazônia",
+            "2" : "Caatinga",
+            "3" : "Cerrado",
+            "4" : "Mata ATlântica"
+        },
+        "resposta" : "resposta:4",
+        "nivel" : 1 
+    },
+
+    "3": {
+        "questao": "Qual animal está ameaçado de extinção?",
+        "opcoes" : {
+            "1" : "Baleia Azul",
+            "2" : "Trura-arco-íris",
+            "3" : "Molinésia",
+            "4" : "Peixe palhaço"
+        },
+        "resposta" : "resposta:1",
+        "nivel" : 3 
+    }
+
+}

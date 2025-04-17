@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<!--- Configurações básicas da página -->
+		<meta charset="utf-8">
+		<title>TerraByte - Tecnologia pela Natureza</title>
+		<meta name="description" content="TerraByte - Usando tecnologia para monitorar e preservar o meio ambiente.">
+		<meta name="author" content="TerraByte">
+		<!-- Meta Dispositivo Móvel -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/sobre.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+		<!-- JavaScript-->
+		<script src="js/sobre.js" defer></script>
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+		<!-- favicons -->
+		<link rel="icon" type="image/png" href="images/favicon.png">
+	</head>
+	<body>
+		<!-- info -->
+		<section id="info" class="s-info">
+			<div class="row info-content">
+				<div class="column">
+					<nav class="tab-nav">
+						<ul class="tab-nav__list">
+							<li class="active" data-id="tab-sobre">
+								<a href="#0">
+									<span>Sobre</span>
+								</a>
+							</li>
+							<li data-id="tab-historia">
+								<a href="#0">
+									<span>História</span>
+								</a>
+							</li>
+							<li data-id="tab-mapa">
+								<a href="#0">
+									<span>Mapa</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<!-- end tab-nav -->
+					<div class="tab-content">
+						<!-- 1. tab Sobre -->
+						<div id="tab-sobre" class='tab-content__item active'>
+							<div class="row tab-content__item-header">
+								<div class="column">
+									<h1>Projeto TerraByte</h1>
+								</div>
+							</div>
+							<div class="row">
+								<div class="column">
+									<p class="lead"> O TerraByte é uma iniciativa que une tecnologia e preservação ambiental para combater os desafios ecológicos que enfrentamos no Brasil. </p>
+									<p> Nossa equipe reúne estudantes de desenvolvimento e análise de sistemas com o objetivo de desenvolver ferramentas que ajudem a identificar, prevenir e combater problemas como desmatamento, queimadas e poluição dos recursos hídricos. </p>
+									<div class="row">
+										<div class="column large-6 tab-full">
+											<h4>Nossa Missão</h4>
+											<p> Desenvolver e implementar soluções tecnológicas inovadoras que contribuam para a preservação do meio ambiente e promovam a conscientização ecológica. Acreditamos que a combinação entre tecnologia e sustentabilidade é o caminho para um futuro melhor para todos. </p>
+										</div>
+										<div class="column large-6 tab-full">
+											<h4>Como Participar</h4>
+											<p> Você pode se envolver na proteção da natureza de diversas formas, seja como voluntário em ONGs, como apoiador de projetos ou compartilhando nossos <a href="#0">dados e informações</a>. Junte-se a nós nessa jornada por um planeta mais saudável! </p>
+											<a href="#contato" class="btn btn--stroke h-full-width">Faça Parte!</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end 1. tab Sobre -->
+						<!-- 2. tab História -->
+						<div id="tab-historia" class='tab-content__item'>
+							<div class="row tab-content__item-header">
+								<div class="column">
+									<h1>Nossa História</h1>
+								</div>
+							</div>
+							<div class="row">
+								<div class="column">
+									<p class="lead"> O TerraByte nasceu em 2025, quando um grupo de estudantes de tecnologia que decidiram usar seus conhecimentos para criar soluções inovadoras para os problemas ambientais que afetam o Brasil e o mundo. </p>
+								</div>
+							</div>
+							<div class="row services-list block-large-1-2 block-medium-1-2 block-tab-full">
+								<div class="column services-list__item">
+									<div class="services-list__item-content">
+										<h4 class="item-title">Os Primeiros Passos</h4>
+										<p> Começamos desenvolvendo um pequeno site interativo, opensource e livre, com uma API para mapear focos de queimadas utilizando dados de satélite. </p>
+									</div>
+								</div>
+							</div>
+							<!-- end historia-list -->
+						</div>
+						<!-- end 2. tab História -->
+						<!-- 3. tab Mapa -->
+						<div id="tab-mapa" class="tab-content__item">
+							<div class="row tab-content__item-header">
+								<div class="column">
+									<h1>Mapa de Queimadas no Brasil</h1>
+								</div>
+							</div>
+							<div class="row">
+								<div class="column">
+									<p class="lead"> Nosso sistema de monitoramento de queimadas utiliza dados de satélites e informações fornecidas por colaboradores para mapear focos de incêndio em todo o território nacional. Esta ferramenta é atualizada diariamente e permite visualizar áreas de risco e acompanhar a evolução das queimadas. </p>
+									<div class="map-container" id="mapQueimadas">
+										<iframe src="https://queimadas.dgi.inpe.br/queimadas/portal-static/situacao-atual/" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+									</div>
+									<p> Fonte: Instituto Nacional de Pesquisas Espaciais (INPE) - Programa Queimadas </p>
+								</div>
+							</div>
+						</div>
+						<!-- end 3. Mapa -->
+						<!-- 4. Notícias - Features Section -->
+						<section class="features fade-in">
+							<h2 class="section-title">Notícias</h2>
+							<div class="features-grid">
+								<div class="feature-card">
+									<div class="feature-icon">
+										<i class="fas fa-tree"></i>
+									</div>
+									<h3>Reflorestamento</h3>
+									<p>Projetos de plantio de árvores nativas para recuperação de áreas degradadas e aumento da biodiversidade local.</p>
+								</div>
+								<div class="feature-card">
+									<div class="feature-icon">
+										<i class="fas fa-water"></i>
+									</div>
+									<h3>Conservação de Água</h3>
+									<p>Iniciativas para preservar rios, lagos e nascentes, garantindo água limpa para comunidades e ecossistemas.</p>
+								</div>
+								<div class="feature-card">
+									<div class="feature-icon">
+										<i class="fas fa-recycle"></i>
+									</div>
+									<h3>Reciclagem</h3>
+									<p>Programas educativos e de coleta seletiva para reduzir a poluição e promover a economia circular.</p>
+								</div>
+							</div>
+						</section>
+						<!-- 4. Fim Notícias -->
+						<!-- 5. Projetos Section -->
+						<section class="projects" id="projetos">
+							<h2 class="section-title">Conheça os Projetos</h2>
+							<div class="projects-grid fade-in">
+								<div class="project-card">
+									<div class="project-image">
+										<img src="/api/placeholder/400/300" alt="Projeto de Reflorestamento">
+									</div>
+									<div class="project-content">
+										<span class="tag">Reflorestamento</span>
+										<h3>Mata Atlântica Viva</h3>
+										<p>Recuperação de áreas degradadas na Mata Atlântica com plantio de espécies nativas e monitoramento da fauna local.</p>
+									</div>
+								</div>
+								<div class="project-card">
+									<div class="project-image">
+										<img src="/api/placeholder/400/300" alt="Projeto Águas Limpas">
+									</div>
+									<div class="project-content">
+										<span class="tag">Recursos Hídricos</span>
+										<h3>Águas Limpas</h3>
+										<p>Revitalização de nascentes e matas ciliares para garantir a qualidade da água em comunidades rurais.</p>
+									</div>
+								</div>
+								<div class="project-card">
+									<div class="project-image">
+										<img src="/api/placeholder/400/300" alt="Projeto Educação Ambiental">
+									</div>
+									<div class="project-content">
+										<span class="tag">Educação</span>
+										<h3>EcoEscolas</h3>
+										<p>Programa educativo que leva conhecimento sobre meio ambiente e sustentabilidade para crianças e jovens em escolas públicas.</p>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!-- Call to Action -->
+						<section class="cta-section" id="contato">
+							<div class="cta-container fade-in">
+								<h2>Faça Parte da Mudança</h2>
+								<p>Existem várias maneiras de contribuir com os projetos e ajudar a construir um futuro mais sustentável. Sua participação é fundamental para alcançarmos nossos objetivos.</p>
+								<div class="cta-buttons">
+									<a href="#" class="cta-button">Seja Voluntário</a>
+									<a href="#" class="secondary-button">Faça uma Doação</a>
+								</div>
+							</div>
+						</section>
+						<!-- Métricas e Resultados -->
+						<section id="impactos" class="stats-section fade-in">
+							<h2 class="section-title">Impactos</h2>
+							<div class="stats-container">
+								<div class="stat-item">
+									<div class="stat-number">+50.000</div>
+									<div class="stat-label">Árvores Plantadas</div>
+								</div>
+								<div class="stat-item">
+									<div class="stat-number">+15</div>
+									<div class="stat-label">Nascentes Recuperadas</div>
+								</div>
+								<div class="stat-item">
+									<div class="stat-number">+5.000</div>
+									<div class="stat-label">Estudantes Envolvidos</div>
+								</div>
+							</div>
+						</section>
+						<!-- Equipe -->
+						<section class="team-section fade-in">
+							<h2 class="section-title">Nossa Equipe</h2>
+							<div class="team-grid">
+								<div class="team-member">
+									<div class="member-image">
+										<img src="/api/placeholder/150/150" alt="Membro da Equipe">
+									</div>
+									<h3>Jennifer</h3>
+									<p>Relatora</p>
+									<p>Detalhes sobre a Jennifer aqui.</p>
+								</div>
+								<div class="team-member">
+									<div class="member-image">
+										<img src="/api/placeholder/150/150" alt="Membro da Equipe">
+									</div>
+									<h3>Angelica</h3>
+									<p>Desenvolvedora</p>
+									<p>Detalhes sobre a Angelica aqui.</p>
+								</div>
+								<div class="team-member">
+									<div class="member-image">
+										<img src="/api/placeholder/150/150" alt="Membro da Equipe">
+									</div>
+									<h3>Kaue</h3>
+									<p>Desenvolvedor Back-End</p>
+									<p>Detalhes sobre o Kaue aqui.</p>
+								</div>
+								<div class="team-member">
+									<div class="member-image">
+										<img src="/api/placeholder/150/150" alt="Membro da Equipe">
+									</div>
+									<h3>Nome Aqui</h3>
+									<p>Função</p>
+									<p>Detalhes sobre a pessoa aqui.</p>
+								</div>
+							</div>
+						</section>
+						<!-- Especialistas -->
+						<section class="author-section">
+							<h2 class="section-title">O Que Dizem Os Especialistas</h2>
+							<div class="author-slider">
+								<div class="author">
+									<div class="quote-icon">
+										<i class="fas fa-quote-left"></i>
+									</div>
+									<p> "O trabalho das ONGS têm sido fundamental para nossa comunidade. Graças ao projeto de monitoramento de água, conseguimos identificar problemas na nascente local e tomar medidas para sua recuperação." </p>
+									<div class="testimonial-author">
+										<div class="author-image">
+											<img src="/api/placeholder/50/50" alt="Autor do Depoimento">
+										</div>
+										<div class="author-info">
+											<h4>Maria</h4>
+											<p>Líder Comunitária, Minas Gerais</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!-- Faça Parte da Mudança -->
+						<section class="cta-section" id="contato">
+							<div class="cta-container fade-in">
+								<h2>Faça Parte da Mudança</h2>
+								<p>Existem várias maneiras de contribuir com os projetos e ajudar a construir um futuro mais sustentável. Sua participação é fundamental para alcançarmos nossos objetivos.</p>
+								<div class="form-container">
+									<form action="#" method="POST">
+										<div class="form-group">
+											<input type="text" name="nome" placeholder="Seu Nome">
+										</div>
+										<div class="form-group">
+											<input type="email" name="email" placeholder="Seu E-mail">
+										</div>
+										<div class="form-group">
+											<select name="interesse">
+												<option value="">Como deseja contribuir?</option>
+												<option value="voluntario">Quero ser voluntário</option>
+												<option value="doacao">Quero fazer uma doação</option>
+												<option value="parceria">Quero propor uma parceria</option>
+												<option value="outro">Outro</option>
+											</select>
+										</div>
+										<div class="form-group">
+											<textarea name="mensagem" placeholder="Sua Mensagem" rows="4"></textarea>
+										</div>
+										<button type="submit" class="cta-button">Enviar Mensagem</button>
+									</form>
+								</div>
+								<div class="cta-buttons">
+									<a href="#" class="cta-button">Seja Voluntário</a>
+									<a href="#" class="secondary-button">Faça uma Doação</a>
+								</div>
+							</div>
+						</section>
+					</div>
+					<!-- end tab content -->
+					<!-- Footer -->
+					<footer>
+						<div class="footer-container">
+							<div class="footer-about">
+								<div class="footer-logo">
+									<i class="fas fa-leaf"></i>
+									<span>Terrabyte</span>
+								</div>
+								<p>Trabalhando por um futuro mais verde e sustentável para todos.</p>
+								<div class="social-icons">
+									<a href="#">
+										<i class="fab fa-facebook-f"></i>
+									</a>
+									<a href="#">
+										<i class="fab fa-twitter"></i>
+									</a>
+									<a href="#">
+										<i class="fab fa-instagram"></i>
+									</a>
+									<a href="#">
+										<i class="fab fa-youtube"></i>
+									</a>
+								</div>
+							</div>
+							<div class="footer-links">
+								<h3>Links Rápidos</h3>
+								<ul>
+									<li>
+										<a href="#inicio">Início</a>
+									</li>
+									<li>
+										<a href="#sobre">Sobre</a>
+									</li>
+									<li>
+										<a href="#projetos">Projetos</a>
+									</li>
+									<li>
+										<a href="#noticias">Notícias</a>
+									</li>
+									<li>
+										<a href="#contato">Contato</a>
+									</li>
+								</ul>
+							</div>
+							<div class="footer-links">
+								<h3>Projetos</h3>
+								<ul>
+									<li>
+										<a href="#">Mata Atlântica Viva</a>
+									</li>
+									<li>
+										<a href="#">Águas Limpas</a>
+									</li>
+									<li>
+										<a href="#">EcoEscolas</a>
+									</li>
+									<li>
+										<a href="#">Lixo Zero</a>
+									</li>
+									<li>
+										<a href="#">Energia Limpa</a>
+									</li>
+								</ul>
+							</div>
+							<div class="footer-links">
+								<h3>Contato</h3>
+								<ul>
+									<li>
+										<a href="tel:+5511999999999">
+											<i class="fas fa-phone"></i> (11) 99999-9999 </a>
+									</li>
+									<li>
+										<a href="mailto:nosso@email.org">
+											<i class="fas fa-envelope"></i> nosso@contato.org </a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fas fa-map-marker-alt"></i> Brasil </a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="footer-bottom">
+							<p>&copy; 2025 TerraByte - Todos os direitos reservados.</p>
+						</div>
+					</footer>
+				</div>
+				<!-- end column -->
+			</div>
+			<!-- end row -->
+		</section>
+		<!-- end s-info -->
+	</body>
+</html>

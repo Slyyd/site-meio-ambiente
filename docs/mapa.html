@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<!--- Configurações básicas da página -->
+		<meta charset="UTF-8">
+		<!-- Meta Dispositivo Móvel -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Mapa Global de Monitoramento de Queimadas</title>
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" />
+		<link rel="stylesheet" href="css/mapa.css" />
+		<!-- Script -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+		<script src="js/mapa.js" defer></script>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Monitoramento Global de Queimadas</h1>
+			<div class="region-tabs">
+				<div class="region-tab active" data-region="global">Global</div>
+				<div class="region-tab" data-region="america">Américas</div>
+				<div class="region-tab" data-region="europe">Europa</div>
+				<div class="region-tab" data-region="africa">África</div>
+				<div class="region-tab" data-region="asia">Ásia</div>
+				<div class="region-tab" data-region="oceania">Oceania</div>
+			</div>
+			<div class="filter-controls">
+				<select id="periodoSelect">
+					<option value="24h">Últimas 24 horas</option>
+					<option value="48h">Últimas 48 horas</option>
+					<option value="7d">Últimos 7 dias</option>
+					<option value="10d">Últimos 10 dias</option>
+				</select>
+				<select id="tipoSelect">
+					<option value="todos">Todos os tipos de queimada</option>
+					<option value="florestal">Incêndios Florestais</option>
+					<option value="agricola">Queimadas Agrícolas</option>
+					<option value="urbana">Queimadas Urbanas</option>
+				</select>
+				<select id="intensidadeSelect">
+					<option value="todos">Todas as intensidades</option>
+					<option value="baixa">Baixa</option>
+					<option value="media">Média</option>
+					<option value="alta">Alta</option>
+					<option value="extrema">Extrema</option>
+				</select>
+				<button id="aplicarFiltros">Aplicar Filtros</button>
+			</div>
+			<div id="map"></div>
+			<div class="statistics">
+				<h2>Estatísticas de Queimadas</h2>
+				<div id="totalQueimadas">Carregando estatísticas...</div>
+			</div>
+		</div>
+	</body>
+</html>

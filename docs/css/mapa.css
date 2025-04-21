@@ -1,0 +1,315 @@
+:root {
+    /* Cores primárias */
+    --primary-dark: #1b5e20; /* Verde floresta escuro */
+    --primary: #2e7d32; /* Verde floresta */
+    --primary-light: #4caf50; /* Verde médio */
+  
+    /* Cores secundárias */
+    --secondary-dark: #0d47a1; /* Azul oceano escuro */
+    --secondary: #1976d2; /* Azul oceano */
+    --secondary-light: #42a5f5; /* Azul céu */
+  
+    /* Cores de destaque */
+    --accent: #ffc107; /* Amarelo sol */
+    --accent-light: #ffd54f; /* Amarelo claro */
+  
+    /* Cores neutras */
+    --neutral-dark: #37474f; /* Cinza chumbo */
+    --neutral: #78909c; /* Cinza médio */
+    --neutral-light: #eceff1; /* Cinza claro */
+    --white: #ffffff; /* Branco */
+  
+    /* Cores semânticas */
+    --success: #66bb6a; /* Verde sucesso */
+    --warning: #ffa726; /* Laranja aviso */
+    --danger: #ef5350; /* Vermelho perigo */
+    --info: #29b6f6; /* Azul informação */
+  
+    /* Cores de fundo */
+    --background-main: #f5f7fa; /* Fundo principal */
+    --background-alt: #e8f5e9; /* Fundo alternativo com tom verde suave */
+  
+    /* BoxShadow */
+    --box-shadow: #00000033;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-main);
+    color: var(--neutral-dark);
+    line-height: 1.6;
+  }
+  
+  #map {
+    width: 100%;
+    height: 70vh; /* Altura responsiva baseada na viewport */
+    min-height: 350px; /* Altura mínima para telas pequenas */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px var(--box-shadow);
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+  }
+  
+  h1 {
+    color: var(--primary-dark);
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    font-size: clamp(1.5rem, 4vw, 2.5rem); /* Tamanho responsivo */
+  }
+  
+  h1::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: var(--accent);
+    margin: 0.5rem auto;
+  }
+  
+  .legend {
+    background: var(--white);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px var(--box-shadow);
+    line-height: 1.5;
+    font-size: 0.9rem;
+  }
+  
+  .legend h4 {
+    color: var(--primary-dark);
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1rem;
+  }
+  
+  .legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+  }
+  
+  .info {
+    background: var(--white);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px var(--box-shadow);
+    font-size: 0.9rem;
+  }
+  
+  .info h4 {
+    color: var(--primary-dark);
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1rem;
+  }
+  
+  .filter-controls {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    background-color: var(--white);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px var(--box-shadow);
+  }
+  
+  .filter-controls select,
+  .filter-controls button {
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 0.9rem;
+  }
+  
+  .filter-controls select {
+    flex-grow: 1;
+    min-width: 150px;
+    border: 1px solid var(--neutral-light);
+    color: var(--neutral-dark);
+    background-color: var(--white);
+  }
+  
+  .filter-controls button {
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 8px 16px;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .filter-controls button:hover {
+    background-color: var(--primary-dark);
+  }
+  
+  .statistics {
+    background-color: var(--white);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px var(--box-shadow);
+    margin-top: 20px;
+    font-size: 0.95rem;
+  }
+  
+  .statistics h2 {
+    margin-top: 0;
+    color: var(--primary-dark);
+    font-size: clamp(1.2rem, 3vw, 1.4rem); /* Tamanho responsivo */
+    position: relative;
+    padding-bottom: 8px;
+  }
+  
+  .statistics h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  #totalQueimadas {
+    margin-top: 15px;
+  }
+  
+  #totalQueimadas strong {
+    color: var(--primary-dark);
+  }
+  
+  #totalQueimadas ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+  }
+  
+  #totalQueimadas li {
+    margin-bottom: 5px;
+  }
+  
+  .region-tab {
+    display: inline-block;
+    padding: 8px 12px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    background-color: var(--neutral-light);
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 500;
+    color: var(--neutral-dark);
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  .region-tab.active {
+    background-color: var(--primary);
+    color: var(--white);
+  }
+  
+  .region-tab:hover:not(.active) {
+    background-color: var(--neutral);
+    color: var(--white);
+  }
+  
+  .region-tabs {
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .filter-controls {
+      flex-direction: column;
+      padding: 12px;
+    }
+  
+    .filter-controls select {
+      width: 100%;
+      margin-bottom: 8px;
+    }
+  
+    .region-tabs {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      padding-bottom: 5px;
+      justify-content: flex-start;
+    }
+  
+    .region-tab {
+      flex: 0 0 auto;
+      white-space: nowrap;
+    }
+  
+    .statistics {
+      padding: 12px;
+    }
+  
+    #map {
+      height: 60vh;
+      min-height: 300px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .region-tab {
+      padding: 6px 10px;
+      font-size: 0.8rem;
+    }
+  
+    h1 {
+      margin-bottom: 15px;
+    }
+  
+    .filter-controls select,
+    .filter-controls button {
+      padding: 8px 10px;
+    }
+  
+    #map {
+      height: 50vh;
+      min-height: 250px;
+    }
+  
+    .statistics h2 {
+      font-size: 1.2rem;
+    }
+  }
+  
+  /* Suporte ao Dark Mode */
+  /* Não fiz ainda, por isso está vazio :(
+    
+      @media (prefers-color-scheme: dark) {
+          :root {
+          
+          }
+      
+          body {
+          }
+    }*/  

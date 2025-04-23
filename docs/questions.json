@@ -69,6 +69,141 @@
         },
         "resposta" : "resposta:3",
         "nivel" : 2 
+         },
+
+    "7": {
+        "questao": "Como a acidificação dos oceanos afeta a vida marinha?",
+        "opcoes" : {
+            "1" : "Aumenta a produção de conchas e esqueletos de organismos",
+            "2" : "Dificulta a formação de conchas e esqueletos de organismos",
+            "3" : "Fortalece os recifes de coral",
+            "4" : "Reduz a poluição marinha"
+        },
+        "resposta" : "resposta:2",
+        "nivel" :  2
+
+        },
+
+    "8": {
+        "questao": "Qual o principal fator responsável pelo derretimento das geleiras?",
+        "opcoes" : {
+            "1" : "Poluição do ar",
+            "2" : "Aquecimento global",
+            "3" : "Desmatamento",
+            "4" : "Poluição da água"
+        },
+        "resposta" : "resposta:2",
+        "nivel" :  1
+
+         },
+
+    "9": {
+        "questao": "Qual o principal impacto do derretimento das geleiras no nível do mar?",
+        "opcoes" : {
+            "1" : "Diminuição do nível do mar",
+            "2" : "Elevação do nível do mar",
+            "3" : "Estabilização do nível do mar",
+            "4" : "Aumento da salinidade dos oceanos"
+        },
+        "resposta" : "resposta:2",
+        "nivel" :  1
+
+        },
+
+    "10": {
+        "questao": "O que é o permafrost?",
+        "opcoes" : {
+            "1" : "Um tipo de rocha vulcânica",
+            "2" : "Um tipo de coral marinho",
+            "3" : "Solo permanentemente congelado",
+            "4" : "Uma formação de gelo marinho"
+        },
+        "resposta" : "resposta:3",
+        "nivel" :  2
+
+         },
+
+    
+    "11": {
+        "questao": "Como o derretimento das geleiras afeta a circulação oceânica?",
+        "opcoes" : {
+            "1" : "Aumenta a salinidade da água do mar",
+            "2" : "Diminui a temperatura da água do mar",
+            "3" : "Altera a salinidade e temperatura da água do mar, afetando as correntes oceânicas",
+            "4" : "Estabiliza as correntes oceânicas"
+        },
+        "resposta" : "resposta:3",
+        "nivel" :  3
+
+        },
+
+    "12": {
+        "questao": "Qual o principal tipo de poluição que afeta o meio ambiente?",
+        "opcoes" : {
+            "1" : "Poluição luminosa",
+            "2" : "Poluição do ar, da água e do solo",
+            "3" : "Poluição sonora",
+            "4" : "Poluição visual"
+        },
+        "resposta" : "resposta:2",
+        "nivel" :  1
+
+         },
+
+    "13": {
+        "questao": "Qual a importância da reciclagem para reduzir a poluição?",
+        "opcoes" : {
+            "1" : "Aumenta a produção de resíduos",
+            "2" : "Reduz a quantidade de resíduos e a necessidade de extrair novas matérias-primas",
+            "3" : "Aumenta a poluição do ar",
+            "4" : "Contamina o solo"
+        },
+        "resposta" : "resposta:2",
+        "nivel" :  1
+
+        "14": {
+        "questao": "Qual o principal impacto da poluição do ar na saúde humana?",
+        "opcoes" : {
+            "1" : "Aumento da qualidade do sono",
+            "2" : "Melhora da função pulmonar",
+            "3" : "Doenças respiratórias e cardiovasculares",
+            "4" : "Fortalecimento do sistema imunológico"
+        },
+        "resposta" : "resposta:3",
+        "nivel" :  1
+
+        "15": {
+        "questao": "Como a poluição do solo afeta a agricultura?",
+        "opcoes" : {
+            "1" : "Aumenta a fertilidade do solo",
+            "2" : "Contamina os alimentos e reduz a produção agrícola",
+            "3" : "Fortalece as plantas",
+            "4" : "Reduz a necessidade de fertilizantes"
+        },
+        "resposta" : "resposta:2",
+        "nivel" : 2 
+
+        "16": {
+        "questao": "Qual material abaixo pode ser reciclado?",
+        "opcoes" : {
+            "1" : "Casca de fruta ",
+            "2" : "Embalagem de isopor",
+            "3" : "Lata de alumínio",
+            "4" : "Resto de comida "
+        },
+        "resposta" : "resposta:3",
+        "nivel" :  1
+
+        "17": {
+        "questao": "O que significa a cor azul na coleta seletiva?",
+        "opcoes" : {
+            "1" : "Plástico",
+            "2" : "Papel",
+            "3" : "Vidro",
+            "4" : "Metal"
+        },
+        "resposta" : "resposta:2",
+        "nivel" :  1
     }
 
 }

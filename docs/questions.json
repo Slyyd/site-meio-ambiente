@@ -1,5 +1,5 @@
-{
-    "1": {
+[
+    {
         "questao": "Qual a maior floresta do Brasil?",
         "opcoes" : {
             "1" : "Amazônia",
@@ -11,7 +11,7 @@
         "nivel" : 1 
     },
 
-    "2": {
+    {
         "questao": "Qual bioma foi desmatado pelos Europeus?",
         "opcoes" : {
             "1" : "Amazônia",
@@ -23,7 +23,7 @@
         "nivel" : 1 
     },
 
-    "3": {
+    {
         "questao": "Qual animal está ameaçado de extinção?",
         "opcoes" : {
             "1" : "Baleia Azul",
@@ -35,7 +35,7 @@
         "nivel" : 3 
          },
 
-    "4": {
+    {
         "questao": "Qual o maior poluente encontrado nos oceanos?",
         "opcoes" : {
             "1" : "Plástico",
@@ -47,7 +47,7 @@
         "nivel" : 1 
          },
 
-    "5": {
+    {
         "questao": "Qual o principal impacto da pesca excessiva nos oceanos?",
         "opcoes" : {
             "1" : "Aumento da biodiversidade marinha",
@@ -59,7 +59,7 @@
         "nivel" : 2 
          },
 
-    "6": {
+    {
         "questao": "O que são áreas marinhas protegidas?",
         "opcoes" : {
             "1" : "Áreas de pesca intensiva",
@@ -71,4 +71,4 @@
         "nivel" : 2 
     }
 
-}
+]

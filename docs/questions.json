@@ -69,6 +69,245 @@
         },
         "resposta" : "resposta:3",
         "nivel" : 2 
+        },
+    {
+        "questao": "Como a acidificação dos oceanos afeta a vida marinha?",
+        "opcoes" : {
+            "1" : "Aumenta a produção de conchas e esqueletos de organismos",
+            "2" : "Dificulta a formação de conchas e esqueletos de organismos",
+            "3" : "Fortalece os recifes de coral",
+            "4" : "Reduz a poluição marinha"
+        },
+        "resposta" : "resposta:2",
+        "nivel" :  2
+        },
+    {
+        "questao": "Qual o principal fator responsável pelo derretimento das geleiras?",
+        "opcoes" : {
+            "1" : "Poluição do ar",
+            "2" : "Aquecimento global",
+            "3" : "Desmatamento",
+            "4" : "Poluição da água"
+        },
+        "resposta" : "resposta:2",
+        "nivel" :  1
+         },
+    {
+        "questao": "Qual o principal impacto do derretimento das geleiras no nível do mar?",
+        "opcoes" : {
+            "1" : "Diminuição do nível do mar",
+            "2" : "Elevação do nível do mar",
+            "3" : "Estabilização do nível do mar",
+            "4" : "Aumento da salinidade dos oceanos"
+        },
+        "resposta" : "resposta:2",
+        "nivel" :  1
+        },
+    {
+        "questao": "O que é o permafrost?",
+        "opcoes" : {
+            "1" : "Um tipo de rocha vulcânica",
+            "2" : "Um tipo de coral marinho",
+            "3" : "Solo permanentemente congelado",
+            "4" : "Uma formação de gelo marinho"
+        },
+        "resposta" : "resposta:3",
+        "nivel" :  2
+
+         },
+    {
+        "questao": "Como o derretimento das geleiras afeta a circulação oceânica?",
+        "opcoes" : {
+            "1" : "Aumenta a salinidade da água do mar",
+            "2" : "Diminui a temperatura da água do mar",
+            "3" : "Altera a salinidade e temperatura da água do mar, afetando as correntes oceânicas",
+            "4" : "Estabiliza as correntes oceânicas"
+        },
+        "resposta" : "resposta:3",
+        "nivel" :  3
+        },
+    {
+        "questao": "Qual o principal tipo de poluição que afeta o meio ambiente?",
+        "opcoes" : {
+            "1" : "Poluição luminosa",
+            "2" : "Poluição do ar, da água e do solo",
+            "3" : "Poluição sonora",
+            "4" : "Poluição visual"
+        },
+        "resposta" : "resposta:2",
+        "nivel" :  1
+         },
+    {
+        "questao": "Qual a importância da reciclagem para reduzir a poluição?",
+        "opcoes" : {
+            "1" : "Aumenta a produção de resíduos",
+            "2" : "Reduz a quantidade de resíduos e a necessidade de extrair novas matérias-primas",
+            "3" : "Aumenta a poluição do ar",
+            "4" : "Contamina o solo"
+        },
+        "resposta" : "resposta:2",
+        "nivel" :  1
+        },
+    {
+        "questao": "Qual o principal impacto da poluição do ar na saúde humana?",
+        "opcoes" : {
+            "1" : "Aumento da qualidade do sono",
+            "2" : "Melhora da função pulmonar",
+            "3" : "Doenças respiratórias e cardiovasculares",
+            "4" : "Fortalecimento do sistema imunológico"
+        },
+        "resposta" : "resposta:3",
+        "nivel" :  1
+        },
+    {
+        "questao": "Como a poluição do solo afeta a agricultura?",
+        "opcoes" : {
+            "1" : "Aumenta a fertilidade do solo",
+            "2" : "Contamina os alimentos e reduz a produção agrícola",
+            "3" : "Fortalece as plantas",
+            "4" : "Reduz a necessidade de fertilizantes"
+        },
+        "resposta" : "resposta:2",
+        "nivel" : 2 
+        },
+    {
+        "questao": "Qual material abaixo pode ser reciclado?",
+        "opcoes" : {
+            "1" : "Casca de fruta",
+            "2" : "Embalagem de isopor",
+            "3" : "Lata de alumínio",
+            "4" : "Resto de comida "
+        },
+        "resposta" : "resposta:3",
+        "nivel" :  1
+        },
+    {
+        "questao": "Qual dos seguintes itens NÃO deve ser colocado na lixeira de reciclagem?",
+        "opcoes" : {
+            "1" : "Garrafas de vidro ",
+            "2" : "Jornais",
+            "3" : "Embalagens de alimentos sujas",
+            "4" : "Latas de alumínio"
+        },
+        "resposta" : "resposta:3",
+        "nivel" : 1 
+        },
+
+ {
+        "questao": "O que é compostagem?",
+        "opcoes" : {
+            "1" : "Queima de lixo",
+            "2" : "Processo de decomposição de matéria orgânica ",
+            "3" : "Armazenamento de resíduos tóxicos",
+            "4" : "Produção de plástico reciclado"
+        },
+        "resposta" : "resposta:2",
+        "nivel" : 1
+        },
+
+     {
+        "questao": "Qual o principal benefício da reciclagem?",
+        "opcoes" : {
+            "1" : "Aumentar a quantidade de lixo nos aterros",
+            "2" : "Reduzir o consumo de recursos naturais",
+            "3" : "Aumentar a poluição do ar",
+            "4" : "Diminuir a geração de empregos"
+        },
+        "resposta" : "resposta:2",
+        "nivel" :  1
+        },
+
+     {
+        "questao": "Qual a lixeira correta para descarte de plástico?",
+        "opcoes" : {
+            "1" : "Azul",
+            "2" : "Vermelha",
+            "3" : "Amarela",
+            "4" : "Verde"
+        },
+        "resposta" : "resposta:2",
+        "nivel" : 1
+        },
+
+     {
+        "questao": "O que é "lixo zero"?",
+        "opcoes" : {
+            "1" : "Não produzir nenhum resíduo",
+            "2" : "Reduzir ao máximo a geração de resíduos",
+            "3" : "Reciclar todo o lixo produzido",
+            "4" : "Queimar todo o lixo produzido"
+        },
+        "resposta" : "resposta:2",
+        "nivel" : 1
+        },
+
+     {
+        "questao": "Qual o processo de transformação de materiais descartados em novos produtos?",
+        "opcoes" : {
+            "1" : "Compostagem",
+            "2" : "Reutilização",
+            "3" : "Reciclagem",
+            "4" : "Redução"
+        },
+        "resposta" : "resposta:3",
+        "nivel" :  2
+        },
+    {
+        "questao": "Quais os principais gases liberados pela decomposição de resíduos orgânicos em aterros?",
+        "opcoes" : {
+            "1" : "Oxigênio e nitrogênio",
+            "2" : "Metano e dióxido de carbono",
+            "3" : "Hélio e argônio",
+            "4" : "Vapor d'água e ozônio"
+        },
+        "resposta" : "resposta:2",
+        "nivel" : 2
+        },
+    {
+        "questao": "?",
+        "opcoes" : {
+            "1" : "",
+            "2" : "",
+            "3" : "",
+            "4" : ""
+        },
+        "resposta" : "resposta:",
+        "nivel" :  
+        },
+    {
+        "questao": "?",
+        "opcoes" : {
+            "1" : "",
+            "2" : "",
+            "3" : "",
+            "4" : ""
+        },
+        "resposta" : "resposta:",
+        "nivel" :  
+        },
+    {
+        "questao": "?",
+        "opcoes" : {
+            "1" : "",
+            "2" : "",
+            "3" : "",
+            "4" : ""
+        },
+        "resposta" : "resposta:",
+        "nivel" :  
+        },
+    {
+        "questao": "?",
+        "opcoes" : {
+            "1" : "",
+            "2" : "",
+            "3" : "",
+            "4" : ""
+        },
+        "resposta" : "resposta:",
+        "nivel" :  
+        },
+    
     }
 
 ]

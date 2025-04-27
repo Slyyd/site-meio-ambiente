@@ -8,6 +8,7 @@
             "4" : "Mata ATlântica"
         },
         "resposta" : "resposta:1",
+        "dica" : "teste",
         "nivel" : 1 
     },
 
@@ -20,6 +21,7 @@
             "4" : "Mata ATlântica"
         },
         "resposta" : "resposta:4",
+        "dica" : "teste",
         "nivel" : 1 
     },
 
@@ -32,6 +34,7 @@
             "4" : "Peixe palhaço"
         },
         "resposta" : "resposta:1",
+        "dica" : "teste",
         "nivel" : 3 
          },
 
@@ -44,6 +47,7 @@
             "4" : "Metais Pesados"
         },
         "resposta" : "resposta:1",
+        "dica" : "teste",
         "nivel" : 1 
          },
 
@@ -56,6 +60,7 @@
             "4" : "Fortalecimento dos recifes de coral"
         },
         "resposta" : "resposta:2",
+        "dica" : "teste",
         "nivel" : 2 
          },
 
@@ -68,6 +73,7 @@
             "4" : "Locais de extração de petróleo e gás"
         },
         "resposta" : "resposta:3",
+        "dica" : "teste",
         "nivel" : 2 
         },
     {
@@ -79,6 +85,7 @@
             "4" : "Reduz a poluição marinha"
         },
         "resposta" : "resposta:2",
+        "dica" : "teste",
         "nivel" :  2
         },
     {
@@ -90,6 +97,7 @@
             "4" : "Poluição da água"
         },
         "resposta" : "resposta:2",
+        "dica" : "teste",
         "nivel" :  1
          },
     {
@@ -101,6 +109,7 @@
             "4" : "Aumento da salinidade dos oceanos"
         },
         "resposta" : "resposta:2",
+        "dica" : "teste",
         "nivel" :  1
         },
     {
@@ -112,6 +121,7 @@
             "4" : "Uma formação de gelo marinho"
         },
         "resposta" : "resposta:3",
+        "dica" : "teste",
         "nivel" :  2
 
          },
@@ -124,6 +134,7 @@
             "4" : "Estabiliza as correntes oceânicas"
         },
         "resposta" : "resposta:3",
+        "dica" : "teste",
         "nivel" :  3
         },
     {
@@ -135,6 +146,7 @@
             "4" : "Poluição visual"
         },
         "resposta" : "resposta:2",
+        "dica" : "teste",
         "nivel" :  1
          },
     {
@@ -146,6 +158,7 @@
             "4" : "Contamina o solo"
         },
         "resposta" : "resposta:2",
+        "dica" : "teste",
         "nivel" :  1
         },
     {
@@ -157,6 +170,7 @@
             "4" : "Fortalecimento do sistema imunológico"
         },
         "resposta" : "resposta:3",
+        "dica" : "teste",
         "nivel" :  1
         },
     {
@@ -168,6 +182,7 @@
             "4" : "Reduz a necessidade de fertilizantes"
         },
         "resposta" : "resposta:2",
+        "dica" : "teste",
         "nivel" : 2 
         },
     {
@@ -179,6 +194,7 @@
             "4" : "Resto de comida "
         },
         "resposta" : "resposta:3",
+        "dica" : "teste",
         "nivel" :  1
         },
     {
@@ -190,6 +206,7 @@
             "4" : "Latas de alumínio"
         },
         "resposta" : "resposta:3",
+        "dica" : "teste",
         "nivel" : 1 
         },
 
@@ -202,6 +219,7 @@
             "4" : "Produção de plástico reciclado"
         },
         "resposta" : "resposta:2",
+        "dica" : "teste",
         "nivel" : 1
         },
 
@@ -214,6 +232,7 @@
             "4" : "Diminuir a geração de empregos"
         },
         "resposta" : "resposta:2",
+        "dica" : "teste",
         "nivel" :  1
         },
 
@@ -226,6 +245,7 @@
             "4" : "Verde"
         },
         "resposta" : "resposta:2",
+        "dica" : "teste",
         "nivel" : 1
         },
 
@@ -238,6 +258,7 @@
             "4" : "Queimar todo o lixo produzido"
         },
         "resposta" : "resposta:2",
+        "dica" : "teste",
         "nivel" : 1
         },
 
@@ -250,6 +271,7 @@
             "4" : "Redução"
         },
         "resposta" : "resposta:3",
+        "dica" : "teste",
         "nivel" :  2
         },
     {
@@ -261,6 +283,7 @@
             "4" : "Vapor d'água e ozônio"
         },
         "resposta" : "resposta:2",
+        "dica" : "teste",
         "nivel" : 2
         },
 
@@ -273,6 +296,7 @@
             "4" : ""
         },
         "resposta" : "resposta:",
+        "dica" : "teste",
         "nivel" :  -1
         },
 
@@ -285,6 +309,7 @@
             "4" : ""
         },
         "resposta" : "resposta:",
+        "dica" : "teste",
         "nivel" :  -1
         },
 
@@ -297,6 +322,7 @@
             "4" : ""
         },
         "resposta" : "resposta:",
+        "dica" : "teste",
         "nivel" :  -1
         },
 
@@ -309,6 +335,7 @@
             "4" : ""
         },
         "resposta" : "resposta:",
+        "dica" : "teste",
         "nivel" :  -1
         }
 

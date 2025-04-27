@@ -73,7 +73,7 @@ function createClasses(questions) {
     // Pega as questões, cria várias instâncias da mesma classe e armazena elas em uma lista
 
     let questionsClasses = questions.map(q => 
-        new Question(q.questao, q.opcoes, q.resposta, q.nivel)
+        new Question(q.questao, q.opcoes, q.resposta, q.dica, q.nivel)
     );
 
     return shuffleQuestions(questionsClasses); 

@@ -3,7 +3,7 @@ export default class Question {
 
     respCoded;
 
-    constructor(pergunta, opcoes, resposta, nivel) {
+    constructor(pergunta, opcoes, resposta, dica, nivel) {
 
         this.pergunta = pergunta; // String
         this.opcoes = opcoes; // List com strings
@@ -12,6 +12,7 @@ export default class Question {
         this.resposta = this.respCoded.replace("resposta:", ""); // Remove o "resposta:" que é usado pra antes de codificar a string
         */
         this.resposta = parseInt(resposta.replace("resposta:", "")); //Int | Temporário enquanto as repostas não estiverem em Base64
+        this.dica = dica;
         this.nivel = nivel; // Int
 
     }

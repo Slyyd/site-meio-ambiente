@@ -53,20 +53,20 @@
     height: 70vh; /* Altura responsiva baseada na viewport */
     min-height: 350px; /* Altura mínima para telas pequenas */
     border-radius: 8px;
-    box-shadow: 0 2px 10px var(--box-shadow);
+    box-shadow: 0 0.12rem 0.62rem var(--box-shadow);
   }
   
   .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 75rem;
     margin: 0 auto;
-    padding: 15px;
+    padding: 0.75rem;
   }
   
   h1 {
     color: var(--primary-dark);
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     position: relative;
     font-size: clamp(1.5rem, 4vw, 2.5rem); /* Tamanho responsivo */
   }
@@ -74,17 +74,17 @@
   h1::after {
     content: "";
     display: block;
-    width: 80px;
-    height: 4px;
+    width: 5rem;
+    height: 0.25rem;
     background-color: var(--accent);
     margin: 0.5rem auto;
   }
   
   .legend {
     background: var(--white);
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 15px var(--box-shadow);
+    padding: 0.62rem;
+    border-radius: 0.31rem;
+    box-shadow: 0 0 0.93rem var(--box-shadow);
     line-height: 1.5;
     font-size: 0.9rem;
   }
@@ -92,56 +92,56 @@
   .legend h4 {
     color: var(--primary-dark);
     margin-top: 0;
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
     font-size: 1rem;
   }
   
   .legend i {
-    width: 18px;
-    height: 18px;
+    width: 1.12rem;
+    height: 1.12rem;
     float: left;
-    margin-right: 8px;
+    margin-right: 0.5rem;
     opacity: 0.7;
   }
   
   .info {
     background: var(--white);
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 15px var(--box-shadow);
+    padding: 0.62rem;
+    border-radius: 0.31rem;
+    box-shadow: 0 0 0.93rem var(--box-shadow);
     font-size: 0.9rem;
   }
   
   .info h4 {
     color: var(--primary-dark);
     margin-top: 0;
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
     font-size: 1rem;
   }
   
   .filter-controls {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     display: flex;
-    gap: 10px;
+    gap: 0.62rem;
     flex-wrap: wrap;
     background-color: var(--white);
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px var(--box-shadow);
+    padding: 0.93rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.12rem 0.62rem var(--box-shadow);
   }
   
   .filter-controls select,
   .filter-controls button {
-    padding: 8px 12px;
-    border-radius: 4px;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.25rem;
     font-family: inherit;
     font-size: 0.9rem;
   }
   
   .filter-controls select {
     flex-grow: 1;
-    min-width: 150px;
-    border: 1px solid var(--neutral-light);
+    min-width: 9.37rem;
+    border: 0.6rem solid var(--neutral-light);
     color: var(--neutral-dark);
     background-color: var(--white);
   }
@@ -152,10 +152,10 @@
     border: none;
     cursor: pointer;
     transition: background-color 0.3s;
-    padding: 8px 16px;
+    padding: 0.5rem 1rem;
     font-weight: 600;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 0.62rem;
   }
   
   .filter-controls button:hover {
@@ -164,10 +164,10 @@
   
   .statistics {
     background-color: var(--white);
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px var(--box-shadow);
-    margin-top: 20px;
+    padding: 0.93rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.12rem 0.62rem var(--box-shadow);
+    margin-top: 1.25rem;
     font-size: 0.95rem;
   }
   
@@ -176,14 +176,14 @@
     color: var(--primary-dark);
     font-size: clamp(1.2rem, 3vw, 1.4rem); /* Tamanho responsivo */
     position: relative;
-    padding-bottom: 8px;
+    padding-bottom: 0.5rem;
   }
   
   .statistics h2::after {
     content: "";
     display: block;
-    width: 60px;
-    height: 3px;
+    width: 3.75rem;
+    height: 0.18rem;
     background-color: var(--accent);
     position: absolute;
     bottom: 0;
@@ -191,7 +191,7 @@
   }
   
   #totalQueimadas {
-    margin-top: 15px;
+    margin-top: 0.93rem;
   }
   
   #totalQueimadas strong {
@@ -199,21 +199,21 @@
   }
   
   #totalQueimadas ul {
-    padding-left: 20px;
-    margin-bottom: 15px;
+    padding-left: 1.25rem;
+    margin-bottom: 0.93rem;
   }
   
   #totalQueimadas li {
-    margin-bottom: 5px;
+    margin-bottom: 0.31rem;
   }
   
   .region-tab {
     display: inline-block;
-    padding: 8px 12px;
-    margin-right: 5px;
-    margin-bottom: 5px;
+    padding: 0.5rem 0.75rem;
+    margin-right: 0.31rem;
+    margin-bottom: 0.31rem;
     background-color: var(--neutral-light);
-    border-radius: 5px 5px 0 0;
+    border-radius: 0.31rem 0.31rem 0 0;
     cursor: pointer;
     transition: all 0.3s;
     font-weight: 500;
@@ -233,7 +233,7 @@
   }
   
   .region-tabs {
-    margin-bottom: 15px;
+    margin-bottom: 0.93rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -242,23 +242,23 @@
   /* Estilos responsivos */
   @media (max-width: 768px) {
     .container {
-      padding: 10px;
+      padding: 0.62rem;
     }
   
     .filter-controls {
       flex-direction: column;
-      padding: 12px;
+      padding: 0.75rem;
     }
   
     .filter-controls select {
       width: 100%;
-      margin-bottom: 8px;
+      margin-bottom: 0.5rem;
     }
   
     .region-tabs {
       flex-wrap: nowrap;
       overflow-x: auto;
-      padding-bottom: 5px;
+      padding-bottom: 0.31rem;
       justify-content: flex-start;
     }
   
@@ -268,33 +268,33 @@
     }
   
     .statistics {
-      padding: 12px;
+      padding: 0.75rem;
     }
   
     #map {
       height: 60vh;
-      min-height: 300px;
+      min-height: 18.75rem;
     }
   }
   
   @media (max-width: 480px) {
     .region-tab {
-      padding: 6px 10px;
+      padding: 0.37rem 0.62rem;
       font-size: 0.8rem;
     }
   
     h1 {
-      margin-bottom: 15px;
+      margin-bottom: 0.93rem;
     }
   
     .filter-controls select,
     .filter-controls button {
-      padding: 8px 10px;
+      padding: 0.5rem 0.62rem;
     }
   
     #map {
       height: 50vh;
-      min-height: 250px;
+      min-height: 15.62rem;
     }
   
     .statistics h2 {

@@ -1,0 +1,394 @@
+/* ==========================================================================
+    TerraByte StyleSheet
+========================================================================== */
+
+/* Definição das variáveis de cores no :root */
+:root {
+    /* Cores principais */
+    --color-bg-primary: #051014;
+    --color-bg-primary-transparent-b3: #05101489;
+    --color-bg-primary-transparent-80: #05101480;
+    --color-text-primary: #fff;
+    --color-accent: #4caf50;
+    --color-accent-hover: #367c39;
+    --shadow-box: #0000001a;
+  
+    /* Cores de sobreposição */
+    --color-overlay-dark: #000000cc;
+  
+    /* Cores de estados */
+    --color-dot-inactive: #ffffff80;
+  
+    /* Dark mode */
+    --dark-color-bg: #121212;
+    --dark-color-text: #f5f5f5;
+  }
+  
+  /* Estilos base para todos os dispositivos */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+  }
+  
+  /* Aqui fica a imagem de fundo */
+  .container {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("../img/pexels-mali-142497.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+  }
+  
+  /* Overlay para melhorar a legibilidade */
+  .container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      var(--color-bg-primary-transparent-b3),
+      var(--color-bg-primary-transparent-80)
+    );
+    z-index: 1;
+  }
+  
+  /* Elementos acima do overlay */
+  header,
+  .content,
+  .pagination {
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Estilos do cabeçalho */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 5%;
+    width: 100%;
+  }
+  
+  .logo {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--color-text-primary);
+    text-decoration: none;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin-left: 1.88rem;
+  }
+  
+  nav ul li a {
+    color: var(--color-text-primary);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: var(--color-accent);
+  }
+  
+  /* Menu toggle para dispositivos móveis */
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1.88rem;
+    height: 1.32rem;
+    cursor: pointer;
+  }
+  
+  .menu-toggle span {
+    display: block;
+    height: 0.18rem;
+    width: 100%;
+    background-color: var(--color-text-primary);
+    border-radius: 0.18rem;
+    transition: all 0.3s ease;
+  }
+  
+  /* Overlay do menu mobile */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-overlay-dark);
+    z-index: 3;
+    display: none;
+  }
+  
+  /* Conteúdo principal */
+  .content {
+    display: flex;
+    padding: 2.5rem 5%;
+    min-height: 70vh;
+    align-items: center;
+  }
+  
+  .left-panel {
+    flex: 1;
+    padding-right: 1.25rem;
+  }
+  
+  .right-panel {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .right-content {
+    background-color: var(--color-bg-primary-transparent-b3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 1.88rem;
+    border-radius: 0.62rem;
+    max-width: 31.25rem; 
+  }
+  
+  /* Estilos de texto */
+  .main-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1.25rem;
+    line-height: 1.2;
+  }
+  
+  .main-title .highlight {
+    color: var(--color-accent);
+  }
+  
+  h3 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 1.88rem;
+    line-height: 1.5;
+  }
+  
+  .section-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 0.93rem;
+    color: var(--color-accent);
+  }
+  
+  .description {
+    line-height: 1.6;
+    margin-bottom: 1.56rem;
+  }
+  
+  /* Botão CTA */
+  .cta-button {
+    background-color: var(--color-accent);
+    color: var(--color-text-primary);
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 0.25rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: var(--color-accent-hover);
+  }
+  
+  /* Botão de play */
+  .play-button {
+    width: 3.75rem;
+    height: 3.75rem;
+    border-radius: 50%;
+    background-color: var(--color-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .play-button::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 0.75rem solid transparent;
+    border-bottom: 0.75rem solid transparent;
+    border-left: 1.25rem solid var(--color-text-primary);
+    margin-left: 0.18;
+  }
+  
+  /* Paginação */
+  .pagination {
+    position: absolute;
+    bottom: 1.87rem;
+    right: 5%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .page-number {
+    margin-right: 1.25rem;
+  }
+  
+  .page-dots {
+    display: flex;
+  }
+  
+  .dot {
+    width: 0.62rem;
+    height: 0.62rem;
+    border-radius: 50%;
+    background-color: var(--color-dot-inactive);
+    margin: 0 0.3rem;
+  }
+  
+  .dot.active {
+    background-color: var(--color-accent);
+  }
+  
+  /* Media Queries para Responsividade */
+  
+  /* Tablets e telas menores */
+  @media screen and (max-width: 1024px) {
+    .content {
+      flex-direction: column;
+      padding: 1.25rem 5%;
+    }
+  
+    .left-panel,
+    .right-panel {
+      width: 100%;
+      padding: 0;
+      margin-bottom: 2.5rem;
+    }
+  
+    .right-panel {
+      justify-content: flex-start;
+    }
+  
+    .right-content {
+      max-width: 100%;
+    }
+  
+    .main-title {
+      font-size: 2.5rem;
+    }
+  }
+  
+  /* Dispositivos móveis */
+  @media screen and (max-width: 768px) {
+    header {
+      padding: 0.93rem 5%;
+    }
+  
+    .menu-toggle {
+      display: flex;
+    }
+  
+    nav#mainNav {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      height: 100vh;
+      width: 70%;
+      background-color: var(--color-bg-primary);
+      z-index: 5;
+      transition: right 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    nav#mainNav.active {
+      right: 0;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul li {
+      margin: 0.93rem 0;
+    }
+  
+    nav ul li a {
+      font-size: 1.2rem;
+    }
+  
+    .main-title {
+      font-size: 2rem;
+    }
+  
+    h3 {
+      font-size: 1rem;
+    }
+  
+    .section-title {
+      font-size: 1.5rem;
+    }
+  
+    .pagination {
+      bottom: 0.93rem;
+      right: 50%;
+      transform: translateX(50%);
+    }
+  }
+  
+  /* Dispositivos móveis pequenos */
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 1.5rem;
+    }
+  
+    .main-title {
+      font-size: 1.8rem;
+    }
+  
+    .play-button {
+      width: 3.12rem;
+      height: 3.12rem;
+    }
+  
+    .cta-button {
+      padding: 0.62rem 1.25rem;
+      font-size: 0.9rem;
+    }
+  
+    .right-content {
+      padding: 1.25rem;
+    }
+  
+    /* Ajuste para background-attachment em dispositivos iOS */
+    @supports (-webkit-touch-callout: none) {
+      .container {
+        background-attachment: scroll;
+      }
+    }
+  }
+  

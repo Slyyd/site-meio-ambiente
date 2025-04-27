@@ -1,3 +1,25 @@
+/*
+-- QuestionHandler.js --
+
+Como funciona:
+
+getCurrentQuestion() :
+    retorna um [] organizado por:
+        currentQuestion: questão atual, feito sobre a classe Question,
+        questionCounter: contagem das questões,
+        pointsCounter: acertos do usuário,
+        hasEnded: booleano que indica se as questões acabaram
+    tem que ser acompanhado por um await quando for chamado em outro arquivo.
+
+passCurrentQuestion(hasScored) :
+    recebe um valor booleano que indica se o usuário acertou ou não
+    não retorna nada
+    é chamado quando o usuário responde uma questão.
+
+*/
+
+
+
 import Question from "../models/Question.js";
 
 const QuestionFile = "../questions.json"; // Caminho do .json

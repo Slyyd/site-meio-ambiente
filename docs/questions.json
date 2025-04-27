@@ -1,5 +1,5 @@
-{
-    "1": {
+[
+    {
         "questao": "Qual a maior floresta do Brasil?",
         "opcoes" : {
             "1" : "Amazônia",
@@ -11,7 +11,7 @@
         "nivel" : 1 
     },
 
-    "2": {
+    {
         "questao": "Qual bioma foi desmatado pelos Europeus?",
         "opcoes" : {
             "1" : "Amazônia",
@@ -23,7 +23,7 @@
         "nivel" : 1 
     },
 
-    "3": {
+    {
         "questao": "Qual animal está ameaçado de extinção?",
         "opcoes" : {
             "1" : "Baleia Azul",
@@ -35,7 +35,7 @@
         "nivel" : 3 
          },
 
-    "4": {
+    {
         "questao": "Qual o maior poluente encontrado nos oceanos?",
         "opcoes" : {
             "1" : "Plástico",
@@ -47,7 +47,7 @@
         "nivel" : 1 
          },
 
-    "5": {
+    {
         "questao": "Qual o principal impacto da pesca excessiva nos oceanos?",
         "opcoes" : {
             "1" : "Aumento da biodiversidade marinha",
@@ -59,7 +59,7 @@
         "nivel" : 2 
          },
 
-    "6": {
+    {
         "questao": "O que são áreas marinhas protegidas?",
         "opcoes" : {
             "1" : "Áreas de pesca intensiva",
@@ -69,9 +69,8 @@
         },
         "resposta" : "resposta:3",
         "nivel" : 2 
-         },
-
-    "7": {
+        },
+    {
         "questao": "Como a acidificação dos oceanos afeta a vida marinha?",
         "opcoes" : {
             "1" : "Aumenta a produção de conchas e esqueletos de organismos",
@@ -81,10 +80,8 @@
         },
         "resposta" : "resposta:2",
         "nivel" :  2
-
         },
-
-    "8": {
+    {
         "questao": "Qual o principal fator responsável pelo derretimento das geleiras?",
         "opcoes" : {
             "1" : "Poluição do ar",
@@ -94,10 +91,8 @@
         },
         "resposta" : "resposta:2",
         "nivel" :  1
-
          },
-
-    "9": {
+    {
         "questao": "Qual o principal impacto do derretimento das geleiras no nível do mar?",
         "opcoes" : {
             "1" : "Diminuição do nível do mar",
@@ -107,10 +102,8 @@
         },
         "resposta" : "resposta:2",
         "nivel" :  1
-
         },
-
-    "10": {
+    {
         "questao": "O que é o permafrost?",
         "opcoes" : {
             "1" : "Um tipo de rocha vulcânica",
@@ -122,9 +115,7 @@
         "nivel" :  2
 
          },
-
-    
-    "11": {
+    {
         "questao": "Como o derretimento das geleiras afeta a circulação oceânica?",
         "opcoes" : {
             "1" : "Aumenta a salinidade da água do mar",
@@ -134,10 +125,8 @@
         },
         "resposta" : "resposta:3",
         "nivel" :  3
-
         },
-
-    "12": {
+    {
         "questao": "Qual o principal tipo de poluição que afeta o meio ambiente?",
         "opcoes" : {
             "1" : "Poluição luminosa",
@@ -147,10 +136,8 @@
         },
         "resposta" : "resposta:2",
         "nivel" :  1
-
          },
-
-    "13": {
+    {
         "questao": "Qual a importância da reciclagem para reduzir a poluição?",
         "opcoes" : {
             "1" : "Aumenta a produção de resíduos",
@@ -160,8 +147,8 @@
         },
         "resposta" : "resposta:2",
         "nivel" :  1
-
-        "14": {
+        },
+    {
         "questao": "Qual o principal impacto da poluição do ar na saúde humana?",
         "opcoes" : {
             "1" : "Aumento da qualidade do sono",
@@ -171,8 +158,8 @@
         },
         "resposta" : "resposta:3",
         "nivel" :  1
-
-        "15": {
+        },
+    {
         "questao": "Como a poluição do solo afeta a agricultura?",
         "opcoes" : {
             "1" : "Aumenta a fertilidade do solo",
@@ -182,28 +169,147 @@
         },
         "resposta" : "resposta:2",
         "nivel" : 2 
-
-        "16": {
+        },
+    {
         "questao": "Qual material abaixo pode ser reciclado?",
         "opcoes" : {
-            "1" : "Casca de fruta ",
+            "1" : "Casca de fruta",
             "2" : "Embalagem de isopor",
             "3" : "Lata de alumínio",
             "4" : "Resto de comida "
         },
         "resposta" : "resposta:3",
         "nivel" :  1
-
-        "17": {
-        "questao": "O que significa a cor azul na coleta seletiva?",
+        },
+    {
+        "questao": "Qual dos seguintes itens NÃO deve ser colocado na lixeira de reciclagem?",
         "opcoes" : {
-            "1" : "Plástico",
-            "2" : "Papel",
-            "3" : "Vidro",
-            "4" : "Metal"
+            "1" : "Garrafas de vidro ",
+            "2" : "Jornais",
+            "3" : "Embalagens de alimentos sujas",
+            "4" : "Latas de alumínio"
+        },
+        "resposta" : "resposta:3",
+        "nivel" : 1 
+        },
+
+ {
+        "questao": "O que é compostagem?",
+        "opcoes" : {
+            "1" : "Queima de lixo",
+            "2" : "Processo de decomposição de matéria orgânica ",
+            "3" : "Armazenamento de resíduos tóxicos",
+            "4" : "Produção de plástico reciclado"
+        },
+        "resposta" : "resposta:2",
+        "nivel" : 1
+        },
+
+     {
+        "questao": "Qual o principal benefício da reciclagem?",
+        "opcoes" : {
+            "1" : "Aumentar a quantidade de lixo nos aterros",
+            "2" : "Reduzir o consumo de recursos naturais",
+            "3" : "Aumentar a poluição do ar",
+            "4" : "Diminuir a geração de empregos"
         },
         "resposta" : "resposta:2",
         "nivel" :  1
-    }
+        },
 
-}
+     {
+        "questao": "Qual a lixeira correta para descarte de plástico?",
+        "opcoes" : {
+            "1" : "Azul",
+            "2" : "Vermelha",
+            "3" : "Amarela",
+            "4" : "Verde"
+        },
+        "resposta" : "resposta:2",
+        "nivel" : 1
+        },
+
+     {
+        "questao": "O que é lixo zero?",
+        "opcoes" : {
+            "1" : "Não produzir nenhum resíduo",
+            "2" : "Reduzir ao máximo a geração de resíduos",
+            "3" : "Reciclar todo o lixo produzido",
+            "4" : "Queimar todo o lixo produzido"
+        },
+        "resposta" : "resposta:2",
+        "nivel" : 1
+        },
+
+     {
+        "questao": "Qual o processo de transformação de materiais descartados em novos produtos?",
+        "opcoes" : {
+            "1" : "Compostagem",
+            "2" : "Reutilização",
+            "3" : "Reciclagem",
+            "4" : "Redução"
+        },
+        "resposta" : "resposta:3",
+        "nivel" :  2
+        },
+    {
+        "questao": "Quais os principais gases liberados pela decomposição de resíduos orgânicos em aterros?",
+        "opcoes" : {
+            "1" : "Oxigênio e nitrogênio",
+            "2" : "Metano e dióxido de carbono",
+            "3" : "Hélio e argônio",
+            "4" : "Vapor d'água e ozônio"
+        },
+        "resposta" : "resposta:2",
+        "nivel" : 2
+        },
+
+    {
+        "questao": "?",
+        "opcoes" : {
+            "1" : "",
+            "2" : "",
+            "3" : "",
+            "4" : ""
+        },
+        "resposta" : "resposta:",
+        "nivel" :  -1
+        },
+
+    {
+        "questao": "?",
+        "opcoes" : {
+            "1" : "",
+            "2" : "",
+            "3" : "",
+            "4" : ""
+        },
+        "resposta" : "resposta:",
+        "nivel" :  -1
+        },
+
+    {
+        "questao": "?",
+        "opcoes" : {
+            "1" : "",
+            "2" : "",
+            "3" : "",
+            "4" : ""
+        },
+        "resposta" : "resposta:",
+        "nivel" :  -1
+        },
+
+    {
+        "questao": "?",
+        "opcoes" : {
+            "1" : "",
+            "2" : "",
+            "3" : "",
+            "4" : ""
+        },
+        "resposta" : "resposta:",
+        "nivel" :  -1
+        }
+
+]

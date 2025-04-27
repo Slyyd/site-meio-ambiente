@@ -1,0 +1,56 @@
+body {
+
+    background-color: #212121;
+
+}
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container h1 {
+
+    color:  white;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+footer {
+
+    display: flex;
+    flex-direction: row;
+    min-width: 50%;
+    justify-content: space-between;
+    align-content: space-between;
+    margin: 100px 0px 0px 0px;
+
+}
+
+
+.questionDiv {
+
+    margin-top: 50px;
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    column-gap: 100%;
+    row-gap: 70px;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.questionDiv button {
+
+    color: white;
+    background-color: rgba(0,0,0,0.3);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+
+}
+

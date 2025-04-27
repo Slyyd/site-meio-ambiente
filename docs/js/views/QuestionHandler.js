@@ -22,7 +22,7 @@ passCurrentQuestion(hasScored) :
 
 import Question from "../models/Question.js";
 
-const QuestionFile = "../questions.json"; // Caminho do .json
+const QuestionFile = "/questions.json"; // Caminho do .json
 let QuestionJSON = {};
 let questionCounter = 0; // Contador das questões
 let pointsCounter = 0; // Contador de pontos

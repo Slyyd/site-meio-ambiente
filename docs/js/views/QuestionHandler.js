@@ -59,7 +59,7 @@ async function fetchJson() {
     try {
 
         const dados = await fetch(QuestionFile); // Lê o .json que contêm as perguntas
-        if (!dados.ok) throw new Error("Falha no Fetch");
+        if (!dados.ok) {throw new Error("Falha no Fetch");}
         let questionList = createClasses(await dados.json());
         return questionList;
         
@@ -72,8 +72,8 @@ async function fetchJson() {
 function createClasses(questions) {
     // Pega as questões, cria várias instâncias da mesma classe e armazena elas em uma lista
 
-    questionsClasses = questions.map(q => 
-        new Question(q.question, q.opcoes, q.resposta, q.nivel)
+    let questionsClasses = questions.map(q => 
+        new Question(q.questao, q.opcoes, q.resposta, q.nivel)
     );
 
     return shuffleQuestions(questionsClasses); 

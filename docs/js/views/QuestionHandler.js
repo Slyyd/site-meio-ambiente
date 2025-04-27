@@ -30,7 +30,6 @@ let hasEnded = false;
 
 let currentQuestionList = await fetchJson();
 
-
 export async function getCurrentQuestion() {
     if (currentQuestionList == null) {currentQuestionList = await fetchJson();}
     if (currentQuestionList.length - 1 < questionCounter) {
@@ -60,9 +59,8 @@ async function fetchJson() {
     try {
 
         const dados = await fetch(QuestionFile); // Lê o .json que contêm as perguntas
-        if (!dados.ok) {throw new Error("Falha no Fetch")}
-        QuestionJSON = await dados.json();
-        let questionList = createClasses(QuestionJSON);
+        if (!dados.ok) throw new Error("Falha no Fetch");
+        let questionList = createClasses(await dados.json());
         return questionList;
         
     } catch (err) {
@@ -73,8 +71,14 @@ async function fetchJson() {
 
 function createClasses(questions) {
     // Pega as questões, cria várias instâncias da mesma classe e armazena elas em uma lista
-    let newQuestionArray = []
 
+    questionsClasses = questions.map(q => 
+        new Question(q.question, q.opcoes, q.resposta, q.nivel)
+    );
+
+    return shuffleQuestions(questionsClasses); 
+
+    /* Sistema antigo
     for (const question in questions) {
         newQuestionArray[question] = new Question(
             questions[question].questao,
@@ -85,6 +89,7 @@ function createClasses(questions) {
     }
 
     return shuffleQuestions(newQuestionArray);
+    */
 }
 
 function shuffleQuestions(questionList) {
@@ -94,7 +99,7 @@ function shuffleQuestions(questionList) {
     https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle
     */
 
-    let newList = questionList;
+    let newList = [...questionList];
 
     for (let i = newList.length - 1; i > 0; i--) {
 
@@ -105,8 +110,6 @@ function shuffleQuestions(questionList) {
         newList[j] = k;
 
     }
-
-    console.log(newList);
     return newList; // Retorna a lista aleatória
 
 

@@ -230,7 +230,7 @@
         },
 
      {
-        "questao": "O que é "lixo zero"?",
+        "questao": "O que é lixo zero?",
         "opcoes" : {
             "1" : "Não produzir nenhum resíduo",
             "2" : "Reduzir ao máximo a geração de resíduos",
@@ -263,6 +263,7 @@
         "resposta" : "resposta:2",
         "nivel" : 2
         },
+
     {
         "questao": "?",
         "opcoes" : {
@@ -272,8 +273,9 @@
             "4" : ""
         },
         "resposta" : "resposta:",
-        "nivel" :  
+        "nivel" :  -1
         },
+
     {
         "questao": "?",
         "opcoes" : {
@@ -283,8 +285,9 @@
             "4" : ""
         },
         "resposta" : "resposta:",
-        "nivel" :  
+        "nivel" :  -1
         },
+
     {
         "questao": "?",
         "opcoes" : {
@@ -294,8 +297,9 @@
             "4" : ""
         },
         "resposta" : "resposta:",
-        "nivel" :  
+        "nivel" :  -1
         },
+
     {
         "questao": "?",
         "opcoes" : {
@@ -305,9 +309,7 @@
             "4" : ""
         },
         "resposta" : "resposta:",
-        "nivel" :  
-        },
-    
-    }
+        "nivel" :  -1
+        }
 
 ]

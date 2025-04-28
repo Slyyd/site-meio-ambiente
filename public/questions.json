@@ -288,18 +288,152 @@
         },
 
     {
-        "questao": "?",
+        "questao": "O que é a logística reversa?",
         "opcoes" : {
-            "1" : "",
-            "2" : "",
-            "3" : "",
-            "4" : ""
+            "1" : "Processo de coleta de lixo comum",
+            "2" : "Sistema de devolução de produtos e embalagens ao fabricante",
+            "3" : "Armazenamento de resíduos nucleares",
+            "4" : "Incineração de lixo hospitalar"
         },
-        "resposta" : "resposta:",
+        "resposta" : "resposta:2",
         "dica" : "teste",
-        "nivel" :  -1
+        "nivel" :  2
         },
 
+    {
+        "questao": "Qual a diferença entre reciclagem e reutilização?",
+        "opcoes" : {
+            "1" : "Não há diferença, são sinônimos",
+            "2" : "Reciclagem transforma materiais, reutilização usa o mesmo material",
+            "3" : "Reciclagem usa apenas plástico, reutilização usa papel.",
+            "4" : "Reciclagem é para lixo orgânico, reutilização para inorgânico"
+        },
+        "resposta" : "resposta:2",
+        "dica" : "teste",
+        "nivel" :  2
+        },
+
+    {
+        "questao": "Qual a importância da coleta seletiva?",
+        "opcoes" : {
+            "1" : "Aumentar o volume de lixo nos aterros",
+            "2" : "Facilitar a reciclagem e reduzir o impacto ambiental",
+            "3" : "Diminuir a geração de empregos na área de reciclagem",
+            "4" : "Aumentar a poluição do solo"
+        },
+        "resposta" : "resposta:2",
+        "dica" : "teste",
+        "nivel" :  2
+        },
+
+    {
+        "questao": "Qual o impacto do descarte incorreto de eletrônicos?",
+        "opcoes" : {
+            "1" : "Liberação de metais pesados no solo e água",
+            "2" : "Aumento da fertilidade do solo",
+            "3" : "Redução da poluição do ar",
+            "4" : "Melhoria da qualidade da água dos rios"
+        },
+        "resposta" : "resposta:1",
+        "dica" : "teste",
+        "nivel" :  2
+        },
+    {
+        "questao": "O que a economia circular busca promover?",
+        "opcoes" : {
+            "1" : "O consumo desenfreado de produtos descartáveis",
+            "2" : "A redução da produção de novos produtos",
+            "3" : "A reutilização e reciclagem de materiais para reduzir o desperdício",
+            "4" : "O descarte de todos os resíduos em aterros"
+        },
+        "resposta" : "resposta:3",
+        "dica" : "teste",
+        "nivel" :  2
+        },
+    {
+        "questao": "Quais os impactos do descarte incorreto de eletrônicos no meio ambiente?",
+        "opcoes" : {
+            "1" : "Aumento da biodiversidade",
+            "2" : "Contaminação do solo e da água por metais pesados e substâncias tóxicas",
+            "3" : "Redução da poluição atmosférica",
+            "4" : "Melhoria da qualidade do ar"
+        },
+        "resposta" : "resposta:2",
+        "dica" : "teste",
+        "nivel" :  3
+        },
+    {
+        "questao": "Como a economia circular pode contribuir para a redução de resíduos?",
+        "opcoes" : {
+            "1" : "Incentivando o consumo de produtos descartáveis",
+            "2" : "Promovendo a reutilização, reparo e reciclagem de materiais",
+            "3" : "Aumentando a produção de novos produtos",
+            "4" : "Diminuindo a vida útil dos produtos"
+        },
+        "resposta" : "resposta:2",
+        "dica" : "teste",
+        "nivel" :  2
+        },
+    {
+        "questao": "Qual a legislação brasileira que trata da gestão de resíduos sólidos?",
+        "opcoes" : {
+            "1" : "Lei nº 12.305/2010 (Política Nacional de Resíduos Sólidos)",
+            "2" : "Lei nº 9.605/1998 (Lei de Crimes Ambientais)",
+            "3" : "Lei nº 11.445/2007 (Lei do Saneamento Básico)",
+            "4" : "Lei nº 6.938/1981 (Política Nacional do Meio Ambiente)"
+        },
+        "resposta" : "resposta:1",
+        "dica" : "teste",
+        "nivel" :  3
+        },
+    {
+        "questao": "Qual o conceito de responsabilidade estendida do produtor (REP)?",
+        "opcoes" : {
+            "1" : "A responsabilidade do consumidor pelo descarte correto dos produtos",
+            "2" : "A responsabilidade do governo pela coleta e tratamento de resíduos",
+            "3" : "A responsabilidade do produtor pelo ciclo de vida completo do produto, incluindo o descarte",
+            "4" : "A responsabilidade dos aterros sanitários pela reciclagem de resíduos"
+        },
+        "resposta" : "resposta:3",
+        "dica" : "teste",
+        "nivel" :  3
+        },
+    {
+        "questao": "Quais os desafios da reciclagem de plásticos multicamadas?",
+        "opcoes" : {
+            "1" : "A facilidade de separação dos diferentes tipos de plástico",
+            "2" : "A baixa demanda por produtos reciclados feitos com esse material",
+            "3" : "A dificuldade de separação e reciclagem dos diferentes materiais que compõem a embalagem",
+            "4" : "O alto custo da coleta seletiva de plásticos multicamadas"
+        },
+        "resposta" : "resposta:3",
+        "dica" : "teste",
+        "nivel" :  3
+        },
+    {
+        "questao": "Como a compostagem em larga escala pode contribuir para a redução de emissões de gases de efeito estufa?",
+        "opcoes" : {
+            "1" : "Aumentando a produção de metano nos aterros",
+            "2" : "Reduzindo a necessidade de fertilizantes químicos e o transporte de resíduos orgânicos",
+            "3" : "Aumentando a queima de resíduos orgânicos",
+            "4" : "Diminuindo a captura de carbono pelo solo"
+        },
+        "resposta" : "resposta:2",
+        "dica" : "teste",
+        "nivel" :  3
+        },
+    {
+        "questao": "Quais as tecnologias para tratamento de resíduos que visam a recuperação de energia?",
+        "opcoes" : {
+            "1" : "Aterros sanitários e compostagem",
+            "2" : "Incineração com recuperação de energia e digestão anaeróbica",
+            "3" : "Coleta seletiva e reciclagem",
+            "4" : "Logística reversa e reutilização"
+        },
+        "resposta" : "resposta:2",
+        "dica" : "teste",
+        "nivel" :  3
+        },     
     {
         "questao": "?",
         "opcoes" : {
@@ -311,8 +445,7 @@
         "resposta" : "resposta:",
         "dica" : "teste",
         "nivel" :  -1
-        },
-
+        },     
     {
         "questao": "?",
         "opcoes" : {
@@ -324,8 +457,7 @@
         "resposta" : "resposta:",
         "dica" : "teste",
         "nivel" :  -1
-        },
-
+        },     
     {
         "questao": "?",
         "opcoes" : {
@@ -337,6 +469,67 @@
         "resposta" : "resposta:",
         "dica" : "teste",
         "nivel" :  -1
+        },     
+    {
+        "questao": "?",
+        "opcoes" : {
+            "1" : "",
+            "2" : "",
+            "3" : "",
+            "4" : ""
+        },
+        "resposta" : "resposta:",
+        "dica" : "teste",
+        "nivel" :  -1
+        },     
+    {
+        "questao": "?",
+        "opcoes" : {
+            "1" : "",
+            "2" : "",
+            "3" : "",
+            "4" : ""
+        },
+        "resposta" : "resposta:",
+        "dica" : "teste",
+        "nivel" :  -1
+        },     
+    {
+        "questao": "?",
+        "opcoes" : {
+            "1" : "",
+            "2" : "",
+            "3" : "",
+            "4" : ""
+        },
+        "resposta" : "resposta:",
+        "dica" : "teste",
+        "nivel" :  -1
+        },     
+    {
+        "questao": "?",
+        "opcoes" : {
+            "1" : "",
+            "2" : "",
+            "3" : "",
+            "4" : ""
+        },
+        "resposta" : "resposta:",
+        "dica" : "teste",
+        "nivel" :  -1
+        },     
+    {
+        "questao": "?",
+        "opcoes" : {
+            "1" : "",
+            "2" : "",
+            "3" : "",
+            "4" : ""
+        },
+        "resposta" : "resposta:",
+        "dica" : "teste",
+        "nivel" :  -1
+        
         }
-
+    
 ]

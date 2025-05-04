@@ -1,14 +1,5 @@
 <img src="docs/img/terrabyte-logo.png" alt="Logo TerraByte" width="300"/><img src="docs/img/logo.png" alt="Nome TerraByte" width="450"/> 
 
-<style>
-img {
-margin-left: 20px;
-margin-right: 100px;
-margin-top: 40px;
-margin-bottom: 50px;
-}
-</style>
-
 ![Licenças](https://img.shields.io/github/license/Slyyd/site-meio-ambiente.svg)
 
 Este site interativo com foco na conscientização ambiental busca educar os usuários por meio de um quiz interativo que aborda questões ambientais, como poluição, conservação de recursos naturais e biodiversidade, e sugere boas práticas para a preservação do meio ambiente através de informações educativas e interativas, o objetivo é estimular o conhecimento e incentivar ações sustentáveis, promovendo um engajamento ativo do público na causa ambiental.

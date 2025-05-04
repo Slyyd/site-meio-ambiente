@@ -1,6 +1,13 @@
-<img src="docs/img/terrabyte-logo.png" alt="Logo TerraByte" width="200"/>
+<img src="docs/img/terrabyte-logo.png" alt="Logo TerraByte" width="300"/><img src="docs/img/logo.png" alt="Nome TerraByte" width="450"/> 
 
-<img src="docs/img/logo.png" alt="Nome TerraByte" width="200"/>
+<style>
+img {
+margin-left: 20px;
+margin-right: 100px;
+margin-top: 40px;
+margin-bottom: 50px;
+}
+</style>
 
 ![Licenças](https://img.shields.io/github/license/Slyyd/site-meio-ambiente.svg)
 

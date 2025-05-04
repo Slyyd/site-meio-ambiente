@@ -39,9 +39,15 @@ Este site interativo com foco na conscientização ambiental busca educar os usu
 │   ├── sobre.css      
 │   └── mapa.css       
 ├── img/               # Imagens e ícones usados no projeto
-│   ├── amigo-secreto.png 
-│   ├── amigo-secreto.png 
-│   └── play_circle_outline.png 
+│   ├── botanical-leaves.jpg 
+│   ├── eolica.jpg
+│   ├── jessica-relatora.jpg
+│   ├── logo.jpg
+│   ├── pexels-alexandrep-junior-12027856.jpg    
+│   ├── pexels-mali-142497.jpg
+│   ├── plantio.jpg
+│   ├── plantio2.jpg
+│   └── terrabyte-logo.png 
 ├── js/                # Arquivos JavaScript
 │   ├──  home.js
 │   ├──  mapa.js 

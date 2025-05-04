@@ -1,12 +1,27 @@
+// Script para menu mobile
+document.getElementById('menuToggle').addEventListener('click', function() {
+	document.querySelector('.main-nav').classList.toggle('active');
+	this.classList.toggle('active');
+});
+
+window.addEventListener('scroll', function() {
+	const header = document.querySelector('.main-header');
+	if (window.scrollY > 10) {
+		header.classList.add('scrolled');
+	} else {
+		header.classList.remove('scrolled');
+	}
+});
+
 // Configuração inicial do mapa
 const map = L.map('map').setView([20, 0], 2); // Visão global
 
-// Adicionar camada base do OpenStreetMap
+// Adiciona camada base do OpenStreetMap
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-// Adicionar camada de satélite como opção
+// Adiciona camada de satélite como opção
 const sateliteLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
 	attribution: 'Imagery &copy; Esri',
 	maxZoom: 19
@@ -20,13 +35,13 @@ const baseMaps = {
 	"Satélite": sateliteLayer
 };
 
-// Adicionar controle de camadas
+// Adiciona controle de camadas
 L.control.layers(baseMaps).addTo(map);
 
-// Criar um grupo de marcadores para queimadas
+// Cria um grupo de marcadores para queimadas
 const queimadasLayer = L.layerGroup().addTo(map);
 
-// Definir regiões com suas coordenadas e zoom
+// Define regiões com suas coordenadas e zoom
 const regioes = {
 	global: {
 		centro: [20, 0],
@@ -55,10 +70,10 @@ const regioes = {
 };
 
 async function carregarDadosQueimadas(periodo = '24h', tipo = 'todos', intensidade = 'todos', regiao = 'global') {
-	// Limpar marcadores existentes
+	// Limpa marcadores existentes
 	queimadasLayer.clearLayers();
 
-	// Configurar o período de tempo de busca com base na seleção do usuário
+	// Configura o período de tempo de busca com base na seleção do usuário
 	let dataRange;
 	switch (periodo) {
 		case '48h':
@@ -79,7 +94,7 @@ async function carregarDadosQueimadas(periodo = '24h', tipo = 'todos', intensida
 	const dataAtual = hoje.toISOString().split('T')[0]; // Formato YYYY-MM-DD
 
 
-	// Configurar os limites de busca com base na região selecionada
+	// Configura os limites de busca com base na região selecionada
 	let limites_regiao;
 	switch (regiao) {
 		case 'america':
@@ -101,7 +116,7 @@ async function carregarDadosQueimadas(periodo = '24h', tipo = 'todos', intensida
 			limites_regiao = "-180,-90,180,90"; // Global
 	}
 
-	// Determinar a fonte de dados (MODIS)
+	// Determina a fonte de dados (MODIS)
 	const fonte = "MODIS_NRT";
 
 	// Chave da API NASA FIRMS
@@ -113,17 +128,17 @@ async function carregarDadosQueimadas(periodo = '24h', tipo = 'todos', intensida
 
 		document.getElementById('totalQueimadas').innerHTML = 'Carregando dados de queimadas reais...';
 
-		// Fazer a chamada à API
+		// Faz a chamada à API
 		const response = await fetch(url);
 
 		if (!response.ok) {
 			throw new Error(`Erro na API: ${response.status}`);
 		}
 
-		// Obter o texto CSV
+		// Obtém o texto CSV
 		const csvText = await response.text();
 
-		// Processar os dados CSV recebidos
+		// Processa os dados CSV recebidos
 		const queimadasFiltradas = processarCSVFIRMS(csvText, tipo, intensidade);
 
 		if (queimadasFiltradas.length === 0) {
@@ -131,7 +146,7 @@ async function carregarDadosQueimadas(periodo = '24h', tipo = 'todos', intensida
 			return;
 		}
 
-		// Adicionar marcadores ao mapa
+		// Adiciona marcadores ao mapa
 		queimadasFiltradas.forEach(ponto => {
 			const marker = L.circleMarker([ponto.lat, ponto.lng], {
 				radius: ponto.intensidade / 20 + 3, // Ajuste para melhor visualização
@@ -157,7 +172,7 @@ async function carregarDadosQueimadas(periodo = '24h', tipo = 'todos', intensida
             `);
 		});
 
-		// Atualizar estatísticas
+		// Atualiza estatísticas
 		atualizarEstatisticas(queimadasFiltradas, regiao);
 
 	} catch (error) {
@@ -172,25 +187,25 @@ async function carregarDadosQueimadas(periodo = '24h', tipo = 'todos', intensida
 function processarCSVFIRMS(csvText, tipoFiltro, intensidadeFiltro) {
 	const pontos = [];
 
-	// Verificar se há dados
+	// Verifica se há dados
 	if (!csvText || csvText.trim() === '') {
 		console.warn("Nenhum dado CSV recebido da API.");
 		return pontos;
 	}
 
-	// Dividir o CSV em linhas
+	// Divide o CSV em linhas
 	const linhas = csvText.split('\n');
 
-	// Verificar se há pelo menos o cabeçalho e uma linha de dados
+	// Verifica se há pelo menos o cabeçalho e uma linha de dados
 	if (linhas.length < 2) {
 		console.warn("Dados CSV insuficientes.");
 		return pontos;
 	}
 
-	// Obter os cabeçalhos
+	// Obtém os cabeçalhos
 	const cabecalhos = linhas[0].split(',').map(header => header.trim());
 
-	// Encontrar os índices das colunas relevantes
+	// Encontra os índices das colunas relevantes
 	const indiceLatitude = cabecalhos.indexOf('latitude');
 	const indiceLongitude = cabecalhos.indexOf('longitude');
 	const indiceBrilho = cabecalhos.findIndex(h => h === 'brightness' || h === 'bright_t31'); // MODIS usa brightness
@@ -203,32 +218,32 @@ function processarCSVFIRMS(csvText, tipoFiltro, intensidadeFiltro) {
 	const indiceTipoFogo = cabecalhos.indexOf('type');
 	const indiceCoberturaTerreno = cabecalhos.indexOf('land_cover');
 
-	// Verificar se os índices essenciais foram encontrados
+	// Verifica se os índices essenciais foram encontrados
 	if (indiceLatitude === -1 || indiceLongitude === -1) {
 		console.error("CSV não possui colunas de latitude/longitude.");
 		return pontos;
 	}
 
-	// Processar cada linha de dados
+	// Processa cada linha de dados
 	for (let i = 1; i < linhas.length; i++) {
 		const linha = linhas[i].trim();
 		if (!linha) continue; // Pular linhas vazias
 
-		// Dividir a linha em campos
+		// Divide a linha em campos
 		// Esta abordagem simples não lida com virgulas dentro de campos entre aspas
 		const campos = linha.split(',').map(campo => campo.trim());
 
-		// Verificar se temos dados suficientes
+		// Verifica se temos dados suficientes
 		if (campos.length <= Math.max(indiceLatitude, indiceLongitude)) continue;
 
-		// Obter latitude e longitude
+		// Obtém latitude e longitude
 		const lat = parseFloat(campos[indiceLatitude]);
 		const lng = parseFloat(campos[indiceLongitude]);
 
-		// Verificar se as coordenadas são válidas
+		// Verifica se as coordenadas são válidas
 		if (isNaN(lat) || isNaN(lng)) continue;
 
-		// Calcular intensidade com base nos dados disponíveis
+		// Calcula intensidade com base nos dados disponíveis
 		let intensidade;
 		if (indiceFRP !== -1 && campos[indiceFRP]) {
 			// Fire Radiative Power (FRP) - indica a intensidade da queimada
@@ -241,7 +256,7 @@ function processarCSVFIRMS(csvText, tipoFiltro, intensidadeFiltro) {
 			intensidade = 50;
 		}
 
-		// Determinar tipo de queimada
+		// Determina tipo de queimada
 		let tipo;
 		if (indiceTipoFogo !== -1 && campos[indiceTipoFogo]) {
 			// Se o CSV tem informação de tipo de fogo
@@ -256,7 +271,7 @@ function processarCSVFIRMS(csvText, tipoFiltro, intensidadeFiltro) {
 				tipo = 'Outros Tipos';
 			}
 		} else if (indiceCoberturaTerreno !== -1 && campos[indiceCoberturaTerreno]) {
-			// Usar cobertura do terreno como indicativo do tipo de queimada
+			// Usa cobertura do terreno como indicativo do tipo de queimada
 			const cobertura = campos[indiceCoberturaTerreno].toLowerCase();
 			if (cobertura.includes('forest') || cobertura.includes('tree')) {
 				tipo = 'Incêndios Florestais';
@@ -278,10 +293,10 @@ function processarCSVFIRMS(csvText, tipoFiltro, intensidadeFiltro) {
 			}
 		}
 
-		// Aplicar filtros
+		// Aplica filtros
 		let incluirPonto = true;
 
-		// Filtrar por tipo
+		// Filtra por tipo
 		if (tipoFiltro !== 'todos') {
 			switch (tipoFiltro) {
 				case 'florestal':
@@ -296,7 +311,7 @@ function processarCSVFIRMS(csvText, tipoFiltro, intensidadeFiltro) {
 			}
 		}
 
-		// Filtrar por intensidade
+		// Filtra por intensidade
 		if (intensidadeFiltro !== 'todos') {
 			switch (intensidadeFiltro) {
 				case 'baixa':
@@ -315,23 +330,23 @@ function processarCSVFIRMS(csvText, tipoFiltro, intensidadeFiltro) {
 		}
 
 		if (incluirPonto) {
-			// Formatar a data
+			// Formata a data
 			let data = indiceData !== -1 ? campos[indiceData] : '';
 			if (data && data.includes('-')) {
-				// Converter de YYYY-MM-DD para DD/MM/YYYY
+				// Converte de YYYY-MM-DD para DD/MM/YYYY
 				const partes = data.split('-');
 				data = `${partes[2]}/${partes[1]}/${partes[0]}`;
 			} else {
 				data = new Date().toLocaleDateString('pt-BR');
 			}
 
-			// Adicionar hora se disponível
+			// Adiciona hora se disponível
 			if (indiceHora !== -1 && campos[indiceHora]) {
 				const hora = campos[indiceHora].padStart(4, '0');
 				data += ` ${hora.substring(0, 2)}:${hora.substring(2, 4)}`;
 			}
 
-			// Obter informação de confiança
+			// Obtém informação de confiança
 			let confianca = 0;
 			if (indiceConfianca !== -1 && campos[indiceConfianca]) {
 				confianca = parseInt(campos[indiceConfianca]);
@@ -340,7 +355,7 @@ function processarCSVFIRMS(csvText, tipoFiltro, intensidadeFiltro) {
 				confianca = Math.floor(Math.random() * 100) + 1; // Valor aleatório para demonstração
 			}
 
-			// Obter informação da fonte
+			// Obtém informação da fonte
 			let fonte = 'NASA FIRMS - MODIS'; // Atualizado para especificar MODIS
 			if (indiceSatelite !== -1 && campos[indiceSatelite]) {
 				fonte = `${campos[indiceSatelite]} - MODIS`;
@@ -349,10 +364,10 @@ function processarCSVFIRMS(csvText, tipoFiltro, intensidadeFiltro) {
 				}
 			}
 
-			// Construir informação de localidade (simplificada)
+			// Construi informação de localidade (simplificada)
 			const localidade = `Lat: ${lat.toFixed(4)}, Lng: ${lng.toFixed(4)}`;
 
-			// Adicionar ao array de pontos
+			// Adiciona ao array de pontos
 			pontos.push({
 				lat: lat,
 				lng: lng,
@@ -453,7 +468,7 @@ function atualizarEstatisticas(dados, regiao) {
 	document.getElementById('totalQueimadas').innerHTML = estatisticasHTML;
 }
 
-// Obter nome da região para exibição
+// Obtém nome da região para exibição
 function getNomeRegiao(regiao) {
 	switch (regiao) {
 		case 'global':
@@ -474,7 +489,7 @@ function getNomeRegiao(regiao) {
 }
 
 
-// Adicionar legenda ao mapa
+// Adiciona legenda ao mapa
 const legend = L.control({
 	position: 'bottomright'
 });
@@ -496,13 +511,13 @@ legend.onAdd = function(map) {
 
 legend.addTo(map);
 
-// Adicionar informações ao mapa
+// Adiciona informações ao mapa
 const info = L.control({
 	position: 'topright'
 });
 
 info.onAdd = function(map) {
-	const div = L.DomUtil.create('div', 'info');
+	const div = L.DomUtil.create('div', 'legend');
 	div.innerHTML = '<h4>Informações</h4>Passe o mouse sobre um ponto para ver detalhes';
 	return div;
 };
@@ -512,13 +527,13 @@ info.addTo(map);
 // Event listeners para as abas de região
 document.querySelectorAll('.region-tab').forEach(tab => {
 	tab.addEventListener('click', function() {
-		// Remover classe ativa de todas as abas
+		// Remove classe ativa de todas as abas
 		document.querySelectorAll('.region-tab').forEach(t => t.classList.remove('active'));
 
-		// Adicionar classe ativa na aba clicada
+		// Adiciona classe ativa na aba clicada
 		this.classList.add('active');
 
-		// Obter região selecionada
+		// Obtém região selecionada
 		const regiao = this.getAttribute('data-region');
 
 		// Centralizar o mapa na região selecionada
@@ -539,16 +554,16 @@ document.getElementById('aplicarFiltros').addEventListener('click', function() {
 	const tipo = document.getElementById('tipoSelect').value;
 	const intensidade = document.getElementById('intensidadeSelect').value;
 
-	// Obter região ativa
+	// Obtém região ativa
 	const regiaoAtiva = document.querySelector('.region-tab.active').getAttribute('data-region');
 
 	carregarDadosQueimadas(periodo, tipo, intensidade, regiaoAtiva);
 });
 
-// Inicializar com dados globais
+// Inicializa com dados globais
 carregarDadosQueimadas();
 
-// Ajustar mapa ao redimensionar a janela
+// Ajusta mapa ao redimensionar a janela
 window.addEventListener('resize', function() {
 	map.invalidateSize();
 });

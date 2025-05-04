@@ -1,315 +1,612 @@
+/* ==========================================================================
+    TerraByte StyleSheet
+========================================================================== */
+
 :root {
-    /* Cores primárias */
-    --primary-dark: #1b5e20; /* Verde floresta escuro */
-    --primary: #2e7d32; /* Verde floresta */
-    --primary-light: #4caf50; /* Verde médio */
-  
-    /* Cores secundárias */
-    --secondary-dark: #0d47a1; /* Azul oceano escuro */
-    --secondary: #1976d2; /* Azul oceano */
-    --secondary-light: #42a5f5; /* Azul céu */
-  
-    /* Cores de destaque */
-    --accent: #ffc107; /* Amarelo sol */
-    --accent-light: #ffd54f; /* Amarelo claro */
-  
-    /* Cores neutras */
-    --neutral-dark: #37474f; /* Cinza chumbo */
-    --neutral: #78909c; /* Cinza médio */
-    --neutral-light: #eceff1; /* Cinza claro */
-    --white: #ffffff; /* Branco */
-  
-    /* Cores semânticas */
-    --success: #66bb6a; /* Verde sucesso */
-    --warning: #ffa726; /* Laranja aviso */
-    --danger: #ef5350; /* Vermelho perigo */
-    --info: #29b6f6; /* Azul informação */
-  
-    /* Cores de fundo */
-    --background-main: #f5f7fa; /* Fundo principal */
-    --background-alt: #e8f5e9; /* Fundo alternativo com tom verde suave */
-  
-    /* BoxShadow */
-    --box-shadow: #00000033;
+  /* Cores primárias */
+  --primary-dark: #1b5e20; /* Verde floresta escuro */
+  --primary: #2e7d32; /* Verde floresta */
+  --primary-light: #4caf50; /* Verde médio */
+
+  /* Cores secundárias */
+  --secondary-dark: #0d47a1; /* Azul oceano escuro */
+  --secondary: #1976d2; /* Azul oceano */
+  --secondary-light: #42a5f5; /* Azul céu */
+
+  /* Cores de destaque */
+  --accent: #ffc107; /* Amarelo sol */
+  --accent-light: #ffd54f; /* Amarelo claro */
+
+  /* Cores neutras */
+  --neutral-dark: #37474f; /* Cinza chumbo */
+  --neutral: #78909c; /* Cinza médio */
+  --neutral-light: #eceff1; /* Cinza claro */
+  --white: #ffffff; /* Branco */
+
+  /* Cores semânticas */
+  --success: #66bb6a; /* Verde sucesso */
+  --warning: #ffa726; /* Laranja aviso */
+  --danger: #ef5350; /* Vermelho perigo */
+  --info: #29b6f6; /* Azul informação */
+
+  /* Cores de fundo */
+  --background-main: #f5f7fa; /* Fundo principal */
+  --background-alt: #e8f5e9; /* Fundo alternativo com tom verde suave */
+
+  /* Header */
+  --header-bg: rgba(255, 255, 255, 0.268);
+  --header-height: 4rem;
+  --header-shadow: 0 0.12rem 0.5rem rgba(0, 0, 0, 0.08);
+
+  /* BoxShadow */
+  --box-shadow: rgba(0, 0, 0, 0.1);
+  --box-shadow-hover: rgba(0, 0, 0, 0.18);
+
+  /* Fontes */
+  --font-primary: "Montserrat", sans-serif;
+  --font-secondary: "Poppins", sans-serif;
+
+  /* Bordas */
+  --border-radius: 0.5rem;
+  --transition: all 0.3s ease;
+}
+
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+  font-size: 1rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-secondary);
+  background-color: var(--background-main);
+  color: var(--neutral-dark);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Configuração para imagem de fundo */
+.page-background {
+  min-height: 100vh;
+  padding-top: calc(var(--header-height) + 1.5rem);
+  background-image: url("../img/pexels-alexandrep-junior-12027856.jpg"); /* Placeholder para imagem de fundo */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.page-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.92),
+    rgba(255, 255, 255, 0.86)
+  );
+  z-index: -1;
+}
+
+/* Header Estilizado */
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  background-color: var(--header-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: var(--header-shadow);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--primary-dark);
+}
+
+.logo img {
+  width: 20%;
+  height: 60%;
+  margin-right: 0.5rem;
+}
+
+.tagline {
+  font-size: 0.85rem;
+  font-weight: 400;
+  margin-left: 0.75rem;
+  padding-left: 0.75rem;
+  border-left: 1px solid #ddd;
+  color: var(--white);
+  display: none;
+}
+
+.main-nav ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.main-nav ul li a {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--neutral-light);
+  padding: 0.4rem 0;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.main-nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: width 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+  color: var(--primary);
+}
+
+.main-nav ul li a:hover::after {
+  width: 100%;
+}
+
+.btn-highlight {
+  background-color: var(--primary);
+  color: var(--white) !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-highlight:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.25rem;
+  color: var(--primary-dark);
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.menu-toggle:hover {
+  color: var(--primary);
+}
+
+.menu-toggle.active i::before {
+  content: "\f00d"; /* Font Awesome X icon */
+}
+
+/* Container principal */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.content-area {
+  background-color: rgba(255, 255, 255, 0.282);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: var(--border-radius);
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Títulos */
+h1 {
+  color: var(--primary-dark);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  position: relative;
+  font-family: var(--font-primary);
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+  font-weight: 700;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width: 5rem;
+  height: 0.25rem;
+  background-color: var(--accent);
+  margin: 0.5rem auto;
+  border-radius: 2px;
+}
+
+h2 {
+  margin-top: 0;
+  color: var(--primary-dark);
+  font-size: clamp(1.2rem, 3vw, 1.4rem);
+  position: relative;
+  padding-bottom: 0.5rem;
+  font-family: var(--font-primary);
+  font-weight: 600;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 3.75rem;
+  height: 0.18rem;
+  background-color: var(--accent);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 2px;
+}
+
+/* Mapa e container */
+.map-container {
+  margin-bottom: 1.5rem;
+}
+
+#map {
+  width: 100%;
+  height: 70vh;
+  min-height: 350px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+}
+
+/* Abas de região */
+.region-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.region-tab {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: var(--neutral-light);
+  border-radius: 0.31rem 0.31rem 0 0;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 500;
+  color: var(--neutral-dark);
+  font-size: 0.9rem;
+  text-align: center;
+  border-bottom: 3px solid transparent;
+}
+
+.region-tab.active {
+  background-color: var(--primary);
+  color: var(--white);
+  border-bottom-color: var(--accent);
+}
+
+.region-tab:hover:not(.active) {
+  background-color: var(--neutral);
+  color: var(--white);
+}
+
+/* Filtros */
+.filter-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  background-color: var(--white);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.05);
+  margin-bottom: 1rem;
+}
+
+.filter-controls select {
+  flex: 1;
+  min-width: 140px;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  border: 1px solid var(--neutral-light);
+  color: var(--neutral-dark);
+  background-color: var(--white);
+  font-family: inherit;
+  font-size: 0.9rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2337474f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  padding-right: 2rem;
+}
+
+.filter-controls select:focus {
+  border-color: var(--primary);
+  outline: none;
+  box-shadow: 0 0 0 3px var(--box-shadow);
+}
+
+.filter-controls button {
+  padding: 0.5rem 1rem;
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 600;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+.filter-controls button:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 0.2rem 0.5rem var(--box-shadow);
+}
+
+.filter-controls button:active {
+  transform: translateY(0);
+}
+
+/* Legenda no Mapa */
+
+.legend {
+  background: var(--white);
+  padding: 0.62rem;
+  border-radius: 0.31rem;
+  box-shadow: 0 0 0.93rem var(--box-shadow);
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+
+.legend h4 {
+  color: var(--primary-dark);
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.legend i {
+  width: 1.12rem;
+  height: 1.12rem;
+  float: left;
+  margin-right: 0.5rem;
+  opacity: 0.7;
+}
+
+/* Estatísticas */
+.statistics {
+  background-color: var(--white);
+  padding: 1.25rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.05);
+  font-size: 0.95rem;
+}
+
+#totalQueimadas {
+  margin-top: 1rem;
+}
+
+#totalQueimadas strong {
+  color: var(--primary-dark);
+  font-weight: 600;
+}
+
+#totalQueimadas ul {
+  padding-left: 1.25rem;
+  margin: 0.75rem 0;
+  list-style-type: disc;
+}
+
+#totalQueimadas li {
+  margin-bottom: 0.5rem;
+}
+
+/* ==========================================================================
+     Media Queries
+     ========================================================================== */
+
+/* Estilos responsivos */
+@media (min-width: 768px) {
+  .tagline {
+    display: block;
   }
-  
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--background-main);
-    color: var(--neutral-dark);
-    line-height: 1.6;
-  }
-  
-  #map {
-    width: 100%;
-    height: 70vh; /* Altura responsiva baseada na viewport */
-    min-height: 350px; /* Altura mínima para telas pequenas */
-    border-radius: 8px;
-    box-shadow: 0 0.12rem 0.62rem var(--box-shadow);
-  }
-  
+}
+
+@media (max-width: 992px) {
   .container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --header-height: 3.5rem;
+  }
+
+  .main-header {
+    padding: 0;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .header-container {
+    padding: 0 1rem;
+  }
+
+  .main-nav {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
     width: 100%;
-    max-width: 75rem;
-    margin: 0 auto;
+    background-color: var(--white);
+    box-shadow: 0 5px 10px var(--box-shadow);
+    padding: 1rem 0;
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 999;
+  }
+
+  .main-nav.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .main-nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-nav ul li a {
+    display: block;
+    padding: 0.75rem 0;
+    font-size: 1rem;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .filter-controls {
+    flex-direction: column;
+  }
+
+  .filter-controls button {
+    width: 100%;
+  }
+
+  #map {
+    height: 60vh;
+    min-height: 300px;
+  }
+
+  .region-tabs {
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-bottom: 0.31rem;
+    margin-bottom: 0.75rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .region-tab {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --header-height: 3.25rem;
+  }
+
+  .logo i {
+    font-size: 1.25rem;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+  }
+
+  h1 {
+    margin-bottom: 1.25rem;
+  }
+
+  h1::after {
+    width: 4rem;
+  }
+
+  .content-area {
+    padding: 1rem;
+  }
+
+  .filter-controls {
     padding: 0.75rem;
   }
-  
-  h1 {
-    color: var(--primary-dark);
-    text-align: center;
-    margin-bottom: 1.25rem;
-    position: relative;
-    font-size: clamp(1.5rem, 4vw, 2.5rem); /* Tamanho responsivo */
-  }
-  
-  h1::after {
-    content: "";
-    display: block;
-    width: 5rem;
-    height: 0.25rem;
-    background-color: var(--accent);
-    margin: 0.5rem auto;
-  }
-  
-  .legend {
-    background: var(--white);
-    padding: 0.62rem;
-    border-radius: 0.31rem;
-    box-shadow: 0 0 0.93rem var(--box-shadow);
-    line-height: 1.5;
-    font-size: 0.9rem;
-  }
-  
-  .legend h4 {
-    color: var(--primary-dark);
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
-  }
-  
-  .legend i {
-    width: 1.12rem;
-    height: 1.12rem;
-    float: left;
-    margin-right: 0.5rem;
-    opacity: 0.7;
-  }
-  
-  .info {
-    background: var(--white);
-    padding: 0.62rem;
-    border-radius: 0.31rem;
-    box-shadow: 0 0 0.93rem var(--box-shadow);
-    font-size: 0.9rem;
-  }
-  
-  .info h4 {
-    color: var(--primary-dark);
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
-  }
-  
-  .filter-controls {
-    margin-bottom: 1.25rem;
-    display: flex;
-    gap: 0.62rem;
-    flex-wrap: wrap;
-    background-color: var(--white);
-    padding: 0.93rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.12rem 0.62rem var(--box-shadow);
-  }
-  
-  .filter-controls select,
-  .filter-controls button {
-    padding: 0.5rem 0.75rem;
-    border-radius: 0.25rem;
-    font-family: inherit;
-    font-size: 0.9rem;
-  }
-  
-  .filter-controls select {
-    flex-grow: 1;
-    min-width: 9.37rem;
-    border: 0.6rem solid var(--neutral-light);
-    color: var(--neutral-dark);
-    background-color: var(--white);
-  }
-  
-  .filter-controls button {
-    background-color: var(--primary);
-    color: var(--white);
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    padding: 0.5rem 1rem;
-    font-weight: 600;
-    width: 100%;
-    margin-top: 0.62rem;
-  }
-  
-  .filter-controls button:hover {
-    background-color: var(--primary-dark);
-  }
-  
-  .statistics {
-    background-color: var(--white);
-    padding: 0.93rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.12rem 0.62rem var(--box-shadow);
-    margin-top: 1.25rem;
-    font-size: 0.95rem;
-  }
-  
-  .statistics h2 {
-    margin-top: 0;
-    color: var(--primary-dark);
-    font-size: clamp(1.2rem, 3vw, 1.4rem); /* Tamanho responsivo */
-    position: relative;
-    padding-bottom: 0.5rem;
-  }
-  
-  .statistics h2::after {
-    content: "";
-    display: block;
-    width: 3.75rem;
-    height: 0.18rem;
-    background-color: var(--accent);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
-  
-  #totalQueimadas {
-    margin-top: 0.93rem;
-  }
-  
-  #totalQueimadas strong {
-    color: var(--primary-dark);
-  }
-  
-  #totalQueimadas ul {
-    padding-left: 1.25rem;
-    margin-bottom: 0.93rem;
-  }
-  
-  #totalQueimadas li {
-    margin-bottom: 0.31rem;
-  }
-  
+
   .region-tab {
-    display: inline-block;
-    padding: 0.5rem 0.75rem;
-    margin-right: 0.31rem;
-    margin-bottom: 0.31rem;
-    background-color: var(--neutral-light);
-    border-radius: 0.31rem 0.31rem 0 0;
-    cursor: pointer;
-    transition: all 0.3s;
-    font-weight: 500;
-    color: var(--neutral-dark);
-    font-size: 0.9rem;
-    text-align: center;
+    padding: 0.37rem 0.62rem;
+    font-size: 0.8rem;
   }
-  
-  .region-tab.active {
-    background-color: var(--primary);
-    color: var(--white);
+
+  #map {
+    height: 50vh;
+    min-height: 250px;
   }
-  
-  .region-tab:hover:not(.active) {
-    background-color: var(--neutral);
-    color: var(--white);
+
+  .statistics {
+    padding: 1rem;
   }
-  
-  .region-tabs {
-    margin-bottom: 0.93rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+}
+
+/* Animações e efeitos adicionais */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
   }
-  
-  /* Estilos responsivos */
-  @media (max-width: 768px) {
-    .container {
-      padding: 0.62rem;
-    }
-  
-    .filter-controls {
-      flex-direction: column;
-      padding: 0.75rem;
-    }
-  
-    .filter-controls select {
-      width: 100%;
-      margin-bottom: 0.5rem;
-    }
-  
-    .region-tabs {
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      padding-bottom: 0.31rem;
-      justify-content: flex-start;
-    }
-  
-    .region-tab {
-      flex: 0 0 auto;
-      white-space: nowrap;
-    }
-  
-    .statistics {
-      padding: 0.75rem;
-    }
-  
-    #map {
-      height: 60vh;
-      min-height: 18.75rem;
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  @media (max-width: 480px) {
-    .region-tab {
-      padding: 0.37rem 0.62rem;
-      font-size: 0.8rem;
-    }
-  
-    h1 {
-      margin-bottom: 0.93rem;
-    }
-  
-    .filter-controls select,
-    .filter-controls button {
-      padding: 0.5rem 0.62rem;
-    }
-  
-    #map {
-      height: 50vh;
-      min-height: 15.62rem;
-    }
-  
-    .statistics h2 {
-      font-size: 1.2rem;
-    }
-  }
-  
-  /* Suporte ao Dark Mode */
-  /* Não fiz ainda, por isso está vazio :(
-    
-      @media (prefers-color-scheme: dark) {
-          :root {
-          
-          }
-      
-          body {
-          }
-    }*/  
+}
+
+.content-area {
+  animation: fadeIn 0.6s ease-out;
+}

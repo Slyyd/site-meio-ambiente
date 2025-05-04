@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			tabContents.forEach(function(content) {
 				content.classList.remove('active');
 			});
-			// Moatra o conteúdo da tab correspondente
+			// Mostra o conteúdo da tab correspondente
 			const tabId = this.getAttribute('data-id');
 			document.getElementById(tabId).classList.add('active');
 		});
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			alert('Estamos trabalhando para construir um futuro mais sustentável! Junte-se a nós nesse desafio.');
 		});
 	}
-	// Partner logo hover effect
+	// Partner logo efeito hover
 	const partnerLogos = document.querySelectorAll('.partner-logo');
 	partnerLogos.forEach(function(logo) {
 		logo.addEventListener('mouseover', function() {

@@ -1,6 +1,5 @@
-<img src="docs/img/terrabyte-logo.png" alt="Logo TerraByte" width="200"/>
+<img src="docs/img/terrabyte-logo.png" alt="Logo TerraByte" width="300"/><img src="docs/img/logo.png" alt="Nome TerraByte" width="400"/> 
 
-<img src="docs/img/logo.png" alt="Nome TerraByte" width="200"/>
 
 ![Licenças](https://img.shields.io/github/license/Slyyd/site-meio-ambiente.svg)
 

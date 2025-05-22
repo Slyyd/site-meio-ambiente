@@ -435,6 +435,186 @@
         "nivel" :  3
         },     
     {
+        "questao": "Qual das seguintes ações domésticas contribui diretamente para a redução do consumo de água?",
+        "opcoes" : {
+            "1" : "Lavar a louça com a torneira aberta o tempo todo",
+            "2" : "Deixar a mangueira ligada enquanto lava o carro",
+            "3" : "Utilizar a descarga com consciência e verificar vazamentos",
+            "4" : "Tomar banhos longos e frequentes"
+        },
+        "resposta" : "resposta:3",
+        "dica" : "teste",
+        "nivel" :  1
+        },     
+    {
+        "questao": "Para diminuir a quantidade de resíduos enviados para aterros sanitários, qual prática devemos priorizar em casa?",
+        "opcoes" : {
+            "1" : "Comprar embalagens plásticas em grande quantidade para economizar",
+            "2" : "Misturar todos os tipos de lixo em um único saco",
+            "3" : "Separar o lixo reciclável (papel, plástico, vidro, metal) do orgânico",
+            "4" : "Jogar embalagens vazias no lixo comum"
+        },
+        "resposta" : "resposta:3",
+        "dica" : "teste",
+        "nivel" :  1
+        },     
+    {
+        "questao": "O que significa a sigla "3Rs" da sustentabilidade?",
+        "opcoes" : {
+            "1" : "Reduzir, Reciclar, Reutilizar",
+            "2" : "Refletir, Repensar, Realizar",
+            "3" : "Reparar, Replantar, Refazer",
+            "4" : "Registrar, Reler, Responder"
+        },
+        "resposta" : "resposta:1",
+        "dica" : "teste",
+        "nivel" :  1
+        },     
+    {
+        "questao": "Qual a melhor forma de reduzir o consumo de energia elétrica com a iluminação doméstica?",
+        "opcoes" : {
+            "1" : "Deixar todas as luzes acesas durante o dia",
+            "2" : "Utilizar lâmpadas incandescentes de alta potência",
+            "3" : "Aproveitar a luz natural e utilizar lâmpadas LED",
+            "4" : "Acender todas as luzes ao entrar em um cômodo, mesmo que não precise"
+        },
+        "resposta" : "resposta:3",
+        "dica" : "teste",
+        "nivel" :  1
+        },     
+    {
+        "questao": "Qual o impacto de descartar óleo de cozinha usado diretamente na pia?",
+        "opcoes" : {
+            "1" : "Enriquece a água com nutrientes",
+            "2" : "Facilita o tratamento da água nos sistemas de esgoto",
+            "3" : "Contamina a água e prejudica a vida aquática",
+            "4" : "Não causa nenhum impacto significativo"
+        },
+        "resposta" : "resposta:3",
+        "dica" : "teste",
+        "nivel" :  1
+        },     
+    {
+        "questao": "Ao fazer compras, qual atitude contribui para a sustentabilidade?",
+        "opcoes" : {
+            "1" : "Comprar produtos com muitas embalagens plásticas",
+            "2" : "Optar por produtos a granel ou com embalagens reutilizáveis",
+            "3" : "Escolher sempre a opção mais barata, independentemente da origem",
+            "4" : "Comprar alimentos ultraprocessados em grande quantidade"
+        },
+        "resposta" : "resposta:2",
+        "dica" : "teste",
+        "nivel" :  2
+        },     
+    {
+        "questao": "O que é compostagem doméstica?",
+        "opcoes" : {
+            "1" : "Um método de lavar roupas utilizando menos água",
+            "2" : "O processo de transformar resíduos orgânicos em adubo",
+            "3" : "Uma técnica de construção de casas ecológicas",
+            "4" : "Um sistema de captação de água da chuva para uso doméstico"
+        },
+        "resposta" : "resposta:2",
+        "dica" : "teste",
+        "nivel" :  2
+        },     
+    {
+        "questao": "Qual a importância de cultivar plantas em casa ou em pequenos espaços?",
+        "opcoes" : {
+            "1" : "Aumenta a produção de lixo orgânico",
+            "2" : "Contribui para a poluição do ar",
+            "3" : "Melhora a qualidade do ar e pode gerar alimentos frescos",
+            "4" : "Atrai pragas para dentro de casa"
+        },
+        "resposta" : "resposta:3",
+        "dica" : "teste",
+        "nivel" :  2
+        },     
+    {
+        "questao": "O que podemos fazer com roupas e objetos que não usamos mais, ao invés de jogá-los no lixo?",
+        "opcoes" : {
+            "1" : "Queimá-los no quintal",
+            "2" : "Enterrá-los no jardim",
+            "3" : "Doá-los, trocá-los ou vendê-los",
+            "4" : "Guardá-los indefinidamente, mesmo sem necessidade"
+        },
+        "resposta" : "resposta:3",
+        "dica" : "teste",
+        "nivel" :  2
+        },     
+    {
+        "questao": "Qual a importância de planejar as refeições e evitar o desperdício de alimentos em casa?",
+        "opcoes" : {
+            "1" : "Aumenta a quantidade de lixo orgânico produzido",
+            "2" : "Contribui para a economia doméstica e reduz o impacto ambiental da produção de alimentos",
+            "3" : "Não tem relação com a sustentabilidade",
+            "4" : "Dificulta a organização da cozinha"
+        },
+        "resposta" : "resposta:2",
+        "dica" : "teste",
+        "nivel" :  2
+        },     
+    {
+        "questao": "Qual fonte de energia doméstica é considerada a mais sustentável a longo prazo?",
+        "opcoes" : {
+            "1" : "Queima de lenha para aquecimento",
+            "2" : "Energia gerada por painéis solares fotovoltaicos",
+            "3" : "Utilização constante de geradores a diesel",
+            "4" : "Energia nuclear"
+        },
+        "resposta" : "resposta:2",
+        "dica" : "teste",
+        "nivel" :  3
+        },     
+    {
+        "questao": "O que é "consumo consciente"?",
+        "opcoes" : {
+            "1" : "Comprar tudo o que se deseja, sem pensar nas consequências",
+            "2" : "Analisar as necessidades reais antes de comprar e considerar o impacto ambiental e social dos produtos",
+            "3" : "Comprar apenas produtos importados e de marcas famosas",
+            "4" : "Deixar de consumir para proteger o meio ambiente"
+        },
+        "resposta" : "resposta:2",
+        "dica" : "teste",
+        "nivel" :  3
+        },
+    {
+        "questao": "Qual a relação entre o desmatamento e as mudanças climáticas?",
+        "opcoes" : {
+            "1" : "O desmatamento ajuda a regular o clima",
+            "2" : "O desmatamento libera gases de efeito estufa e diminui a absorção de carbono",
+            "3" : "Não há nenhuma relação entre eles",
+            "4" : "O desmatamento aumenta a biodiversidade"
+        },
+        "resposta" : "resposta:2",
+        "dica" : "teste",
+        "nivel" :  3
+        },     
+    {
+        "questao": "Qual a importância de educar crianças e jovens sobre a sustentabilidade desde cedo?",
+        "opcoes" : {
+            "1" : "Para que se preocupem com problemas que não são deles",
+            "2" : "Para que desenvolvam hábitos e valores que contribuam para um futuro mais sustentável",
+            "3" : "Para limitar sua liberdade de escolha no futuro",
+            "4" : "Não há necessidade de abordar esse tema com crianças e jovens"
+        },
+        "resposta" : "resposta:2",
+        "dica" : "teste",
+        "nivel" :  3
+        },     
+    {
+        "questao": "Qual das seguintes ações ajuda a reduzir a poluição do ar em áreas urbanas?",
+        "opcoes" : {
+            "1" : "Utilizar o carro para todos os deslocamentos, mesmo curtos",
+            "2" : "Manter os pneus do carro sempre com baixa pressão",
+            "3" : "Optar por transporte público, bicicleta ou caminhadas",
+            "4" : "Acelerar bruscamente com frequência"
+        },
+        "resposta" : "resposta:3",
+        "dica" : "teste",
+        "nivel" :  3
+        },     
+    {
         "questao": "?",
         "opcoes" : {
             "1" : "",
@@ -458,6 +638,66 @@
         "dica" : "teste",
         "nivel" :  -1
         },     
+    {
+        "questao": "?",
+        "opcoes" : {
+            "1" : "",
+            "2" : "",
+            "3" : "",
+            "4" : ""
+        },
+        "resposta" : "resposta:",
+        "dica" : "teste",
+        "nivel" :  -1
+        },     
+    {
+        "questao": "?",
+        "opcoes" : {
+            "1" : "",
+            "2" : "",
+            "3" : "",
+            "4" : ""
+        },
+        "resposta" : "resposta:",
+        "dica" : "teste",
+        "nivel" :  -1
+        },     
+    {
+        "questao": "?",
+        "opcoes" : {
+            "1" : "",
+            "2" : "",
+            "3" : "",
+            "4" : ""
+        },
+        "resposta" : "resposta:",
+        "dica" : "teste",
+        "nivel" :  -1
+        },     
+    {
+        "questao": "?",
+        "opcoes" : {
+            "1" : "",
+            "2" : "",
+            "3" : "",
+            "4" : ""
+        },
+        "resposta" : "resposta:",
+        "dica" : "teste",
+        "nivel" :  -1
+        },     
+    {
+        "questao": "?",
+        "opcoes" : {
+            "1" : "",
+            "2" : "",
+            "3" : "",
+            "4" : ""
+        },
+        "resposta" : "resposta:",
+        "dica" : "teste",
+        "nivel" :  -1
+        }, 
     {
         "questao": "?",
         "opcoes" : {

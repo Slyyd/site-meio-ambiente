@@ -8,7 +8,7 @@
             "4" : "Mata ATlântica"
         },
         "resposta" : "resposta:1",
-        "dica" : "teste",
+        "dica" : "Plante árvores nativas: Elas atraem a fauna local e ajudam a manter o equilíbrio do ecossistema",
         "nivel" : 1 
     },
 
@@ -21,7 +21,7 @@
             "4" : "Mata ATlântica"
         },
         "resposta" : "resposta:4",
-        "dica" : "teste",
+        "dica" : "Crie um jardim em casa: Mesmo em pequenos espaços, você pode atrair polinizadores como abelhas e borboletas",
         "nivel" : 1 
     },
 
@@ -34,7 +34,7 @@
             "4" : "Peixe palhaço"
         },
         "resposta" : "resposta:1",
-        "dica" : "teste",
+        "dica" : "Não compre animais silvestres: Combata o tráfico de animais e incentive a conservação em seu habitat natural",
         "nivel" : 3 
          },
 
@@ -47,7 +47,7 @@
             "4" : "Metais Pesados"
         },
         "resposta" : "resposta:1",
-        "dica" : "teste",
+        "dica" : "Não jogue lixo nas praias: Leve todo o seu lixo de volta",
         "nivel" : 1 
          },
 
@@ -60,7 +60,7 @@
             "4" : "Fortalecimento dos recifes de coral"
         },
         "resposta" : "resposta:2",
-        "dica" : "teste",
+        "dica" : "Participe de limpezas de praias e rios: Ajude a remover o lixo que ameaça a vida marinha",
         "nivel" : 2 
          },
 
@@ -73,7 +73,7 @@
             "4" : "Locais de extração de petróleo e gás"
         },
         "resposta" : "resposta:3",
-        "dica" : "teste",
+        "dica" : "Reduza o consumo de plástico: Principalmente os de uso único, que acabam nos oceanos",
         "nivel" : 2 
         },
     {
@@ -85,7 +85,7 @@
             "4" : "Reduz a poluição marinha"
         },
         "resposta" : "resposta:2",
-        "dica" : "teste",
+        "dica" : "Evite produtos de higiene com microplásticos: Pequenas esferas de plástico que poluem a água",
         "nivel" :  2
         },
     {
@@ -97,7 +97,7 @@
             "4" : "Poluição da água"
         },
         "resposta" : "resposta:2",
-        "dica" : "teste",
+        "dica" : "Invista em isolamento térmico: Ajuda a manter a temperatura interna da casa, reduzindo o uso de ar condicionado e aquecedores",
         "nivel" :  1
          },
     {
@@ -109,7 +109,7 @@
             "4" : "Aumento da salinidade dos oceanos"
         },
         "resposta" : "resposta:2",
-        "dica" : "teste",
+        "dica" : "Respeite os recifes de coral: Eles são ecossistemas frágeis e vitais para a vida marinha",
         "nivel" :  1
         },
     {
@@ -121,7 +121,7 @@
             "4" : "Uma formação de gelo marinho"
         },
         "resposta" : "resposta:3",
-        "dica" : "teste",
+        "dica" : "Seja um defensor do meio ambiente: Fale sobre o assunto, inspire seus amigos e familiares a adotarem hábitos mais sustentáveis",
         "nivel" :  2
 
          },
@@ -134,7 +134,7 @@
             "4" : "Estabiliza as correntes oceânicas"
         },
         "resposta" : "resposta:3",
-        "dica" : "teste",
+        "dica" : "Consuma menos: O consumo consciente é a chave para reduzir o impacto",
         "nivel" :  3
         },
     {
@@ -146,7 +146,7 @@
             "4" : "Poluição visual"
         },
         "resposta" : "resposta:2",
-        "dica" : "teste",
+        "dica" : "Não faça queimadas: Elas poluem o ar e destroem ecossistemas",
         "nivel" :  1
          },
     {
@@ -158,7 +158,7 @@
             "4" : "Contamina o solo"
         },
         "resposta" : "resposta:2",
-        "dica" : "teste",
+        "dica" : "Separe seu lixo: Tenha lixeiras diferentes para orgânicos, recicláveis secos (papel, plástico, metal, vidro) e rejeitos",
         "nivel" :  1
         },
     {
@@ -170,7 +170,7 @@
             "4" : "Fortalecimento do sistema imunológico"
         },
         "resposta" : "resposta:3",
-        "dica" : "teste",
+        "dica" : "Caminhe mais, dirija menos: Menos poluição do ar e mais saúde para você",
         "nivel" :  1
         },
     {
@@ -182,7 +182,7 @@
             "4" : "Reduz a necessidade de fertilizantes"
         },
         "resposta" : "resposta:2",
-        "dica" : "teste",
+        "dica" : "Evite o uso de agrotóxicos em jardins: Opte por métodos orgânicos de controle de pragas",
         "nivel" : 2 
         },
     {
@@ -194,7 +194,7 @@
             "4" : "Resto de comida "
         },
         "resposta" : "resposta:3",
-        "dica" : "teste",
+        "dica" : "Conheça os pontos de coleta: Informe-se sobre os ecopontos e cooperativas de reciclagem na sua cidade",
         "nivel" :  1
         },
     {
@@ -206,7 +206,7 @@
             "4" : "Latas de alumínio"
         },
         "resposta" : "resposta:3",
-        "dica" : "teste",
+        "dica" : "Lave as embalagens: Antes de descartar plásticos e vidros, lave-os para remover resíduos e evitar odores e pragas",
         "nivel" : 1 
         },
 
@@ -219,7 +219,7 @@
             "4" : "Produção de plástico reciclado"
         },
         "resposta" : "resposta:2",
-        "dica" : "teste",
+        "dica" : "Composte seu lixo orgânico: Transforme restos de alimentos e podas de jardim em adubo rico para suas plantas",
         "nivel" : 1
         },
 
@@ -232,7 +232,7 @@
             "4" : "Diminuir a geração de empregos"
         },
         "resposta" : "resposta:2",
-        "dica" : "teste",
+        "dica" : "Reduza o consumo de descartáveis: Evite copos, talheres e pratos plásticos",
         "nivel" :  1
         },
 
@@ -245,7 +245,7 @@
             "4" : "Verde"
         },
         "resposta" : "resposta:2",
-        "dica" : "teste",
+        "dica" : "Leve sua sacola retornável: Diga adeus às sacolas plásticas do supermercado",
         "nivel" : 1
         },
 
@@ -258,7 +258,7 @@
             "4" : "Queimar todo o lixo produzido"
         },
         "resposta" : "resposta:2",
-        "dica" : "teste",
+        "dica" : "Descarte corretamente eletrônicos e pilhas: Procure por pontos de coleta específicos para esses materiais, eles contêm substâncias tóxicas",
         "nivel" : 1
         },
 
@@ -271,7 +271,7 @@
             "4" : "Redução"
         },
         "resposta" : "resposta:3",
-        "dica" : "teste",
+        "dica" : "Amasse as embalagens: Reduza o volume de caixas, garrafas PET e latas para otimizar o espaço no lixo e no caminhão de coleta",
         "nivel" :  2
         },
     {
@@ -283,7 +283,7 @@
             "4" : "Vapor d'água e ozônio"
         },
         "resposta" : "resposta:2",
-        "dica" : "teste",
+        "dica" : "Reaproveite ao máximo: Antes de jogar fora, pense se o item pode ter outra utilidade",
         "nivel" : 2
         },
 
@@ -296,7 +296,7 @@
             "4" : "Incineração de lixo hospitalar"
         },
         "resposta" : "resposta:2",
-        "dica" : "teste",
+        "dica" : "Evite desperdício de alimentos: Planeje suas compras e aproveite os alimentos ao máximo",
         "nivel" :  2
         },
 
@@ -309,7 +309,7 @@
             "4" : "Reciclagem é para lixo orgânico, reutilização para inorgânico"
         },
         "resposta" : "resposta:2",
-        "dica" : "teste",
+        "dica" : "Reaproveite a água da máquina de lavar: Use-a para lavar quintais, calçadas ou regar plantas",
         "nivel" :  2
         },
 
@@ -322,7 +322,7 @@
             "4" : "Aumentar a poluição do solo"
         },
         "resposta" : "resposta:2",
-        "dica" : "teste",
+        "dica" : "Respeite as áreas de proteção ambiental: Ao visitar parques e reservas, siga as regras e não deixe lixo",
         "nivel" :  2
         },
 
@@ -335,7 +335,7 @@
             "4" : "Melhoria da qualidade da água dos rios"
         },
         "resposta" : "resposta:1",
-        "dica" : "teste",
+        "dica" : "Tire os aparelhos da tomada: O modo stand-by ainda consome energia",
         "nivel" :  2
         },
     {
@@ -347,7 +347,7 @@
             "4" : "O descarte de todos os resíduos em aterros"
         },
         "resposta" : "resposta:3",
-        "dica" : "teste",
+        "dica" : "Participe de ações locais: Engaje-se em projetos de sua comunidade para melhorar o meio ambiente",
         "nivel" :  2
         },
     {
@@ -359,7 +359,7 @@
             "4" : "Melhoria da qualidade do ar"
         },
         "resposta" : "resposta:2",
-        "dica" : "teste",
+        "dica" : "Apoie empresas sustentáveis: Pesquise sobre as práticas ambientais das empresas que você consome",
         "nivel" :  3
         },
     {
@@ -371,7 +371,7 @@
             "4" : "Diminuindo a vida útil dos produtos"
         },
         "resposta" : "resposta:2",
-        "dica" : "teste",
+        "dica" : "Eduque-se e eduque os outros: Compartilhe seu conhecimento sobre a importância da preservação ambiental",
         "nivel" :  2
         },
     {
@@ -383,7 +383,7 @@
             "4" : "Lei nº 6.938/1981 (Política Nacional do Meio Ambiente)"
         },
         "resposta" : "resposta:1",
-        "dica" : "teste",
+        "dica" : "Use produtos de limpeza ecológicos: Menos químicos nocivos liberados na água e no ar",
         "nivel" :  3
         },
     {
@@ -395,7 +395,7 @@
             "4" : "A responsabilidade dos aterros sanitários pela reciclagem de resíduos"
         },
         "resposta" : "resposta:3",
-        "dica" : "teste",
+        "dica" : "Use o transporte público, bicicleta ou vá a pé: Reduza a emissão de gases poluentes dos veículos",
         "nivel" :  3
         },
     {
@@ -407,7 +407,7 @@
             "4" : "O alto custo da coleta seletiva de plásticos multicamadas"
         },
         "resposta" : "resposta:3",
-        "dica" : "teste",
+        "dica" : "Apoie iniciativas de conservação: Contribua com organizações que trabalham na proteção da flora e fauna",
         "nivel" :  3
         },
     {
@@ -419,7 +419,7 @@
             "4" : "Diminuindo a captura de carbono pelo solo"
         },
         "resposta" : "resposta:2",
-        "dica" : "teste",
+        "dica" : "Colete água da chuva: Se possível, instale um sistema simples para coletar água para regar o jardim ou lavar áreas externas",
         "nivel" :  3
         },
     {
@@ -431,7 +431,7 @@
             "4" : "Logística reversa e reutilização"
         },
         "resposta" : "resposta:2",
-        "dica" : "teste",
+        "dica" : "Não jogue lixo no vaso sanitário: Isso força mais descargas e pode entupir o encanamento",
         "nivel" :  3
         },     
     {
@@ -443,7 +443,7 @@
             "4" : "Tomar banhos longos e frequentes"
         },
         "resposta" : "resposta:3",
-        "dica" : "teste",
+        "dica" : "Opte por equipamentos economizadores de água: Como torneiras com arejadores ou chuveiros de baixa vazão",
         "nivel" :  1
         },     
     {
@@ -455,7 +455,7 @@
             "4" : "Jogar embalagens vazias no lixo comum"
         },
         "resposta" : "resposta:3",
-        "dica" : "teste",
+        "dica" : "Não jogue lixo em rios e lagos: Isso polui a água e prejudica a vida aquática",
         "nivel" :  1
         },     
     {
@@ -467,7 +467,7 @@
             "4" : "Registrar, Reler, Responder"
         },
         "resposta" : "resposta:1",
-        "dica" : "teste",
+        "dica" : "Desligue as luzes ao sair de um cômodo: Economia simples e eficaz",
         "nivel" :  1
         },     
     {
@@ -479,7 +479,7 @@
             "4" : "Acender todas as luzes ao entrar em um cômodo, mesmo que não precise"
         },
         "resposta" : "resposta:3",
-        "dica" : "teste",
+        "dica" : "Use lâmpadas LED: São mais eficientes e duram mais",
         "nivel" :  1
         },     
     {
@@ -491,7 +491,7 @@
             "4" : "Não causa nenhum impacto significativo"
         },
         "resposta" : "resposta:3",
-        "dica" : "teste",
+        "dica" : "Evite produtos que contenham óleo de palma não sustentável: A produção desse óleo é uma das maiores causas de desmatamento",
         "nivel" :  1
         },     
     {
@@ -503,7 +503,7 @@
             "4" : "Comprar alimentos ultraprocessados em grande quantidade"
         },
         "resposta" : "resposta:2",
-        "dica" : "teste",
+        "dica" : "Descarte óleos de cozinha corretamente: Não jogue no ralo, ele pode contaminar a água",
         "nivel" :  2
         },     
     {
@@ -515,7 +515,7 @@
             "4" : "Um sistema de captação de água da chuva para uso doméstico"
         },
         "resposta" : "resposta:2",
-        "dica" : "teste",
+        "dica" : "Verifique vazamentos: Um gotejamento constante pode desperdiçar milhares de litros por ano",
         "nivel" :  2
         },     
     {
@@ -527,7 +527,7 @@
             "4" : "Atrai pragas para dentro de casa"
         },
         "resposta" : "resposta:3",
-        "dica" : "teste",
+        "dica" : "Regue as plantas pela manhã ou à noite: Assim, a água evapora menos",
         "nivel" :  2
         },     
     {
@@ -539,7 +539,7 @@
             "4" : "Guardá-los indefinidamente, mesmo sem necessidade"
         },
         "resposta" : "resposta:3",
-        "dica" : "teste",
+        "dica" : "Consuma produtos locais: Reduza a pegada de carbono do transporte de mercadorias",
         "nivel" :  2
         },     
     {
@@ -551,7 +551,7 @@
             "4" : "Dificulta a organização da cozinha"
         },
         "resposta" : "resposta:2",
-        "dica" : "teste",
+        "dica" : "Reduza o consumo de carne vermelha: A pecuária é uma das grandes emissoras de gases de efeito estufa",
         "nivel" :  2
         },     
     {
@@ -563,7 +563,7 @@
             "4" : "Energia nuclear"
         },
         "resposta" : "resposta:2",
-        "dica" : "teste",
+        "dica" : "Apoie fontes de energia renováveis: Se possível, opte por energia solar ou eólica",
         "nivel" :  3
         },     
     {
@@ -575,7 +575,7 @@
             "4" : "Deixar de consumir para proteger o meio ambiente"
         },
         "resposta" : "resposta:2",
-        "dica" : "teste",
+        "dica" : "Compre frutos do mar de pesca sustentável: Verifique a origem e se a pesca não agride o ecossistema",
         "nivel" :  3
         },
     {
@@ -587,7 +587,7 @@
             "4" : "O desmatamento aumenta a biodiversidade"
         },
         "resposta" : "resposta:2",
-        "dica" : "teste",
+        "dica" : "Apoie a criação de reservas marinhas: Áreas protegidas para a vida marinha",
         "nivel" :  3
         },     
     {
@@ -599,7 +599,7 @@
             "4" : "Não há necessidade de abordar esse tema com crianças e jovens"
         },
         "resposta" : "resposta:2",
-        "dica" : "teste",
+        "dica" : "Use produtos de limpeza ecológicos: Menos químicos nocivos liberados na água e no ar",
         "nivel" :  3
         },     
     {
@@ -611,7 +611,7 @@
             "4" : "Acelerar bruscamente com frequência"
         },
         "resposta" : "resposta:3",
-        "dica" : "teste",
+        "dica" : "Compartilhe caronas: Se for de carro, ofereça carona para colegas ou amigos",
         "nivel" :  3
         },     
     {

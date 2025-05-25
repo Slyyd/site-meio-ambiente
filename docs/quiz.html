@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!--- Configurações básicas da página -->
+    <meta charset="utf-8">
+    <title>TerraByte - Tecnologia pela Natureza</title>
+    <meta name="description"
+        content="TerraByte - Usando tecnologia para monitorar e preservar o meio ambiente no Brasil">
+    <meta name="author" content="TerraByte">
+    <!-- Meta Dispositivo Móvel -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/sobre.css">
+    <link rel="stylesheet" href="css/quiz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- Script -->
+    <script src="js/questoes.js" defer></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Montserrat:wght@400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="main-header">
+
+        <div class="header-container">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo TerraByte">
+                <span class="tagline">Tecnologia pela Natureza</span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li>
+                        <a href="home.html">Início</a>
+                    </li>
+                    <li>
+                        <a href="sobre.html">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="sobre.html#noticias">Notícias</a>
+                    </li>
+                    <li>
+                        <a href="mapa.html" class="btn-highlight">Mapa</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+
+    </header>
+
+
+
+    <main>
+        <br>
+        <br>
+        <section class="qst-panel">
+
+            <!--Introdução das questões-->
+            <div class="qst-intro" style="display: none;">
+
+                <h1>Quiz - Meio Ambiente</h1>
+                <br>
+                <p>Está preparado para testar seus conhecimentos sobre o meio ambiente em um quiz rápido e divertido?
+                </p>
+                <button id="btn_start">Começar!</button>
+
+            </div>
+
+            <div class="qst-main">
+
+                <div class="qst-info">
+
+                    <!--Área onde se encontra o número de questões-->
+                    <div class="qst-left-top">
+                        <h1>Questão: <span id="span_qst">1</span></h1>
+                    </div>
+
+                    <!--Área onde se encotra a pergunta-->
+                    <div class="qst-middle">
+                        <p>Como a compostagem em larga escala pode contribuir para a redução de emissões de gases de efeito estufa?</p>
+                    </div>
+
+                </div>
+
+
+                <!--Área onde se encontra as respostas-->
+                <div class="qst-options">
+                    <p>1.<button>Aumentando a produção de metano nos aterros</button></p>
+                    <p>2.<button>Reduzindo a necessidade de fertilizantes químicos e o transporte de resíduos orgânicos</button></p>
+                    <p>3.<button>Aumentando a queima de resíduos orgânicos</button></p>
+                    <p>4.<button>Diminuindo a captura de carbono pelo solo</button></p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

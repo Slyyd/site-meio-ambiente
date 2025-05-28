@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/quiz.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!-- Script -->
-    <script src="js/questoes.js" defer></script>
+    <script type="module" src="js/quiz.js" defer></script>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -64,13 +64,13 @@
         <section class="qst-panel">
 
             <!--Introdução das questões-->
-            <div class="qst-intro" style="display: none;">
+            <div class="qst-intro">
 
                 <h1>Quiz - Meio Ambiente</h1>
                 <br>
                 <p>Está preparado para testar seus conhecimentos sobre o meio ambiente em um quiz rápido e divertido?
                 </p>
-                <button id="btn_start">Começar!</button>
+                <button id="btnStart">Começar!</button>
 
             </div>
 
@@ -80,12 +80,12 @@
 
                     <!--Área onde se encontra o número de questões-->
                     <div class="qst-left-top">
-                        <h1>Questão: <span id="span_qst">1</span></h1>
+                        <h1>Questão: <span id="spanQst">1</span></h1>
                     </div>
 
                     <!--Área onde se encotra a pergunta-->
                     <div class="qst-middle">
-                        <p>Como a compostagem em larga escala pode contribuir para a redução de emissões de gases de efeito estufa?</p>
+                        <p id="pPergunta">Como a compostagem em larga escala pode contribuir para a redução de emissões de gases de efeito estufa?</p>
                     </div>
 
                 </div>
@@ -93,12 +93,24 @@
 
                 <!--Área onde se encontra as respostas-->
                 <div class="qst-options">
-                    <p>1.<button>Aumentando a produção de metano nos aterros</button></p>
-                    <p>2.<button>Reduzindo a necessidade de fertilizantes químicos e o transporte de resíduos orgânicos</button></p>
-                    <p>3.<button>Aumentando a queima de resíduos orgânicos</button></p>
-                    <p>4.<button>Diminuindo a captura de carbono pelo solo</button></p>
+                    <p>1.<button class="btnOpcao">Aumentando a produção de metano nos aterros</button></p>
+                    <p>2.<button class="btnOpcao">Reduzindo a necessidade de fertilizantes químicos e o transporte de resíduos orgânicos</button></p>
+                    <p>3.<button class="btnOpcao">Aumentando a queima de resíduos orgânicos</button></p>
+                    <p>4.<button class="btnOpcao">Diminuindo a captura de carbono pelo solo</button></p>
                 </div>
 
+            </div>
+
+            <div class="qst-dica">
+                <h1>Dica da vez:</h1>
+                <p id="pDica">Evite desperdício de alimentos: Planeje suas compras e aproveite os alimentos ao máximo</p>
+                <button id="btnProximaDica">Próxima Pergunta</button>
+            </div>
+
+            <div class="qst-end">
+                <h1>Parabéns!</h1>
+                <p>Você acertou: <span id="spanAcertos">1</span> de <span id="spanTotal">15</span> questões!</p>
+                <button>Tente Novamente!</button>
             </div>
 
         </section>

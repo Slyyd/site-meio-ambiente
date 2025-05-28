@@ -134,7 +134,7 @@ main {
 }
 
 .qst-panel {
-
+    display: block;
     position: relative;
     padding: 4rem 0;
     margin: 0 auto;
@@ -182,7 +182,7 @@ main {
 
 /*Painel das questões*/
 .qst-main {
-    display: flex;
+    display: none; /*flex*/
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -256,4 +256,66 @@ main {
     font-size: 1.8rem;
     text-wrap: pretty;
     width: 100%;
+}
+
+/*Tela com as dicas*/
+.qst-dica {
+    display: none; /*inline-flex*/
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.qst-dica h1, p {
+    text-align: center;
+}
+
+.qst-dica p {
+    font-size: 1.8rem;
+}
+
+.qst-dica button {
+    padding: 0.8rem 1.3rem;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    transition: var(--transition);
+    font-weight: 600;
+    font-family: inherit;
+    font-size: 1.8rem;
+    text-wrap: pretty;
+}
+
+/*Tela após os término do quiz*/
+.qst-end {
+    display: none; /*flex*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.qst-end p {
+    font-size: 2rem;
+}
+
+.qst-end span {
+    color: var(--primary-color);
+}
+
+.qst-end button {
+    padding: 0.8rem 1.3rem;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    transition: var(--transition);
+    font-weight: 600;
+    font-family: inherit;
+    font-size: 1.8rem;
+    text-wrap: pretty;
 }

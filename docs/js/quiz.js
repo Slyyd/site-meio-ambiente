@@ -1,47 +1,86 @@
 import { getCurrentQuestion, passCurrentQuestion } from "./Model/QuestionHandler.js";
 
-// Constantes do HTML
+// Divs
 const divIntro = document.querySelector(".qst-intro");
 const divMain = document.querySelector(".qst-main");
 const divDica = document.querySelector(".qst-dica");
 const divEnd = document.querySelector(".qst-end");
 
+// Elementos que mostram dados
 const questionCounter = document.querySelector("#spanQst");
 const pPergunta = document.querySelector("#pPergunta");
-const spanDica = document.querySelector("#spanDica");
+const pDica = document.querySelector("#pDica");
 const spanAcertos = document.querySelector("#spanAcertos");
 const spanTotal = document.querySelector("#spanTotal");
 
+// Botoes da página
 const btnIntro = document.querySelector("#btnStart");
 const btnsOpcoes = document.querySelectorAll(".btnOpcao");
+const btnAdvice = document.querySelector("#btnProximaDica");
+const btnEnd = document.querySelector("#btnEnd");
 
+let quantidadeDeQuestoes = 14; // Número total de questões - 1
 
-let QuestionHandler;
-let question;
+let QuestionHandler; // Modulo com funções das questões
+let question; // Objeto da classe Question
 
+// Funções principais
 
+async function setupQuestion() {
 
-
-
-function setupQuestion(currentQuestion) {
+    QuestionHandler = getCurrentQuestion(quantidadeDeQuestoes);
+    question = (await QuestionHandler).currentQuestion;
 
     for (let i = 0; i < btnsOpcoes.length; i++) {
-        btnsOpcoes[i].innerHTML = currentQuestion.opcoes[i + 1];
+        btnsOpcoes[i].innerHTML = await question.opcoes[i + 1];
         btnsOpcoes[i].id = i + 1;
+        btnsOpcoes[i].removeEventListener("click", selectButton);
+        btnsOpcoes[i].addEventListener("click", selectButton);
     }
 
-    pPergunta.innerHTML = currentQuestion.pergunta;
+    pPergunta.innerHTML = question.pergunta;
+    questionCounter.textContent = (await QuestionHandler).questionCounter + 1;
 
 }
 
-function introButton() { divIntro.style.display = "none"; divMain.style.display = "flex"; }
+// Funções de troca de página
+
+async function endQuiz() {
+
+    divDica.classList.remove("divActive-InFlex");
+    divEnd.classList.add("divActive-Flex");
+    spanAcertos.textContent = (await QuestionHandler).pointsCounter;
+    spanTotal.textContent = quantidadeDeQuestoes + 1;
+
+}
+
+async function showAdvice() {
+
+    if ((await QuestionHandler).hasEnded == true) { btnAdvice.removeEventListener("click", adviceButton); btnAdvice.addEventListener("click", endQuiz); btnAdvice.textContent = "Terminar"; }
+    divMain.classList.remove("divActive-Flex")
+    pDica.textContent = question.dica;
+    divDica.classList.add("divActive-InFlex")
+}
+
+// Funções dos botões
+
+async function selectButton() {
+
+    showAdvice();
+    passCurrentQuestion(this.id);
+    setupQuestion();
+}
+
+function introButton() { divIntro.classList.remove("divActive-Block"); divMain.classList.add("divActive-Flex"); }
+function adviceButton() { divDica.classList.remove("divActive-InFlex"); divMain.classList.add("divActive-Flex"); }
 
 async function initializeQuiz() {
-    QuestionHandler = await getCurrentQuestion();
-    question = QuestionHandler.currentQuestion;
-    setupQuestion(question);
-    btnIntro.addEventListener("click", introButton);
-}
 
+    setupQuestion();
+    btnIntro.addEventListener("click", introButton);
+    btnAdvice.addEventListener("click", adviceButton);
+    btnEnd.addEventListener("click", () => {location.reload();});
+
+}
 
 initializeQuiz();

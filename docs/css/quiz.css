@@ -2,6 +2,23 @@
     TerraByte StyleSheet
 ========================================================================== */
 
+
+
+.divActive-Flex {
+    display: flex !important;
+    animation: fadeIn 0.5s ease;
+}
+
+.divActive-InFlex {
+    display: inline-flex !important;
+    animation: fadeIn 0.5s ease;
+}
+
+.divActive-Block {
+    display: block !important;
+    animation: fadeIn 0.5s ease;
+}
+
 /*Header*/
 
 .main-header {
@@ -134,7 +151,10 @@ main {
 }
 
 .qst-panel {
-    display: block;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: relative;
     padding: 4rem 0;
     margin: 0 auto;
@@ -149,11 +169,13 @@ main {
 
 }
 
+
 /*Painel de Introdução*/
 .qst-intro {
-
+    display: none;
     padding: 1rem;
     text-align: center;
+    transition: var(--transition);
 
 }
 
@@ -164,13 +186,12 @@ main {
 
 .qst-intro button {
     background-color: var(--primary-color);
-    color: var(--text-light);
+    color: black;
     padding: 1.2rem 3rem;
     border-radius: var(--border-radius);
     border-color: var(--primary-color);
-    font-weight: 500;
+    font-weight: 800;
     font-size: 1.8rem;
-    transition: var(--transition);
     display: inline-block;
 }
 
@@ -189,7 +210,8 @@ main {
     height: 90%;
     width: 100%;
     padding: 0 8rem;
-
+    transition: var(--transition);
+    animation: fadeIn 0.5s ease;
 }
 
 /*Área onde fica as informações da pergunta (Número da questão, pontuação, a pergunta em si)*/
@@ -261,8 +283,9 @@ main {
 /*Tela com as dicas*/
 .qst-dica {
     display: none; /*inline-flex*/
+    padding: 0rem 1rem ;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1rem;

@@ -22,16 +22,18 @@ passCurrentQuestion(hasScored) :
 
 import Question from "./Question.js";
 
-const QuestionFile = "questions.json"; // Caminho do .json
+const QuestionFile = "js/questions.json"; // Caminho do .json
 let questionCounter = 0; // Contador das questões
 let pointsCounter = 0; // Contador de pontos
+let questionAmount = 0;
 let hasEnded = false;
 
 let currentQuestionList = await fetchJson();
 
-export async function getCurrentQuestion() {
+export async function getCurrentQuestion(AmountOfQuestions) {
     if (currentQuestionList == null) { currentQuestionList = await fetchJson(); }
-    if (currentQuestionList.length - 1 < questionCounter) {
+    if (questionAmount <= 0) { questionAmount = AmountOfQuestions; }
+    if ((currentQuestionList.length - 1 < questionCounter) || questionAmount <= questionCounter) {
         hasEnded = true;
     }
     let currentQuestion = currentQuestionList[questionCounter]
@@ -44,9 +46,13 @@ export async function getCurrentQuestion() {
     };
 }
 
-export function passCurrentQuestion(hasScored) {
+function checkAnswer(currentQuestion, answer) {
+    return currentQuestion.resposta == answer;
+}
 
-    if (hasScored) {
+export function passCurrentQuestion(answer) {
+
+    if (checkAnswer(currentQuestionList[questionCounter], answer) == true) {
         pointsCounter++;
     }
 
@@ -69,29 +75,6 @@ async function fetchJson() {
 
 }
 
-function createClasses(questions) {
-    // Pega as questões, cria várias instâncias da mesma classe e armazena elas em uma lista
-
-    let questionsClasses = questions.map(q =>
-        new Question(q.questao, q.opcoes, q.resposta, q.dica, q.nivel)
-    );
-
-    return shuffleQuestions(questionsClasses);
-
-    /* Sistema antigo
-    for (const question in questions) {
-        newQuestionArray[question] = new Question(
-            questions[question].questao,
-            questions[question].opcoes,
-            questions[question].resposta,
-            questions[question].nivel
-        )
-    }
-
-    return shuffleQuestions(newQuestionArray);
-    */
-}
-
 function shuffleQuestions(questionList) {
     /*
     Usa o método de Fisher Yates
@@ -112,4 +95,26 @@ function shuffleQuestions(questionList) {
     }
     return newList; // Retorna a lista aleatória
 
+}
+
+function createClasses(questions) {
+    // Pega as questões, cria várias instâncias da mesma classe e armazena elas em uma lista
+
+    let questionsClasses = questions.filter(q=> q.nivel !=-1).map(q => 
+         new Question(q.questao, q.opcoes, q.resposta, q.dica, q.nivel)
+    );
+    return shuffleQuestions(questionsClasses);
+
+    /* Sistema antigo
+    for (const question in questions) {
+        newQuestionArray[question] = new Question(
+            questions[question].questao,
+            questions[question].opcoes,
+            questions[question].resposta,
+            questions[question].nivel
+        )
+    }
+
+    return shuffleQuestions(newQuestionArray);
+    */
 }

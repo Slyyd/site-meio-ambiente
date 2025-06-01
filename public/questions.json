@@ -1,0 +1,775 @@
+[
+    {
+        "questao": "Qual a maior floresta do Brasil?",
+        "opcoes" : {
+            "1" : "Amazônia",
+            "2" : "Caatinga",
+            "3" : "Cerrado",
+            "4" : "Mata ATlântica"
+        },
+        "resposta" : "resposta:1",
+        "dica" : "Plante árvores nativas: Elas atraem a fauna local e ajudam a manter o equilíbrio do ecossistema",
+        "nivel" : 1 
+    },
+
+    {
+        "questao": "Qual bioma foi desmatado pelos Europeus?",
+        "opcoes" : {
+            "1" : "Amazônia",
+            "2" : "Caatinga",
+            "3" : "Cerrado",
+            "4" : "Mata ATlântica"
+        },
+        "resposta" : "resposta:4",
+        "dica" : "Crie um jardim em casa: Mesmo em pequenos espaços, você pode atrair polinizadores como abelhas e borboletas",
+        "nivel" : 1 
+    },
+
+    {
+        "questao": "Qual animal está ameaçado de extinção?",
+        "opcoes" : {
+            "1" : "Baleia Azul",
+            "2" : "Trura-arco-íris",
+            "3" : "Molinésia",
+            "4" : "Peixe palhaço"
+        },
+        "resposta" : "resposta:1",
+        "dica" : "Não compre animais silvestres: Combata o tráfico de animais e incentive a conservação em seu habitat natural",
+        "nivel" : 3 
+         },
+
+    {
+        "questao": "Qual o maior poluente encontrado nos oceanos?",
+        "opcoes" : {
+            "1" : "Plástico",
+            "2" : "Óleo",
+            "3" : "Esgoto",
+            "4" : "Metais Pesados"
+        },
+        "resposta" : "resposta:1",
+        "dica" : "Não jogue lixo nas praias: Leve todo o seu lixo de volta",
+        "nivel" : 1 
+         },
+
+    {
+        "questao": "Qual o principal impacto da pesca excessiva nos oceanos?",
+        "opcoes" : {
+            "1" : "Aumento da biodiversidade marinha",
+            "2" : "Desequilíbrio da cadeia alimentar e redução de espécies",
+            "3" : "Diminuição da poluição marinha",
+            "4" : "Fortalecimento dos recifes de coral"
+        },
+        "resposta" : "resposta:2",
+        "dica" : "Participe de limpezas de praias e rios: Ajude a remover o lixo que ameaça a vida marinha",
+        "nivel" : 2 
+         },
+
+    {
+        "questao": "O que são áreas marinhas protegidas?",
+        "opcoes" : {
+            "1" : "Áreas de pesca intensiva",
+            "2" : "Regiões costeiras com alta poluição",
+            "3" : "Áreas delimitadas para conservação da biodiversidade marinha",
+            "4" : "Locais de extração de petróleo e gás"
+        },
+        "resposta" : "resposta:3",
+        "dica" : "Reduza o consumo de plástico: Principalmente os de uso único, que acabam nos oceanos",
+        "nivel" : 2 
+        },
+    {
+        "questao": "Como a acidificação dos oceanos afeta a vida marinha?",
+        "opcoes" : {
+            "1" : "Aumenta a produção de conchas e esqueletos de organismos",
+            "2" : "Dificulta a formação de conchas e esqueletos de organismos",
+            "3" : "Fortalece os recifes de coral",
+            "4" : "Reduz a poluição marinha"
+        },
+        "resposta" : "resposta:2",
+        "dica" : "Evite produtos de higiene com microplásticos: Pequenas esferas de plástico que poluem a água",
+        "nivel" :  2
+        },
+    {
+        "questao": "Qual o principal fator responsável pelo derretimento das geleiras?",
+        "opcoes" : {
+            "1" : "Poluição do ar",
+            "2" : "Aquecimento global",
+            "3" : "Desmatamento",
+            "4" : "Poluição da água"
+        },
+        "resposta" : "resposta:2",
+        "dica" : "Invista em isolamento térmico: Ajuda a manter a temperatura interna da casa, reduzindo o uso de ar condicionado e aquecedores",
+        "nivel" :  1
+         },
+    {
+        "questao": "Qual o principal impacto do derretimento das geleiras no nível do mar?",
+        "opcoes" : {
+            "1" : "Diminuição do nível do mar",
+            "2" : "Elevação do nível do mar",
+            "3" : "Estabilização do nível do mar",
+            "4" : "Aumento da salinidade dos oceanos"
+        },
+        "resposta" : "resposta:2",
+        "dica" : "Respeite os recifes de coral: Eles são ecossistemas frágeis e vitais para a vida marinha",
+        "nivel" :  1
+        },
+    {
+        "questao": "O que é o permafrost?",
+        "opcoes" : {
+            "1" : "Um tipo de rocha vulcânica",
+            "2" : "Um tipo de coral marinho",
+            "3" : "Solo permanentemente congelado",
+            "4" : "Uma formação de gelo marinho"
+        },
+        "resposta" : "resposta:3",
+        "dica" : "Seja um defensor do meio ambiente: Fale sobre o assunto, inspire seus amigos e familiares a adotarem hábitos mais sustentáveis",
+        "nivel" :  2
+
+         },
+    {
+        "questao": "Como o derretimento das geleiras afeta a circulação oceânica?",
+        "opcoes" : {
+            "1" : "Aumenta a salinidade da água do mar",
+            "2" : "Diminui a temperatura da água do mar",
+            "3" : "Altera a salinidade e temperatura da água do mar, afetando as correntes oceânicas",
+            "4" : "Estabiliza as correntes oceânicas"
+        },
+        "resposta" : "resposta:3",
+        "dica" : "Consuma menos: O consumo consciente é a chave para reduzir o impacto",
+        "nivel" :  3
+        },
+    {
+        "questao": "Qual o principal tipo de poluição que afeta o meio ambiente?",
+        "opcoes" : {
+            "1" : "Poluição luminosa",
+            "2" : "Poluição do ar, da água e do solo",
+            "3" : "Poluição sonora",
+            "4" : "Poluição visual"
+        },
+        "resposta" : "resposta:2",
+        "dica" : "Não faça queimadas: Elas poluem o ar e destroem ecossistemas",
+        "nivel" :  1
+         },
+    {
+        "questao": "Qual a importância da reciclagem para reduzir a poluição?",
+        "opcoes" : {
+            "1" : "Aumenta a produção de resíduos",
+            "2" : "Reduz a quantidade de resíduos e a necessidade de extrair novas matérias-primas",
+            "3" : "Aumenta a poluição do ar",
+            "4" : "Contamina o solo"
+        },
+        "resposta" : "resposta:2",
+        "dica" : "Separe seu lixo: Tenha lixeiras diferentes para orgânicos, recicláveis secos (papel, plástico, metal, vidro) e rejeitos",
+        "nivel" :  1
+        },
+    {
+        "questao": "Qual o principal impacto da poluição do ar na saúde humana?",
+        "opcoes" : {
+            "1" : "Aumento da qualidade do sono",
+            "2" : "Melhora da função pulmonar",
+            "3" : "Doenças respiratórias e cardiovasculares",
+            "4" : "Fortalecimento do sistema imunológico"
+        },
+        "resposta" : "resposta:3",
+        "dica" : "Caminhe mais, dirija menos: Menos poluição do ar e mais saúde para você",
+        "nivel" :  1
+        },
+    {
+        "questao": "Como a poluição do solo afeta a agricultura?",
+        "opcoes" : {
+            "1" : "Aumenta a fertilidade do solo",
+            "2" : "Contamina os alimentos e reduz a produção agrícola",
+            "3" : "Fortalece as plantas",
+            "4" : "Reduz a necessidade de fertilizantes"
+        },
+        "resposta" : "resposta:2",
+        "dica" : "Evite o uso de agrotóxicos em jardins: Opte por métodos orgânicos de controle de pragas",
+        "nivel" : 2 
+        },
+    {
+        "questao": "Qual material abaixo pode ser reciclado?",
+        "opcoes" : {
+            "1" : "Casca de fruta",
+            "2" : "Embalagem de isopor",
+            "3" : "Lata de alumínio",
+            "4" : "Resto de comida "
+        },
+        "resposta" : "resposta:3",
+        "dica" : "Conheça os pontos de coleta: Informe-se sobre os ecopontos e cooperativas de reciclagem na sua cidade",
+        "nivel" :  1
+        },
+    {
+        "questao": "Qual dos seguintes itens NÃO deve ser colocado na lixeira de reciclagem?",
+        "opcoes" : {
+            "1" : "Garrafas de vidro ",
+            "2" : "Jornais",
+            "3" : "Embalagens de alimentos sujas",
+            "4" : "Latas de alumínio"
+        },
+        "resposta" : "resposta:3",
+        "dica" : "Lave as embalagens: Antes de descartar plásticos e vidros, lave-os para remover resíduos e evitar odores e pragas",
+        "nivel" : 1 
+        },
+
+ {
+        "questao": "O que é compostagem?",
+        "opcoes" : {
+            "1" : "Queima de lixo",
+            "2" : "Processo de decomposição de matéria orgânica ",
+            "3" : "Armazenamento de resíduos tóxicos",
+            "4" : "Produção de plástico reciclado"
+        },
+        "resposta" : "resposta:2",
+        "dica" : "Composte seu lixo orgânico: Transforme restos de alimentos e podas de jardim em adubo rico para suas plantas",
+        "nivel" : 1
+        },
+
+     {
+        "questao": "Qual o principal benefício da reciclagem?",
+        "opcoes" : {
+            "1" : "Aumentar a quantidade de lixo nos aterros",
+            "2" : "Reduzir o consumo de recursos naturais",
+            "3" : "Aumentar a poluição do ar",
+            "4" : "Diminuir a geração de empregos"
+        },
+        "resposta" : "resposta:2",
+        "dica" : "Reduza o consumo de descartáveis: Evite copos, talheres e pratos plásticos",
+        "nivel" :  1
+        },
+
+     {
+        "questao": "Qual a lixeira correta para descarte de plástico?",
+        "opcoes" : {
+            "1" : "Azul",
+            "2" : "Vermelha",
+            "3" : "Amarela",
+            "4" : "Verde"
+        },
+        "resposta" : "resposta:2",
+        "dica" : "Leve sua sacola retornável: Diga adeus às sacolas plásticas do supermercado",
+        "nivel" : 1
+        },
+
+     {
+        "questao": "O que é lixo zero?",
+        "opcoes" : {
+            "1" : "Não produzir nenhum resíduo",
+            "2" : "Reduzir ao máximo a geração de resíduos",
+            "3" : "Reciclar todo o lixo produzido",
+            "4" : "Queimar todo o lixo produzido"
+        },
+        "resposta" : "resposta:2",
+        "dica" : "Descarte corretamente eletrônicos e pilhas: Procure por pontos de coleta específicos para esses materiais, eles contêm substâncias tóxicas",
+        "nivel" : 1
+        },
+
+     {
+        "questao": "Qual o processo de transformação de materiais descartados em novos produtos?",
+        "opcoes" : {
+            "1" : "Compostagem",
+            "2" : "Reutilização",
+            "3" : "Reciclagem",
+            "4" : "Redução"
+        },
+        "resposta" : "resposta:3",
+        "dica" : "Amasse as embalagens: Reduza o volume de caixas, garrafas PET e latas para otimizar o espaço no lixo e no caminhão de coleta",
+        "nivel" :  2
+        },
+    {
+        "questao": "Quais os principais gases liberados pela decomposição de resíduos orgânicos em aterros?",
+        "opcoes" : {
+            "1" : "Oxigênio e nitrogênio",
+            "2" : "Metano e dióxido de carbono",
+            "3" : "Hélio e argônio",
+            "4" : "Vapor d'água e ozônio"
+        },
+        "resposta" : "resposta:2",
+        "dica" : "Reaproveite ao máximo: Antes de jogar fora, pense se o item pode ter outra utilidade",
+        "nivel" : 2
+        },
+
+    {
+        "questao": "O que é a logística reversa?",
+        "opcoes" : {
+            "1" : "Processo de coleta de lixo comum",
+            "2" : "Sistema de devolução de produtos e embalagens ao fabricante",
+            "3" : "Armazenamento de resíduos nucleares",
+            "4" : "Incineração de lixo hospitalar"
+        },
+        "resposta" : "resposta:2",
+        "dica" : "Evite desperdício de alimentos: Planeje suas compras e aproveite os alimentos ao máximo",
+        "nivel" :  2
+        },
+
+    {
+        "questao": "Qual a diferença entre reciclagem e reutilização?",
+        "opcoes" : {
+            "1" : "Não há diferença, são sinônimos",
+            "2" : "Reciclagem transforma materiais, reutilização usa o mesmo material",
+            "3" : "Reciclagem usa apenas plástico, reutilização usa papel.",
+            "4" : "Reciclagem é para lixo orgânico, reutilização para inorgânico"
+        },
+        "resposta" : "resposta:2",
+        "dica" : "Reaproveite a água da máquina de lavar: Use-a para lavar quintais, calçadas ou regar plantas",
+        "nivel" :  2
+        },
+
+    {
+        "questao": "Qual a importância da coleta seletiva?",
+        "opcoes" : {
+            "1" : "Aumentar o volume de lixo nos aterros",
+            "2" : "Facilitar a reciclagem e reduzir o impacto ambiental",
+            "3" : "Diminuir a geração de empregos na área de reciclagem",
+            "4" : "Aumentar a poluição do solo"
+        },
+        "resposta" : "resposta:2",
+        "dica" : "Respeite as áreas de proteção ambiental: Ao visitar parques e reservas, siga as regras e não deixe lixo",
+        "nivel" :  2
+        },
+
+    {
+        "questao": "Qual o impacto do descarte incorreto de eletrônicos?",
+        "opcoes" : {
+            "1" : "Liberação de metais pesados no solo e água",
+            "2" : "Aumento da fertilidade do solo",
+            "3" : "Redução da poluição do ar",
+            "4" : "Melhoria da qualidade da água dos rios"
+        },
+        "resposta" : "resposta:1",
+        "dica" : "Tire os aparelhos da tomada: O modo stand-by ainda consome energia",
+        "nivel" :  2
+        },
+    {
+        "questao": "O que a economia circular busca promover?",
+        "opcoes" : {
+            "1" : "O consumo desenfreado de produtos descartáveis",
+            "2" : "A redução da produção de novos produtos",
+            "3" : "A reutilização e reciclagem de materiais para reduzir o desperdício",
+            "4" : "O descarte de todos os resíduos em aterros"
+        },
+        "resposta" : "resposta:3",
+        "dica" : "Participe de ações locais: Engaje-se em projetos de sua comunidade para melhorar o meio ambiente",
+        "nivel" :  2
+        },
+    {
+        "questao": "Quais os impactos do descarte incorreto de eletrônicos no meio ambiente?",
+        "opcoes" : {
+            "1" : "Aumento da biodiversidade",
+            "2" : "Contaminação do solo e da água por metais pesados e substâncias tóxicas",
+            "3" : "Redução da poluição atmosférica",
+            "4" : "Melhoria da qualidade do ar"
+        },
+        "resposta" : "resposta:2",
+        "dica" : "Apoie empresas sustentáveis: Pesquise sobre as práticas ambientais das empresas que você consome",
+        "nivel" :  3
+        },
+    {
+        "questao": "Como a economia circular pode contribuir para a redução de resíduos?",
+        "opcoes" : {
+            "1" : "Incentivando o consumo de produtos descartáveis",
+            "2" : "Promovendo a reutilização, reparo e reciclagem de materiais",
+            "3" : "Aumentando a produção de novos produtos",
+            "4" : "Diminuindo a vida útil dos produtos"
+        },
+        "resposta" : "resposta:2",
+        "dica" : "Eduque-se e eduque os outros: Compartilhe seu conhecimento sobre a importância da preservação ambiental",
+        "nivel" :  2
+        },
+    {
+        "questao": "Qual a legislação brasileira que trata da gestão de resíduos sólidos?",
+        "opcoes" : {
+            "1" : "Lei nº 12.305/2010 (Política Nacional de Resíduos Sólidos)",
+            "2" : "Lei nº 9.605/1998 (Lei de Crimes Ambientais)",
+            "3" : "Lei nº 11.445/2007 (Lei do Saneamento Básico)",
+            "4" : "Lei nº 6.938/1981 (Política Nacional do Meio Ambiente)"
+        },
+        "resposta" : "resposta:1",
+        "dica" : "Use produtos de limpeza ecológicos: Menos químicos nocivos liberados na água e no ar",
+        "nivel" :  3
+        },
+    {
+        "questao": "Qual o conceito de responsabilidade estendida do produtor (REP)?",
+        "opcoes" : {
+            "1" : "A responsabilidade do consumidor pelo descarte correto dos produtos",
+            "2" : "A responsabilidade do governo pela coleta e tratamento de resíduos",
+            "3" : "A responsabilidade do produtor pelo ciclo de vida completo do produto, incluindo o descarte",
+            "4" : "A responsabilidade dos aterros sanitários pela reciclagem de resíduos"
+        },
+        "resposta" : "resposta:3",
+        "dica" : "Use o transporte público, bicicleta ou vá a pé: Reduza a emissão de gases poluentes dos veículos",
+        "nivel" :  3
+        },
+    {
+        "questao": "Quais os desafios da reciclagem de plásticos multicamadas?",
+        "opcoes" : {
+            "1" : "A facilidade de separação dos diferentes tipos de plástico",
+            "2" : "A baixa demanda por produtos reciclados feitos com esse material",
+            "3" : "A dificuldade de separação e reciclagem dos diferentes materiais que compõem a embalagem",
+            "4" : "O alto custo da coleta seletiva de plásticos multicamadas"
+        },
+        "resposta" : "resposta:3",
+        "dica" : "Apoie iniciativas de conservação: Contribua com organizações que trabalham na proteção da flora e fauna",
+        "nivel" :  3
+        },
+    {
+        "questao": "Como a compostagem em larga escala pode contribuir para a redução de emissões de gases de efeito estufa?",
+        "opcoes" : {
+            "1" : "Aumentando a produção de metano nos aterros",
+            "2" : "Reduzindo a necessidade de fertilizantes químicos e o transporte de resíduos orgânicos",
+            "3" : "Aumentando a queima de resíduos orgânicos",
+            "4" : "Diminuindo a captura de carbono pelo solo"
+        },
+        "resposta" : "resposta:2",
+        "dica" : "Colete água da chuva: Se possível, instale um sistema simples para coletar água para regar o jardim ou lavar áreas externas",
+        "nivel" :  3
+        },
+    {
+        "questao": "Quais as tecnologias para tratamento de resíduos que visam a recuperação de energia?",
+        "opcoes" : {
+            "1" : "Aterros sanitários e compostagem",
+            "2" : "Incineração com recuperação de energia e digestão anaeróbica",
+            "3" : "Coleta seletiva e reciclagem",
+            "4" : "Logística reversa e reutilização"
+        },
+        "resposta" : "resposta:2",
+        "dica" : "Não jogue lixo no vaso sanitário: Isso força mais descargas e pode entupir o encanamento",
+        "nivel" :  3
+        },     
+    {
+        "questao": "Qual das seguintes ações domésticas contribui diretamente para a redução do consumo de água?",
+        "opcoes" : {
+            "1" : "Lavar a louça com a torneira aberta o tempo todo",
+            "2" : "Deixar a mangueira ligada enquanto lava o carro",
+            "3" : "Utilizar a descarga com consciência e verificar vazamentos",
+            "4" : "Tomar banhos longos e frequentes"
+        },
+        "resposta" : "resposta:3",
+        "dica" : "Opte por equipamentos economizadores de água: Como torneiras com arejadores ou chuveiros de baixa vazão",
+        "nivel" :  1
+        },     
+    {
+        "questao": "Para diminuir a quantidade de resíduos enviados para aterros sanitários, qual prática devemos priorizar em casa?",
+        "opcoes" : {
+            "1" : "Comprar embalagens plásticas em grande quantidade para economizar",
+            "2" : "Misturar todos os tipos de lixo em um único saco",
+            "3" : "Separar o lixo reciclável (papel, plástico, vidro, metal) do orgânico",
+            "4" : "Jogar embalagens vazias no lixo comum"
+        },
+        "resposta" : "resposta:3",
+        "dica" : "Não jogue lixo em rios e lagos: Isso polui a água e prejudica a vida aquática",
+        "nivel" :  1
+        },     
+    {
+        "questao": "O que significa a sigla "3Rs" da sustentabilidade?",
+        "opcoes" : {
+            "1" : "Reduzir, Reciclar, Reutilizar",
+            "2" : "Refletir, Repensar, Realizar",
+            "3" : "Reparar, Replantar, Refazer",
+            "4" : "Registrar, Reler, Responder"
+        },
+        "resposta" : "resposta:1",
+        "dica" : "Desligue as luzes ao sair de um cômodo: Economia simples e eficaz",
+        "nivel" :  1
+        },     
+    {
+        "questao": "Qual a melhor forma de reduzir o consumo de energia elétrica com a iluminação doméstica?",
+        "opcoes" : {
+            "1" : "Deixar todas as luzes acesas durante o dia",
+            "2" : "Utilizar lâmpadas incandescentes de alta potência",
+            "3" : "Aproveitar a luz natural e utilizar lâmpadas LED",
+            "4" : "Acender todas as luzes ao entrar em um cômodo, mesmo que não precise"
+        },
+        "resposta" : "resposta:3",
+        "dica" : "Use lâmpadas LED: São mais eficientes e duram mais",
+        "nivel" :  1
+        },     
+    {
+        "questao": "Qual o impacto de descartar óleo de cozinha usado diretamente na pia?",
+        "opcoes" : {
+            "1" : "Enriquece a água com nutrientes",
+            "2" : "Facilita o tratamento da água nos sistemas de esgoto",
+            "3" : "Contamina a água e prejudica a vida aquática",
+            "4" : "Não causa nenhum impacto significativo"
+        },
+        "resposta" : "resposta:3",
+        "dica" : "Evite produtos que contenham óleo de palma não sustentável: A produção desse óleo é uma das maiores causas de desmatamento",
+        "nivel" :  1
+        },     
+    {
+        "questao": "Ao fazer compras, qual atitude contribui para a sustentabilidade?",
+        "opcoes" : {
+            "1" : "Comprar produtos com muitas embalagens plásticas",
+            "2" : "Optar por produtos a granel ou com embalagens reutilizáveis",
+            "3" : "Escolher sempre a opção mais barata, independentemente da origem",
+            "4" : "Comprar alimentos ultraprocessados em grande quantidade"
+        },
+        "resposta" : "resposta:2",
+        "dica" : "Descarte óleos de cozinha corretamente: Não jogue no ralo, ele pode contaminar a água",
+        "nivel" :  2
+        },     
+    {
+        "questao": "O que é compostagem doméstica?",
+        "opcoes" : {
+            "1" : "Um método de lavar roupas utilizando menos água",
+            "2" : "O processo de transformar resíduos orgânicos em adubo",
+            "3" : "Uma técnica de construção de casas ecológicas",
+            "4" : "Um sistema de captação de água da chuva para uso doméstico"
+        },
+        "resposta" : "resposta:2",
+        "dica" : "Verifique vazamentos: Um gotejamento constante pode desperdiçar milhares de litros por ano",
+        "nivel" :  2
+        },     
+    {
+        "questao": "Qual a importância de cultivar plantas em casa ou em pequenos espaços?",
+        "opcoes" : {
+            "1" : "Aumenta a produção de lixo orgânico",
+            "2" : "Contribui para a poluição do ar",
+            "3" : "Melhora a qualidade do ar e pode gerar alimentos frescos",
+            "4" : "Atrai pragas para dentro de casa"
+        },
+        "resposta" : "resposta:3",
+        "dica" : "Regue as plantas pela manhã ou à noite: Assim, a água evapora menos",
+        "nivel" :  2
+        },     
+    {
+        "questao": "O que podemos fazer com roupas e objetos que não usamos mais, ao invés de jogá-los no lixo?",
+        "opcoes" : {
+            "1" : "Queimá-los no quintal",
+            "2" : "Enterrá-los no jardim",
+            "3" : "Doá-los, trocá-los ou vendê-los",
+            "4" : "Guardá-los indefinidamente, mesmo sem necessidade"
+        },
+        "resposta" : "resposta:3",
+        "dica" : "Consuma produtos locais: Reduza a pegada de carbono do transporte de mercadorias",
+        "nivel" :  2
+        },     
+    {
+        "questao": "Qual a importância de planejar as refeições e evitar o desperdício de alimentos em casa?",
+        "opcoes" : {
+            "1" : "Aumenta a quantidade de lixo orgânico produzido",
+            "2" : "Contribui para a economia doméstica e reduz o impacto ambiental da produção de alimentos",
+            "3" : "Não tem relação com a sustentabilidade",
+            "4" : "Dificulta a organização da cozinha"
+        },
+        "resposta" : "resposta:2",
+        "dica" : "Reduza o consumo de carne vermelha: A pecuária é uma das grandes emissoras de gases de efeito estufa",
+        "nivel" :  2
+        },     
+    {
+        "questao": "Qual fonte de energia doméstica é considerada a mais sustentável a longo prazo?",
+        "opcoes" : {
+            "1" : "Queima de lenha para aquecimento",
+            "2" : "Energia gerada por painéis solares fotovoltaicos",
+            "3" : "Utilização constante de geradores a diesel",
+            "4" : "Energia nuclear"
+        },
+        "resposta" : "resposta:2",
+        "dica" : "Apoie fontes de energia renováveis: Se possível, opte por energia solar ou eólica",
+        "nivel" :  3
+        },     
+    {
+        "questao": "O que é "consumo consciente"?",
+        "opcoes" : {
+            "1" : "Comprar tudo o que se deseja, sem pensar nas consequências",
+            "2" : "Analisar as necessidades reais antes de comprar e considerar o impacto ambiental e social dos produtos",
+            "3" : "Comprar apenas produtos importados e de marcas famosas",
+            "4" : "Deixar de consumir para proteger o meio ambiente"
+        },
+        "resposta" : "resposta:2",
+        "dica" : "Compre frutos do mar de pesca sustentável: Verifique a origem e se a pesca não agride o ecossistema",
+        "nivel" :  3
+        },
+    {
+        "questao": "Qual a relação entre o desmatamento e as mudanças climáticas?",
+        "opcoes" : {
+            "1" : "O desmatamento ajuda a regular o clima",
+            "2" : "O desmatamento libera gases de efeito estufa e diminui a absorção de carbono",
+            "3" : "Não há nenhuma relação entre eles",
+            "4" : "O desmatamento aumenta a biodiversidade"
+        },
+        "resposta" : "resposta:2",
+        "dica" : "Apoie a criação de reservas marinhas: Áreas protegidas para a vida marinha",
+        "nivel" :  3
+        },     
+    {
+        "questao": "Qual a importância de educar crianças e jovens sobre a sustentabilidade desde cedo?",
+        "opcoes" : {
+            "1" : "Para que se preocupem com problemas que não são deles",
+            "2" : "Para que desenvolvam hábitos e valores que contribuam para um futuro mais sustentável",
+            "3" : "Para limitar sua liberdade de escolha no futuro",
+            "4" : "Não há necessidade de abordar esse tema com crianças e jovens"
+        },
+        "resposta" : "resposta:2",
+        "dica" : "Use produtos de limpeza ecológicos: Menos químicos nocivos liberados na água e no ar",
+        "nivel" :  3
+        },     
+    {
+        "questao": "Qual das seguintes ações ajuda a reduzir a poluição do ar em áreas urbanas?",
+        "opcoes" : {
+            "1" : "Utilizar o carro para todos os deslocamentos, mesmo curtos",
+            "2" : "Manter os pneus do carro sempre com baixa pressão",
+            "3" : "Optar por transporte público, bicicleta ou caminhadas",
+            "4" : "Acelerar bruscamente com frequência"
+        },
+        "resposta" : "resposta:3",
+        "dica" : "Compartilhe caronas: Se for de carro, ofereça carona para colegas ou amigos",
+        "nivel" :  3
+        },     
+    {
+        "questao": "?",
+        "opcoes" : {
+            "1" : "",
+            "2" : "",
+            "3" : "",
+            "4" : ""
+        },
+        "resposta" : "resposta:",
+        "dica" : "teste",
+        "nivel" :  -1
+        },     
+    {
+        "questao": "?",
+        "opcoes" : {
+            "1" : "",
+            "2" : "",
+            "3" : "",
+            "4" : ""
+        },
+        "resposta" : "resposta:",
+        "dica" : "teste",
+        "nivel" :  -1
+        },     
+    {
+        "questao": "?",
+        "opcoes" : {
+            "1" : "",
+            "2" : "",
+            "3" : "",
+            "4" : ""
+        },
+        "resposta" : "resposta:",
+        "dica" : "teste",
+        "nivel" :  -1
+        },     
+    {
+        "questao": "?",
+        "opcoes" : {
+            "1" : "",
+            "2" : "",
+            "3" : "",
+            "4" : ""
+        },
+        "resposta" : "resposta:",
+        "dica" : "teste",
+        "nivel" :  -1
+        },     
+    {
+        "questao": "?",
+        "opcoes" : {
+            "1" : "",
+            "2" : "",
+            "3" : "",
+            "4" : ""
+        },
+        "resposta" : "resposta:",
+        "dica" : "teste",
+        "nivel" :  -1
+        },     
+    {
+        "questao": "?",
+        "opcoes" : {
+            "1" : "",
+            "2" : "",
+            "3" : "",
+            "4" : ""
+        },
+        "resposta" : "resposta:",
+        "dica" : "teste",
+        "nivel" :  -1
+        },     
+    {
+        "questao": "?",
+        "opcoes" : {
+            "1" : "",
+            "2" : "",
+            "3" : "",
+            "4" : ""
+        },
+        "resposta" : "resposta:",
+        "dica" : "teste",
+        "nivel" :  -1
+        }, 
+    {
+        "questao": "?",
+        "opcoes" : {
+            "1" : "",
+            "2" : "",
+            "3" : "",
+            "4" : ""
+        },
+        "resposta" : "resposta:",
+        "dica" : "teste",
+        "nivel" :  -1
+        },     
+    {
+        "questao": "?",
+        "opcoes" : {
+            "1" : "",
+            "2" : "",
+            "3" : "",
+            "4" : ""
+        },
+        "resposta" : "resposta:",
+        "dica" : "teste",
+        "nivel" :  -1
+        },     
+    {
+        "questao": "?",
+        "opcoes" : {
+            "1" : "",
+            "2" : "",
+            "3" : "",
+            "4" : ""
+        },
+        "resposta" : "resposta:",
+        "dica" : "teste",
+        "nivel" :  -1
+        },     
+    {
+        "questao": "?",
+        "opcoes" : {
+            "1" : "",
+            "2" : "",
+            "3" : "",
+            "4" : ""
+        },
+        "resposta" : "resposta:",
+        "dica" : "teste",
+        "nivel" :  -1
+        },     
+    {
+        "questao": "?",
+        "opcoes" : {
+            "1" : "",
+            "2" : "",
+            "3" : "",
+            "4" : ""
+        },
+        "resposta" : "resposta:",
+        "dica" : "teste",
+        "nivel" :  -1
+        },     
+    {
+        "questao": "?",
+        "opcoes" : {
+            "1" : "",
+            "2" : "",
+            "3" : "",
+            "4" : ""
+        },
+        "resposta" : "resposta:",
+        "dica" : "teste",
+        "nivel" :  -1
+        
+        }
+    
+]

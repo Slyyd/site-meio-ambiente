@@ -10,6 +10,8 @@ const divEnd = document.querySelector(".qst-end");
 const questionCounter = document.querySelector("#spanQst");
 const pPergunta = document.querySelector("#pPergunta");
 const pDica = document.querySelector("#pDica");
+const pRespostaCorreta = document.querySelector("#pRespostaCorreta");
+const pRespostaUsuario = document.querySelector("#pRespostaUsuario")
 const spanAcertos = document.querySelector("#spanAcertos");
 const spanTotal = document.querySelector("#spanTotal");
 
@@ -54,10 +56,13 @@ async function endQuiz() {
 
 }
 
-async function showAdvice() {
+async function showAdvice(respostaEscolhida) {
 
     if ((await QuestionHandler).hasEnded == true) { btnAdvice.removeEventListener("click", adviceButton); btnAdvice.addEventListener("click", endQuiz); btnAdvice.textContent = "Terminar"; }
     divMain.classList.remove("divActive-Flex")
+    pRespostaUsuario.textContent = question.opcoes[respostaEscolhida];
+    pRespostaCorreta.textContent = question.opcoes[question.resposta];
+    pRespostaCorreta
     pDica.textContent = question.dica;
     divDica.classList.add("divActive-InFlex")
 }
@@ -66,7 +71,7 @@ async function showAdvice() {
 
 async function selectButton() {
 
-    showAdvice();
+    showAdvice(this.id);
     passCurrentQuestion(this.id);
     setupQuestion();
 }

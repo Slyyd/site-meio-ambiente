@@ -1,8 +1,27 @@
+// Mobile Menu
+document.getElementById('menuToggle').addEventListener('click', function() {
+	document.querySelector('.main-nav').classList.toggle('active');
+	this.classList.toggle('active');
+});
+
+window.addEventListener('scroll', function() {
+	const header = document.querySelector('.main-header');
+	if (window.scrollY > 10) {
+		header.classList.add('scrolled');
+	} else {
+		header.classList.remove('scrolled');
+	}
+});
+
+// Inicializar o slideshow
+let slideIndex = 1;
+
 document.addEventListener('DOMContentLoaded', function() {
 	// Preloader
 	setTimeout(function() {
 		document.getElementById('preloader').style.display = 'none';
 	}, 1000);
+
 	// Tabs
 	const tabLinks = document.querySelectorAll('.tab-nav__list li');
 	const tabContents = document.querySelectorAll('.tab-content__item');
@@ -68,4 +87,45 @@ document.addEventListener('DOMContentLoaded', function() {
 			this.style.filter = 'grayscale(100%)';
 		});
 	});
+
+	showSlides(slideIndex);
+	// Iniciar rotação automática dos slides a cada 5 segundos
+	setInterval(function() {
+		plusSlides(1);
+	}, 5000);
 });
+
+// Função para mostrar um slide específico
+function currentSlide(n) {
+	showSlides(slideIndex = n);
+}
+
+// Função principal de exibição dos slides
+function showSlides(n) {
+	let i;
+	let slides = document.getElementsByClassName("author-slide");
+	let dots = document.getElementsByClassName("dot");
+
+	// Loop para voltar ao primeiro slide se passar do último
+	if (n > slides.length) {
+		slideIndex = 1
+	}
+	// Loop para ir ao último slide se retroceder do primeiro
+	if (n < 1) {
+		slideIndex = slides.length
+	}
+
+	// Esconde todos os slides
+	for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";
+	}
+
+	// Remove a classe "active" de todos os pontos
+	for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active-dot", "");
+	}
+
+	// Mostra o slide atual e marca o ponto correspondente como ativo
+	slides[slideIndex - 1].style.display = "block";
+	dots[slideIndex - 1].className += " active-dot";
+}

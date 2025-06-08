@@ -1,247 +1,247 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <!--- Configurações básicas da página -->
-    <meta charset="utf-8">
-    <title>TerraByte - Tecnologia pela Natureza</title>
-    <meta name="description" content="TerraByte - Usando tecnologia para monitorar e preservar o meio ambiente.">
-    <meta name="author" content="TerraByte">
-    <!-- Meta Dispositivo Móvel -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/sobre.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <!-- JavaScript-->
-    <script src="js/sobre.js" defer></script>
-    <script src="js/noticias.js" defer></script>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <!-- Header -->
-    <header class="main-header">
-      <div class="header-container">
-        <div class="logo">
-          <img src="img/logo.png" alt="Logo TerraByte">
-          <span class="tagline">Tecnologia pela Natureza</span>
-        </div>
-        <nav class="main-nav">
-          <ul>
-            <li>
-              <a href="home.html">Início</a>
-            </li>
-            <li>
-              <a href="#noticias">Notícias</a>
-            </li>
-            <li>
-              <a href="#projetos">Projetos</a>
-            </li>
-            <li>
-              <a href="#equipe">Equipe</a>
-            </li>
-            <li>
-              <a href="mapa.html" class="btn-highlight">Mapa</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="menu-toggle">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-    </header>
-    <!-- info -->
-    <section id="info" class="s-info">
-      <div class="row info-content">
-        <div class="column">
-          <nav class="tab-nav">
-            <ul class="tab-nav__list">
-              <li class="active" data-id="tab-sobre">
-                <a href="#0">
-                  <span>Sobre</span>
-                </a>
-              </li>
-              <li data-id="tab-historia">
-                <a href="#0">
-                  <span>História</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <div class="tab-content">
-            <!-- 1. tab Sobre -->
-            <div id="tab-sobre" class='tab-content__item active'>
-              <div class="row tab-content__item-header">
-                <div class="column">
-                  <h1>Projeto TerraByte</h1>
-                </div>
-              </div>
-              <div class="row">
-                <div class="column">
-                  <p class="lead">O TerraByte é uma iniciativa que une tecnologia e preservação ambiental para combater os desafios ecológicos que enfrentamos no Brasil.</p>
-                  <p>Nossa equipe reúne estudantes de desenvolvimento e análise de sistemas com o objetivo de desenvolver ferramentas que ajudem a identificar, prevenir e combater problemas como desmatamento, queimadas e poluição dos recursos hídricos.</p>
-                  <div class="row">
-                    <div class="column large-6 tab-full">
-                      <h4>Nossa Missão</h4>
-                      <p> Desenvolver e implementar soluções tecnológicas inovadoras que contribuam para a preservação do meio ambiente e promovam a conscientização ecológica. Acreditamos que a combinação entre tecnologia e sustentabilidade é o caminho para um futuro melhor para todos. </p>
-                    </div>
-                    <div class="column large-6 tab-full">
-                      <h4>Como Participar</h4>
-                      <p> Você pode se envolver na proteção da natureza de diversas formas, seja como voluntário em ONGs ou como apoiador de projetos. Junte-se a nós nessa jornada por um planeta mais saudável! </p>
-                      <a href="quiz.html" class="btn btn--stroke h-full-width">Participe do QUIZ!</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- 2. tab História -->
-            <div id="tab-historia" class='tab-content__item'>
-              <div class="row tab-content__item-header">
-                <div class="column">
-                  <h1>Nossa História</h1>
-                </div>
-              </div>
-              <div class="row">
-                <div class="column">
-                  <p class="lead">O TerraByte nasceu em 2025, quando um grupo de estudantes de tecnologia decidiram usar seus conhecimentos para criar soluções inovadoras para os problemas ambientais que afetam o Brasil e o mundo.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Notícias -->
-            <section id="noticias" class="fade-in">
-              <div class="news-container">
-                <div class="news-title">
-                  <h1>Notícias</h1>
-                  <p>Fique por dentro das últimas notícias sobre meio ambiente e mudanças climáticas</p>
-                  </header>
-                  <div class="carousel-container">
-                    <div id="carousel" class="carousel">
-                      <div class="loading">Carregando notícias...</div>
-                    </div>
-                    <button class="nav-button prev">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#2c7d59">
-                        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
-                      </svg>
-                    </button>
-                    <button class="nav-button next">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#2c7d59">
-                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="indicators" id="indicators"></div>
-                </div>
-                <div class="pagination-controls">
-                  <button id="prevPageBtn" disabled>Página Anterior</button>
-                  <span id="pageInfo">Página 1 de 3</span>
-                  <button id="nextPageBtn">Próxima Página</button>
-                </div>
-            </section>
-            <!-- Call to Action -->
-            <section class="cta-section" id="faca-parte">
-              <div class="cta-container fade-in">
-                <h2>Faça Parte da Mudança</h2>
-                <p>Existem várias maneiras de contribuir com os projetos e ajudar a construir um futuro mais sustentável. Sua participação é fundamental para alcançarmos nossos objetivos.</p>
-                <div class="cta-buttons">
-                  <a href="#" class="cta-button">Seja Voluntário</a>
-                  <a href="#" class="secondary-button">Faça uma Doação</a>
-                </div>
-              </div>
-            </section>
-            <!-- Projetos Section -->
-            <section class="projects" id="projetos">
-              <h2 class="section-title">Conheça os Projetos</h2>
-              <div class="projects-grid fade-in">
-                <div class="project-card">
-                  <div class="project-image">
-                    <img src="img/plantio.jpg" alt="Projeto de Reflorestamento">
-                  </div>
-                  <div class="project-content">
-                    <span class="tag">Reflorestamento</span>
-                    <h3>Mata Atlântica Viva</h3>
-                    <p>Recuperação de áreas degradadas na Mata Atlântica com plantio de espécies nativas e monitoramento da fauna local.</p>
-                  </div>
-                </div>
-                <div class="project-card">
-                  <div class="project-image">
-                    <img src="img/eolica.jpg" alt="Projeto Águas Limpas">
-                  </div>
-                  <div class="project-content">
-                    <span class="tag">Recursos Hídricos</span>
-                    <h3>Águas Limpas</h3>
-                    <p>Revitalização de nascentes e matas ciliares para garantir a qualidade da água em comunidades rurais.</p>
-                  </div>
-                </div>
-                <div class="project-card">
-                  <div class="project-image">
-                    <img src="img/plantio2.jpg" alt="Projeto Educação Ambiental">
-                  </div>
-                  <div class="project-content">
-                    <span class="tag">Educação</span>
-                    <h3>EcoEscolas</h3>
-                    <p>Programa educativo que leva conhecimento sobre meio ambiente e sustentabilidade para crianças e jovens em escolas públicas.</p>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <!-- Equipe -->
-            <section id="equipe" class="team-section fade-in">
-              <h2 class="section-title">Nossa Equipe</h2>
-              <div class="team-grid">
-                <div class="team-member">
-                  <div class="member-image">
-                    <img src="img/angelica-team.png" alt="Membro da Equipe">
-                  </div>
-                  <h3>Angélica</h3>
-                  <p>Desenvolvedora</p>
-                  <p>Estudante de Desenvolvimento de Sistemas.</p>
-                </div>
-                <div class="team-member">
-                  <div class="member-image">
-                    <img src="img/bianca-team.png" alt="Membro da Equipe">
-                  </div>
-                  <h3>Bianca</h3>
-                  <p>Desenvolvedora</p>
-                  <p>Tecnóloga em Análise e Desenvolvimento de Sistemas e Estudante de Técnico em Desenvolvimento de Sistemas</p>
-                </div>
-                <div class="team-member">
-                  <div class="member-image">
-                    <img src="img/jessica-relatora.png" alt="Membro da Equipe Jéssica">
-                  </div>
-                  <h3>Jenifer</h3>
-                  <p>Relatora</p>
-                  <p>Estudante de Desenvolvimento de Sistemas e futura estudante de Design Gráfico.</p>
-                </div>
-              </div>
-              <div class="team-grid">
-                <div class="team-member">
-                  <div class="member-image">
-                    <img src="img/johann-fullstack.png" alt="Membro da Equipe">
-                  </div>
-                  <h3>Johann</h3>
-                  <p>Desenvolvedor Full-Stack</p>
-                  <p>Estudante de Análise, Desenvolvimento de Sistemas, Engenharia de Dados e Segurança da Informação.</p>
-                </div>
-                <div class="team-member">
-                  <div class="member-image">
-                    <img src="img/jose-team.png" alt="Membro da Equipe">
-                  </div>
-                  <h3>José</h3>
-                  <p>Desenvolvedor</p>
-                  <p>Estudando de Desenvolvimento de Sistemas, Estudante de Sistemas de informação e Proano.</p>
-                </div>
-                <div class="team-member">
-                  <div class="member-image">
-                    <img src="img/kaue-backend.png" alt="Membro da Equipe">
-                  </div>
-                  <h3>Kauê</h3>
-                  <p>Desenvolvedor Back-End</p>
-                  <p>Técnico e estudante em Desenvolvimento de Sistemas</p>
-                </div>
-              </div>
-            </section>
-           <!-- Citação Autor -->
+	<head>
+		<!--- Configurações básicas da página -->
+		<meta charset="utf-8">
+		<title>TerraByte - Tecnologia pela Natureza</title>
+		<meta name="description" content="TerraByte - Usando tecnologia para monitorar e preservar o meio ambiente.">
+		<meta name="author" content="TerraByte">
+		<!-- Meta Dispositivo Móvel -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/sobre.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+		<!-- JavaScript-->
+		<script src="js/sobre.js" defer></script>
+		<script src="js/noticias.js" defer></script>
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<!-- Header -->
+		<header class="main-header">
+			<div class="header-container">
+				<div class="logo">
+					<img src="img/logo.png" alt="Logo TerraByte">
+					<span class="tagline">Tecnologia pela Natureza</span>
+				</div>
+				<nav class="main-nav">
+					<ul>
+						<li>
+							<a href="home.html">Início</a>
+						</li>
+						<li>
+							<a href="#noticias">Notícias</a>
+						</li>
+						<li>
+							<a href="#projetos">Projetos</a>
+						</li>
+						<li>
+							<a href="#equipe">Equipe</a>
+						</li>
+						<li>
+							<a href="mapa.html" class="btn-highlight">Mapa</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="menu-toggle" id="menuToggle">
+					<i class="fas fa-bars"></i>
+				</div>
+			</div>
+		</header>
+		<!-- info -->
+		<section id="info" class="s-info">
+			<div class="row info-content">
+				<div class="column">
+					<nav class="tab-nav">
+						<ul class="tab-nav__list">
+							<li class="active" data-id="tab-sobre">
+								<a href="#0">
+									<span>Sobre</span>
+								</a>
+							</li>
+							<li data-id="tab-historia">
+								<a href="#0">
+									<span>História</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="tab-content">
+						<!-- 1. tab Sobre -->
+						<div id="tab-sobre" class='tab-content__item active'>
+							<div class="row tab-content__item-header">
+								<div class="column">
+									<h1>Projeto TerraByte</h1>
+								</div>
+							</div>
+							<div class="row">
+								<div class="column">
+									<p class="lead">O TerraByte é uma iniciativa que une tecnologia e preservação ambiental para combater os desafios ecológicos que enfrentamos no Brasil.</p>
+									<p>Nossa equipe reúne estudantes de desenvolvimento e análise de sistemas com o objetivo de desenvolver ferramentas que ajudem a identificar, prevenir e combater problemas como desmatamento, queimadas e poluição dos recursos hídricos.</p>
+									<div class="row">
+										<div class="column large-6 tab-full">
+											<h4>Nossa Missão</h4>
+											<p> Desenvolver e implementar soluções tecnológicas inovadoras que contribuam para a preservação do meio ambiente e promovam a conscientização ecológica. Acreditamos que a combinação entre tecnologia e sustentabilidade é o caminho para um futuro melhor para todos. </p>
+										</div>
+										<div class="column large-6 tab-full">
+											<h4>Como Participar</h4>
+											<p> Você pode se envolver na proteção da natureza de diversas formas, seja como voluntário em ONGs ou como apoiador de projetos. Junte-se a nós nessa jornada por um planeta mais saudável! </p>
+											<a href="quiz.html" class="btn btn--stroke h-full-width">Participe do QUIZ!</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 2. tab História -->
+						<div id="tab-historia" class='tab-content__item'>
+							<div class="row tab-content__item-header">
+								<div class="column">
+									<h1>Nossa História</h1>
+								</div>
+							</div>
+							<div class="row">
+								<div class="column">
+									<p class="lead">O TerraByte nasceu em 2025, quando um grupo de estudantes de tecnologia decidiram usar seus conhecimentos para criar soluções inovadoras para os problemas ambientais que afetam o Brasil e o mundo.</p>
+								</div>
+							</div>
+						</div>
+						<!-- Notícias -->
+						<section id="noticias" class="fade-in">
+							<div class="news-container">
+								<div class="news-title">
+									<h1>Notícias</h1>
+									<p>Fique por dentro das últimas notícias sobre meio ambiente e mudanças climáticas</p>
+									</header>
+									<div class="carousel-container">
+										<div id="carousel" class="carousel">
+											<div class="loading">Carregando notícias...</div>
+										</div>
+										<button class="nav-button prev">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#2c7d59">
+												<path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+											</svg>
+										</button>
+										<button class="nav-button next">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#2c7d59">
+												<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+											</svg>
+										</button>
+									</div>
+									<div class="indicators" id="indicators"></div>
+								</div>
+								<div class="pagination-controls">
+									<button id="prevPageBtn" disabled>Página Anterior</button>
+									<span id="pageInfo">Página 1 de 3</span>
+									<button id="nextPageBtn">Próxima Página</button>
+								</div>
+						</section>
+						<!-- Call to Action -->
+						<section class="cta-section" id="faca-parte">
+							<div class="cta-container fade-in">
+								<h2>Faça Parte da Mudança</h2>
+								<p>Existem várias maneiras de contribuir com os projetos e ajudar a construir um futuro mais sustentável. Sua participação é fundamental para alcançarmos nossos objetivos.</p>
+								<div class="cta-buttons">
+									<a href="https://sejaumvoluntario.sisicmbio.icmbio.gov.br/voluntariado/login/?next=/" class="cta-button">Seja Voluntário</a>
+									<a href="https://doe.wwf.org.br/ficha/nao-retorno" class="secondary-button">Faça uma Doação</a>
+								</div>
+							</div>
+						</section>
+						<!-- Projetos Section -->
+						<section class="projects" id="projetos">
+							<h2 class="section-title">Conheça os Projetos</h2>
+							<div class="projects-grid fade-in">
+								<div class="project-card">
+									<div class="project-image">
+										<img src="img/plantio.jpg" alt="Projeto de Reflorestamento">
+									</div>
+									<div class="project-content">
+										<span class="tag">Reflorestamento</span>
+										<h3>Projeto Paisagens Sustentáveis da Amazônia - ASL Brasil</h3>
+										<p>Conservação integrada da Amazônia, fortalecendo governos locais e incentivando a economia sustentável. Valoriza áreas protegidas e a cooperação regional para preservar a biodiversidade e os serviços da floresta.</p>
+									</div>
+								</div>
+								<div class="project-card">
+									<div class="project-image">
+										<img src="img/eolica.jpg" alt="Projeto Águas Limpas">
+									</div>
+									<div class="project-content">
+										<span class="tag">Reciclagem</span>
+										<h3>Adubo de Papel</h3>
+										<p>Estudantes de Guanambi (BA) descobriram que o papel, feito de fibra de celulose, pode ser usado como adubo para o cultivo de plantas, ao desenvolverem o projeto “Reutilização de livros antigos como adubo para o plantio”.</p>
+									</div>
+								</div>
+								<div class="project-card">
+									<div class="project-image">
+										<img src="img/plantio2.jpg" alt="Projeto Educação Ambiental">
+									</div>
+									<div class="project-content">
+										<span class="tag">Preservação</span>
+										<h3>Pró-Espécies</h3>
+										<p>O Programa Pró-Espécies, do Ministério do Meio Ambiente, atua na conservação de espécies ameaçadas em 13 estados, com foco em 290 espécies sem proteção. Financiado pelo GEF e apoiado por instituições como WWF-Brasil e ICMBio, combate causas da extinção como perda de habitat e espécies invasoras, cobrindo 62 milhões de hectares</p>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!-- Equipe -->
+						<section id="equipe" class="team-section fade-in">
+							<h2 class="section-title">Nossa Equipe</h2>
+							<div class="team-grid">
+								<div class="team-member">
+									<div class="member-image">
+										<img src="img/angelica-team.png" alt="Membro da Equipe">
+									</div>
+									<h3>Angélica</h3>
+									<p>Desenvolvedora</p>
+									<p>Estudante de Desenvolvimento de Sistemas.</p>
+								</div>
+								<div class="team-member">
+									<div class="member-image">
+										<img src="img/bianca-team.png" alt="Membro da Equipe">
+									</div>
+									<h3>Bianca</h3>
+									<p>Desenvolvedora</p>
+									<p>Tecnóloga em Análise e Desenvolvimento de Sistemas e Estudante de Técnico em Desenvolvimento de Sistemas</p>
+								</div>
+								<div class="team-member">
+									<div class="member-image">
+										<img src="img/jessica-relatora.png" alt="Membro da Equipe Jéssica">
+									</div>
+									<h3>Jenifer</h3>
+									<p>Relatora</p>
+									<p>Estudante de Desenvolvimento de Sistemas e futura estudante de Design Gráfico.</p>
+								</div>
+							</div>
+							<div class="team-grid">
+								<div class="team-member">
+									<div class="member-image">
+										<img src="img/johann-fullstack.png" alt="Membro da Equipe">
+									</div>
+									<h3>Johann</h3>
+									<p>Desenvolvedor Full-Stack</p>
+									<p>Estudante de Análise, Desenvolvimento de Sistemas, Engenharia de Dados e Segurança da Informação.</p>
+								</div>
+								<div class="team-member">
+									<div class="member-image">
+										<img src="img/jose-team.png" alt="Membro da Equipe">
+									</div>
+									<h3>José</h3>
+									<p>Desenvolvedor</p>
+									<p>Estudando de Desenvolvimento de Sistemas, Estudante de Sistemas de informação e Proano.</p>
+								</div>
+								<div class="team-member">
+									<div class="member-image">
+										<img src="img/kaue-backend.png" alt="Membro da Equipe">
+									</div>
+									<h3>Kauê</h3>
+									<p>Desenvolvedor Back-End</p>
+									<p>Técnico e estudante em Desenvolvimento de Sistemas</p>
+								</div>
+							</div>
+						</section>
+						<!-- Citação Autor -->
 						<section class="author-section">
 							<h2 class="section-title">Legado de Luta e Esperança</h2>
 							<div class="author-slider">
@@ -309,77 +309,71 @@
 								</div>
 							</div>
 						</section>
-            <!-- Footer -->
-            <footer>
-              <div class="footer-container">
-                <div class="footer-about">
-                  <div class="footer-logo">
-                    <i class="fas fa-leaf"></i>
-                    <span>Terrabyte</span>
-                  </div>
-                  <p>Trabalhando por um futuro mais verde e sustentável para todos.</p>
-                  <div class="social-icons">
-                    <a href="#">
-                      <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#">
-                      <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#">
-                      <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#">
-                      <i class="fab fa-youtube"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="footer-links">
-                  <h3>Links Rápidos</h3>
-                  <ul>
-                    <li>
-                      <a href="home.html">Início</a>
-                    </li>
-                    <li>
-                      <a href="#noticias">Notícias</a>
-                    </li>
-                    <li>
-                      <a href="#projetos">Projetos</a>
-                    </li>
-                    <li>
-                      <a href="#faca-parte">Faça Parte</a>
-                    </li>
-                    <li>
-                      <a href="#equipe">Equipe</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="footer-links">
-                  <h3>Projetos</h3>
-                  <ul>
-                    <li>
-                      <a href="#">Mata Atlântica Viva</a>
-                    </li>
-                    <li>
-                      <a href="#">Águas Limpas</a>
-                    </li>
-                    <li>
-                      <a href="#">EcoEscolas</a>
-                    </li>
-                    <li>
-                      <a href="#">Lixo Zero</a>
-                    </li>
-                    <li>
-                      <a href="#">Energia Limpa</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="footer-bottom">
-                <p>&copy; 2025 TerraByte - Todos os direitos reservados.</p>
-              </div>
-            </footer>
-          </div>
-        </div>
-    </section>
-  </body>
+						<!-- Footer -->
+						<footer>
+							<div class="footer-container">
+								<div class="footer-about">
+									<div class="footer-logo">
+										<i class="fas fa-leaf"></i>
+										<span>Terrabyte</span>
+									</div>
+									<p>Trabalhando por um futuro mais verde e sustentável para todos.</p>
+									<div class="social-icons">
+										<a href="#">
+											<i class="fab fa-facebook-f"></i>
+										</a>
+										<a href="#">
+											<i class="fab fa-twitter"></i>
+										</a>
+										<a href="#">
+											<i class="fab fa-instagram"></i>
+										</a>
+										<a href="#">
+											<i class="fab fa-youtube"></i>
+										</a>
+									</div>
+								</div>
+								<div class="footer-links">
+									<h3>Links Rápidos</h3>
+									<ul>
+										<li>
+											<a href="home.html">Início</a>
+										</li>
+										<li>
+											<a href="#noticias">Notícias</a>
+										</li>
+										<li>
+											<a href="#projetos">Projetos</a>
+										</li>
+										<li>
+											<a href="#faca-parte">Faça Parte</a>
+										</li>
+										<li>
+											<a href="#equipe">Equipe</a>
+										</li>
+									</ul>
+								</div>
+								<div class="footer-links">
+									<h3>Projetos</h3>
+									<ul>
+										<li>
+											<a href="https://www.gov.br/mma/pt-br/composicao/sbio/projeto-paisagens-sustentaveis-da-amazonia-asl-brasil" target="_blank">Projeto Paisagens Sustentáveis da Amazônia - ASL Brasil</a>
+										</li>
+										<li>
+											<a href="https://criativosdaescola.com.br/historia/adubo-de-papel/" target="_blank">Adubo de Papel</a>
+										</li>
+										<li>
+											<a href="https://proespecies.eco.br/projeto/" target="_blank">Pró-Espécies</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="footer-bottom">
+								<p>&copy; 2025 TerraByte - Todos os direitos reservados.</p>
+							</div>
+						</footer>
+					</div>
+				</div>
+		</section>
+	</body>
 </html>
